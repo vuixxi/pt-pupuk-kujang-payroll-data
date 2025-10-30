@@ -1,0 +1,96 @@
+[
+   {
+      "period": "Periode 1",
+      "loanPerWorker": 50000,
+      "loanWorkers": ["Sirod", "Farhan", "Vicky", "Endi", "Husen"],
+      "data": [
+         {
+            "date": "Sabtu, 18 Oktober 2025",
+            "shortDate": "18 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 125,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Teja"]
+         },
+         {
+            "date": "Senin, 20 Oktober 2025",
+            "shortDate": "20 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 133,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Husen"]
+         },
+         {
+            "date": "Selasa, 21 Oktober 2025",
+            "shortDate": "21 / 10",
+            "job": "Muat",
+            "type": "Mobil",
+            "totalProduction": 1,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Husen"]
+         },
+         {
+            "date": "Selasa, 21 Oktober 2025",
+            "shortDate": "21 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 103,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Husen"]
+         },
+         {
+            "date": "Rabu, 22 Oktober 2025",
+            "shortDate": "22 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 78,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Husen"]
+         },
+         {
+            "date": "Rabu, 22 Oktober 2025",
+            "shortDate": "22 / 10",
+            "job": "Muat",
+            "type": "Mobil",
+            "totalProduction": 1,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Husen"]
+         },
+         {
+            "date": "Jumat, 24 Oktober 2025",
+            "shortDate": "24 / 10",
+            "job": "Bongkar",
+            "type": "Mobil",
+            "totalProduction": 1,
+            "workers": ["Sirod", "Farhan", "Vicky"]
+         }
+      ]
+   },
+   {
+      "period": "Periode 2",
+      "loanPerWorker": 50000,
+      "loanWorkers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kakange Komar"],
+      "data": [
+         {
+            "date": "Rabu, 29 Oktober 2025",
+            "shortDate": "29 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 205,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kakange Komar"]
+         },
+         {
+            "date": "Kamis, 30 Oktober 2025",
+            "shortDate": "30 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 158,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kakange Komar"]
+         },
+         {
+            "date": "Jumat, 31 Oktober 2025",
+            "shortDate": "31 / 10",
+            "job": "Produksi",
+            "type": "Karung",
+            "totalProduction": 100,
+            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kakange Komar"]
+         }
+      ]
+   }
+]
