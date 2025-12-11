@@ -1,0 +1,12 @@
+index.html
+css/
+  style.css
+js/
+  utils.js
+  workerList.js
+  mainTable.js
+  summaryTable.js
+  dropdown.js
+  app.js
+json/
+  data.json
