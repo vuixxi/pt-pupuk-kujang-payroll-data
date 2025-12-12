@@ -57,7 +57,7 @@ function calculateDailySalary(item) {
       "muat": 110000,
       "bongkar": 120000,
       "angkut cacahan lembut": 400,
-      "stapel cacahan": 400,
+      "stapel cacahan": 800,
       "stapel coa": 400
    };
    
