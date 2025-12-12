@@ -212,10 +212,18 @@
          {
             "date": "Jumat, 12 Desember 2025",
             "shortDate": "12 / 12",
-            "job": "Produksi",
+            "job": "Stapel COA",
             "type": "Karung",
-            "totalProduction": 150,
-            "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"]
+            "totalProduction": 362,
+            "workers": ["Sirod", "Vicky", "Komar", "Kurnata", "Wahyu"]
+         },
+         {
+            "date": "Jumat, 12 Desember 2025",
+            "shortDate": "12 / 12",
+            "job": "Stapel Cacahan",
+            "type": "Karung",
+            "totalProduction": 205,
+            "workers": ["Sirod", "Vicky", "Komar", "Kurnata", "Wahyu"]
          }
       ]
    }
