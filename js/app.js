@@ -1,4 +1,4 @@
-const myLink = "json/data.json";
+const myLink = "./json/data.json";
 
 async function loadData() {
   try {
@@ -9,7 +9,7 @@ async function loadData() {
     const data = [];
     
     for (const p of json.periods) {
-      const r = await fetch(`json/${p.file}`);
+      const r = await fetch(`./json/${p.file}`);
       const d = await r.json();
       data.push(d);
     }
