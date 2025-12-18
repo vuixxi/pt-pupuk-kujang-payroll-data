@@ -1,0 +1,64 @@
+{
+  "periodId": 5,
+  "period": "Periode 5",
+  "loanPerWorker": 50000,
+  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
+  "data": [
+     {
+        "date": "Sabtu, 13 Desember 2025",
+        "shortDate": "12 / 12",
+        "job": "Angkut Cacahan Lembut",
+        "type": "Karung",
+        "totalProduction": 266,
+        "workers": ["Sirod", "Farhan", "Vicky", "Wahyu"]
+     },
+     {
+        "date": "Senin, 15 Desember 2025",
+        "shortDate": "15 / 12",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 216,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Wahyu"]
+     },
+     {
+        "date": "Selasa, 16 Desember 2025",
+        "shortDate": "16 / 12",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 185,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"]
+     },
+     {
+        "date": "Rabu, 17 Desember 2025",
+        "shortDate": "17 / 12",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 150,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+     },
+     {
+        "date": "Rabu, 17 Desember 2025",
+        "shortDate": "17 / 12",
+        "job": "Angkut Cacahan Lembut",
+        "type": "Karung",
+        "totalProduction": 210,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+     },
+     {
+        "date": "Kamis, 18 Desember 2025",
+        "shortDate": "18 / 12",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 130,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+     },
+     {
+        "date": "Jumat, 19 Desember 2025",
+        "shortDate": "19 / 12",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 200,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+     }
+  ]
+}
