@@ -4,6 +4,7 @@
     { "periodId": 2, "file": "period2.json" },
     { "periodId": 3, "file": "period3.json" },
     { "periodId": 4, "file": "period4.json" },
-    { "periodId": 5, "file": "period5.json" }
+    { "periodId": 5, "file": "period5.json" },
+    { "periodId": 6, "file": "period6.json" }
   ]
 }
