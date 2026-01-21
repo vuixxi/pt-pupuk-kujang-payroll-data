@@ -25,7 +25,23 @@
         "shortDate": "21 / 01",
         "job": "Produksi",
         "type": "Karung",
-        "totalProduction": 250,
+        "totalProduction": 218,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata", "Husen"]
+     },
+     {
+        "date": "Kamis, 22 Januari 2026",
+        "shortDate": "22 / 01",
+        "job": "Salin",
+        "type": "Karung",
+        "totalProduction": 400,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata", "Husen"]
+     },
+     {
+        "date": "Jumat, 23 Januari 2026",
+        "shortDate": "23 / 01",
+        "job": "Salin",
+        "type": "Karung",
+        "totalProduction": 500,
         "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata", "Husen"]
      }
   ]
