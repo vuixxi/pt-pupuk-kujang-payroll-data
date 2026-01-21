@@ -1,0 +1,40 @@
+{
+  "periodId": 2,
+  "period": "Periode 2",
+  "loanPerWorker": 50000,
+  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"],
+  "data": [
+     {
+        "date": "Rabu, 29 Oktober 2025",
+        "shortDate": "29 / 10",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 205,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"]
+     },
+     {
+        "date": "Kamis, 30 Oktober 2025",
+        "shortDate": "30 / 10",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 158,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"]
+     },
+     {
+        "date": "Jumat, 31 Oktober 2025",
+        "shortDate": "31 / 10",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 100,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"]
+     },
+     {
+        "date": "Jumat, 31 Oktober 2025",
+        "shortDate": "31 / 10",
+        "job": "Angkut Cacahan Lembut",
+        "type": "Karung",
+        "totalProduction": 156,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"]
+     }
+  ]
+}

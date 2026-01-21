@@ -1,0 +1,32 @@
+{
+  "periodId": 7,
+  "period": "Periode 7",
+  "loanPerWorker": 50000,
+  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata"],
+  "data": [
+     {
+        "date": "Selasa, 20 Januari 2026",
+        "shortDate": "20 / 01",
+        "job": "Angkut Cacahan Lembut",
+        "type": "Karung",
+        "totalProduction": 200,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata"]
+     },
+     {
+        "date": "Selasa, 20 Januari 2026",
+        "shortDate": "20 / 01",
+        "job": "Stapel Cacahan",
+        "type": "Karung",
+        "totalProduction": 116,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata"]
+     },
+     {
+        "date": "Rabu, 21 Januari 2026",
+        "shortDate": "21 / 01",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 250,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata", "Husen"]
+     }
+  ]
+}
