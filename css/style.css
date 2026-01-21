@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../assets/fonts/Quicksand-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand-Bold";
+  background-color: #eaeaea;
+  color: #212121;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+
