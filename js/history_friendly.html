@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>2 Halaman History Back</title>
+</head>
+<body>
+
+  <div id="page1">
+    <h1>Halaman 1</h1>
+    <p>Ini halaman pertama.</p>
+    <a href="#page2">Next</a>
+  </div>
+
+  <div id="page2" style="display:none;">
+    <h1>Halaman 2</h1>
+    <p>Ini halaman kedua.</p>
+    <a href="#" onclick="goBack(event)">Prev</a>
+  </div>
+
+  <script>
+    function render() {
+      const hash = location.hash || "#page1";
+
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "none";
+
+      if (hash === "#page2") {
+        document.getElementById("page2").style.display = "block";
+      } else {
+        document.getElementById("page1").style.display = "block";
+      }
+    }
+
+    function goBack(e) {
+      e.preventDefault();
+      history.back();
+    }
+
+    window.addEventListener("hashchange", render);
+    window.addEventListener("load", render);
+  </script>
+
+</body>
+</html>
+ -->
+ 
+ 
+ 
+ 
+ 
+ 
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>3 Halaman History</title>
+</head>
+<body>
+
+  <div id="page1">
+    <h1>Halaman 1</h1>
+    <p>Ini halaman pertama.</p>
+    <a href="#page2">Next</a>
+  </div>
+  <div id="page2" style="display:none;">
+    <h1>Halaman 2</h1>
+    <p>Ini halaman kedua.</p>
+    <a href="#" onclick="goBack(event)">Prev</a>
+    <br><br>
+    <a href="#page3">Next</a>
+  </div>
+  <div id="page3" style="display:none;">
+    <h1>Halaman 3</h1>
+    <p>Ini halaman ketiga.</p>
+    <a href="#" onclick="goBack(event)">Prev</a>
+  </div>
+
+  <script>
+    const pages = ["page1", "page2", "page3"];
+
+    function render() {
+      const hash = location.hash || "#page1";
+
+      pages.forEach(id => {
+        document.getElementById(id).style.display = "none"; 
+      });
+
+      const current = hash.substring(1);
+      if (pages.includes(current)) {
+        document.getElementById(current).style.display = "block";
+      } else {
+        document.getElementById("page1").style.display = "block";
+      }
+    }
+
+    function goBack(e) {
+      e.preventDefault();
+      history.back();
+    }
+
+    window.addEventListener("hashchange", render);
+    window.addEventListener("load", render);
+  </script>
+
+</body>
+</html>
+
+
+
