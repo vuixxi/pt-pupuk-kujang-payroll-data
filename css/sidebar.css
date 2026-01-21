@@ -1,7 +1,7 @@
 .sidebar {
   position: fixed;
-  min-width: 30vw;
-  left: 70vw;
+  /* min-width: 30vw; */
+  width: max-content;
   right: 0;
   bottom: 0;
   padding: 0.6rem;
@@ -9,12 +9,13 @@
   box-shadow: -1.5px 0 2px rgba(0, 0, 0, 0.2);
   visibility: visible;
   z-index: 9;
+  transform: translateX(0);
   transition: 0.5s ease;
 }
 
 .sidebar.sidebar--hidden {
-  left: 100vw;
   visibility: hidden;
+  transform: translateX(100%);
 }
 
 .sidebar-blackscreen {
@@ -57,7 +58,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 4rem;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
   visibility: visible;
   opacity: 1;
@@ -96,11 +97,15 @@
   box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.3);
   z-index: 9;
 }
+.sidebar-content__main {
+  padding: 1rem;
+}
 
 .sidebar-content .calculator {}
 
 .sidebar-content .calculator .calculator__navbar {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
+  padding-top: 0;
   overflow: auto;
   white-space: nowrap;
 }
@@ -114,7 +119,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .sidebar-content .calculator .calculator__output {
