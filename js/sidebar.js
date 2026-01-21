@@ -12,6 +12,7 @@ function handleSidebar() {
   if (!header || !sidebar) return;
 
   const headerHeight = header.getBoundingClientRect().height;
+  sidebar.style.width = `${sidebar.getBoundingClientRect().width * 1.5}px`;
   sidebar.style.top = `${headerHeight}px`;
   sidebarBlackscreen.style.top = `${headerHeight}px`;
 
