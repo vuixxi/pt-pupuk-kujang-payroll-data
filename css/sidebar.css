@@ -1,0 +1,129 @@
+.sidebar {
+  position: fixed;
+  min-width: 30vw;
+  left: 70vw;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem;
+  background-color: #eaeaea;
+  box-shadow: -1.5px 0 2px rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  z-index: 9;
+  transition: 0.5s ease;
+}
+
+.sidebar.sidebar--hidden {
+  left: 100vw;
+  visibility: hidden;
+}
+
+.sidebar-blackscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+  z-index: 8;
+  transition: opacity 0.5s, scale 0s;
+}
+
+.sidebar-blackscreen.sidebar-blackscreen--hidden {
+  visibility: hidden;
+  opacity: 0;
+  scale: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s, scale 0s 0.5s;
+}
+
+.sidebar .sidebar__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar .sidebar__controls .sidebar__item {
+  
+}
+
+.sidebar-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+  z-index: 999999;
+  transition: opacity 0.5s, scale 0s;
+}
+
+.sidebar-content--hidden {
+  visibility: hidden;
+  opacity: 0;
+  scale: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s, scale 0s 0.5s;
+}
+
+.sidebar-content__controls {
+  background-color: #eaeaea;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-content__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+
+.sidebar-content .calculator {}
+
+.sidebar-content .calculator .calculator__navbar {
+  padding: 1rem 0.5rem;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.sidebar-content .calculator .calculator__tab {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.sidebar-content .calculator .calculator__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar-content .calculator .calculator__output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  color: salmon;
+  border-radius: 3px;
+  border: solid 3px #aeaeae;
+}
