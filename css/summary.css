@@ -2,6 +2,7 @@
   display: grid;
   gap: 1rem;
   padding: 1rem;
+  padding-bottom: 2rem;
   visibility: visible;
 }
 
@@ -17,6 +18,7 @@
 
 .summary .summary__table-wrapper {
   overflow: auto;
+  padding-bottom: 1rem;
 }
 
 .summary .summary__table {
@@ -53,5 +55,6 @@
 .summary-toggle {
    display: flex;
    justify-content: center;
-   padding: 2rem 0;
+   /* padding: 1rem 0; */
+   padding-bottom: 2rem;
 }
