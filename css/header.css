@@ -1,3 +1,4 @@
+
 .header {
   position: sticky;
   top: 0;
@@ -18,11 +19,19 @@
 }
 
 .header .header__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 2.5rem;
   height: 2.5rem;
-  border: solid 2px #212121;
+  background: #555555;
+  /* border: solid 3px #555; */
   border-radius: 50%;
+}
+
+.header .header__logo {
+  background-color: #333333;
 }
 
 .header .header__title {
