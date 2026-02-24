@@ -22,6 +22,13 @@ async function loadData() {
     handleSidebar();
     handleContent();
     handleContentClose();
+    
+    const calculate = initCalculator();
+    initCalculatorTabs(calculate);
+    
+    handleFeedback();
+    handleReport();
+    
     handleMain(data, period);
     setupSummaryToggle();
     

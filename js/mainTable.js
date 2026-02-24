@@ -53,15 +53,15 @@ function calculateDailySalary(item) {
    let dailyTotalSalary = 0;
    let dailySalaryPerWorker = 0;
    const RATE = {
-      "produksi": 45 * 80,
+      "produksi": 3600,
       "muat": 110000,
       "bongkar": 120000,
       "angkut cacahan lembut": 400,
       "stapel cacahan": 800,
       "stapel coa": 400,
       "stapel produksi": 400,
-      "salin": 680,
-      "salin timbang": 680
+      "salin": 765,
+      "salin timbang": 200000
    };
    
    dailyTotalSalary = item.totalProduction * (RATE[item.job.toLowerCase()] || 0);

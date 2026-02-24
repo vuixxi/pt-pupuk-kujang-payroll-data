@@ -189,15 +189,15 @@ handleCalculator();
 // DATA RATE
 // ==============================
 const RATE = {
-  produksi: 45 * 80,
+  produksi: 3600,
   muat: 110000,
   bongkar: 120000,
   "angkut cacahan lembut": 400,
   "stapel cacahan": 800,
   "stapel coa": 400,
   "stapel produksi": 400,
-  salin: 680,
-  "salin timbang": 680
+  salin: 765,
+  "salin timbang": 200000
 };
 
 // ==============================
@@ -258,8 +258,64 @@ function initCalculator() {
   return calculate;
 }
 
-// ==============================
-// INIT
-// ==============================
-const calculate = initCalculator();
-initCalculatorTabs(calculate);
+
+
+
+
+
+function handleFeedback() {
+  const criticismInput = document.querySelector("#criticism");
+  const suggestionInput = document.querySelector("#suggestion");
+  const feedbackButton = document.querySelector(".feedback__button");
+
+  function checkInput() {
+    const criticism = criticismInput.value.trim();
+    const suggestion = suggestionInput.value.trim();
+
+    feedbackButton.disabled = !(criticism && suggestion);
+  }
+
+  // auto aktif saat user ngetik
+  criticismInput.addEventListener("input", checkInput);
+  suggestionInput.addEventListener("input", checkInput);
+
+  // klik tombol kirim
+  feedbackButton.addEventListener("click", function () {
+    alert("Kritik dan Saran anda telah terkirim!");
+
+    criticismInput.value = "";
+    suggestionInput.value = "";
+    feedbackButton.disabled = true;
+  });
+
+  // kondisi awal
+  feedbackButton.disabled = true;
+}
+
+
+
+
+
+function handleReport() {
+  const reportInput = document.querySelector("#reportInput");
+  const reportButton = document.querySelector(".report__button");
+
+  function checkInput() {
+    const report = reportInput.value.trim();
+    reportButton.disabled = report === "";
+  }
+
+  // auto aktif saat user ngetik
+  reportInput.addEventListener("input", checkInput);
+
+  // klik tombol kirim
+  reportButton.addEventListener("click", function () {
+    alert("Laporan anda telah terkirim!");
+
+    reportInput.value = "";
+    reportButton.disabled = true;
+  });
+
+  // kondisi awal
+  reportButton.disabled = true;
+}
