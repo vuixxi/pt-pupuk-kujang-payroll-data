@@ -47,11 +47,12 @@
 
 .main .main__table-workers-title {
   cursor: pointer;
+  color: #2563EB;
   transition: 0.2s;
 }
 
 .main .main__table-workers-title:hover {
-  color: blue;
+  color: #DC2626;
 }
 
 .main .main__table-workers-list {
