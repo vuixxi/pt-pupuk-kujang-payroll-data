@@ -33,7 +33,7 @@
         "shortDate": "22 / 01",
         "job": "Salin",
         "type": "Karung",
-        "totalProduction": 484,
+        "totalProduction": 426,
         "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata"]
      },
      {
@@ -41,8 +41,8 @@
         "shortDate": "23 / 01",
         "job": "Salin",
         "type": "Karung",
-        "totalProduction": 300,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata"]
+        "totalProduction": 438,
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Kurnata", "Husen"]
      }
   ]
 }

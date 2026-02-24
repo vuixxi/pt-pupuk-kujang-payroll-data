@@ -1,0 +1,40 @@
+{
+  "periodId": 8,
+  "period": "Periode 8",
+  "loanPerWorker": 50000,
+  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+  "data": [
+     {
+        "date": "Senin, 23 Februari 2026",
+        "shortDate": "23 / 02",
+        "job": "Muat",
+        "type": "Mobil",
+        "totalProduction": 0.5,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+     },
+     {
+        "date": "Senin, 23 Februari 2026",
+        "shortDate": "23 / 02",
+        "job": "Salin Timbang",
+        "type": "Mobil",
+        "totalProduction": 0.5,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+     },
+     {
+        "date": "Selasa, 24 Februari 2026",
+        "shortDate": "24 / 02",
+        "job": "Salin Timbang",
+        "type": "Mobil",
+        "totalProduction": 1,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+     },
+     {
+        "date": "Selasa, 24 Februari 2026",
+        "shortDate": "24 / 02",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 81,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+     }
+  ]
+}
