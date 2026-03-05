@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/security.css">
   
   
   
@@ -20,18 +21,22 @@
     sidebar Laporkan Bug
     sidebar Hubungi Kami
     pisahkan js style.js
+    sidebar diklik hidden body scroll
+    alert (vuixxi.github.io => Hannachan) tidak bisa di custom. pake div aja
     
     update in github:
     index.html
-    period9.json
+    style.css
+    security.css
+    security.js
     
   -->
   
   
 </head>
-<body>
+<body class="body--overflow">
   
-  <div class="container">
+  <div class="container container--security">
     
     <header class="header">
       <div class="header__brand">
@@ -272,6 +277,30 @@
   
   </div>
   
+  
+  <section class="security">
+    <div class="security__controls">
+      <header class="security__header">
+        <h3 class="security__title">Selamat Datang!</h3>
+        <p class="security__paragraph">Ga boleh ngeluh sebelum jadi COA >_<</p>
+      </header>
+      <main class="security__main">
+        <div class="security__item">
+          <label for="pass1">Lagi esuk produksi olih pirang karung:</label>
+          <input type="number" class="security__pass1 u-input" id="pass1" placeholder="12345">
+        </div>
+        <div class="security__item">
+          <label for="pass2">Lagi esuk muat pirang mobil:</label>
+          <input type="number" class="security__pass2 u-input" id="pass2" placeholder="12345">
+        </div>
+        <div class="security__item">
+          <button type="button" class="section__button u-button">Masuk</button>
+        </div>
+      </main>
+    </div>
+  </section>
+  
+  <script src="./js/security.js"></script>
   <script src="./js/utils.js"></script>
   <script src="./js/sidebar.js"></script>
   <script src="./js/mainTable.js"></script>
