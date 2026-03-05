@@ -10,7 +10,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 50,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar"],
+        "paid": false
      },
      {
         "date": "Senin, 08 Desember 2025",
@@ -18,7 +19,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 202,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata", "Manah"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata", "Manah"],
+        "paid": false
      },
      {
         "date": "Selasa, 09 Desember 2025",
@@ -26,7 +28,8 @@
         "job": "Stapel Cacahan",
         "type": "Karung",
         "totalProduction": 68,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata", "Manah"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata", "Manah"],
+        "paid": false
      },
      {
         "date": "Selasa, 09 Desember 2025",
@@ -34,7 +37,8 @@
         "job": "Stapel COA",
         "type": "Karung",
         "totalProduction": 222,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata", "Manah"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata", "Manah"],
+        "paid": false
      },
      {
         "date": "Selasa, 09 Desember 2025",
@@ -42,7 +46,8 @@
         "job": "Stapel COA",
         "type": "Karung",
         "totalProduction": 480,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"],
+        "paid": false
      },
      {
         "date": "Rabu, 10 Desember 2025",
@@ -50,7 +55,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 177,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"],
+        "paid": false
      },
      {
         "date": "Kamis, 11 Desember 2025",
@@ -58,7 +64,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 185,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Kurnata"],
+        "paid": false
      },
      {
         "date": "Jumat, 12 Desember 2025",
@@ -66,7 +73,8 @@
         "job": "Stapel COA",
         "type": "Karung",
         "totalProduction": 362,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata"],
+        "paid": false
      },
      {
         "date": "Jumat, 12 Desember 2025",
@@ -74,7 +82,8 @@
         "job": "Stapel Cacahan",
         "type": "Karung",
         "totalProduction": 205,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata"],
+        "paid": false
      }
   ]
 }

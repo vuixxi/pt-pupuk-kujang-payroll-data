@@ -10,7 +10,8 @@
         "job": "Muat",
         "type": "Mobil",
         "totalProduction": 0.5,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
      },
      {
         "date": "Senin, 23 Februari 2026",
@@ -18,7 +19,8 @@
         "job": "Salin Timbang",
         "type": "Mobil",
         "totalProduction": 0.5,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
      },
      {
         "date": "Selasa, 24 Februari 2026",
@@ -26,15 +28,53 @@
         "job": "Salin Timbang",
         "type": "Mobil",
         "totalProduction": 1,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
      },
      {
         "date": "Selasa, 24 Februari 2026",
         "shortDate": "24 / 02",
         "job": "Produksi",
         "type": "Karung",
-        "totalProduction": 81,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"]
+        "totalProduction": 102,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
+     },
+     {
+        "date": "Rabu, 25 Februari 2026",
+        "shortDate": "25 / 02",
+        "job": "Muat",
+        "type": "Mobil",
+        "totalProduction": 0.5,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
+     },
+     {
+        "date": "Rabu, 25 Februari 2026",
+        "shortDate": "25 / 02",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 138,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
+     },
+     {
+        "date": "Kamis, 26 Februari 2026",
+        "shortDate": "26 / 02",
+        "job": "Muat",
+        "type": "Mobil",
+        "totalProduction": 1,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
+     },
+     {
+        "date": "Kamis, 26 Februari 2026",
+        "shortDate": "26 / 02",
+        "job": "Produksi",
+        "type": "Karung",
+        "totalProduction": 102,
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Sana"],
+        "paid": false
      }
   ]
 }

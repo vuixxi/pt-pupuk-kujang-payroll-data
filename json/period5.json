@@ -10,7 +10,8 @@
         "job": "Angkut Cacahan Lembut",
         "type": "Karung",
         "totalProduction": 266,
-        "workers": ["Sirod", "Farhan", "Vicky", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Senin, 15 Desember 2025",
@@ -18,7 +19,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 216,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Selasa, 16 Desember 2025",
@@ -26,7 +28,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 185,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Rabu, 17 Desember 2025",
@@ -34,7 +37,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 150,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
+        "paid": false
      },
      {
         "date": "Rabu, 17 Desember 2025",
@@ -42,7 +46,8 @@
         "job": "Angkut Cacahan Lembut",
         "type": "Karung",
         "totalProduction": 210,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
+        "paid": false
      },
      {
         "date": "Kamis, 18 Desember 2025",
@@ -50,7 +55,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 130,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
+        "paid": false
      },
      {
         "date": "Jumat, 19 Desember 2025",
@@ -58,7 +64,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 200,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
+        "paid": false
      }
   ]
 }

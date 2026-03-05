@@ -10,7 +10,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 210,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Senin, 12 Januari 2026",
@@ -18,7 +19,8 @@
         "job": "Angkut Cacahan Lembut",
         "type": "Karung",
         "totalProduction": 57,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Selasa, 13 Januari 2026",
@@ -26,7 +28,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 107,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Rabu, 14 Januari 2026",
@@ -34,7 +37,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 135,
-        "workers": ["Sirod", "Farhan", "Vicky", "Husen", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Husen", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Rabu, 14 Januari 2026",
@@ -42,7 +46,8 @@
         "job": "Angkut Cacahan Lembut",
         "type": "Karung",
         "totalProduction": 137,
-        "workers": ["Sirod", "Farhan", "Vicky", "Husen", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Husen", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Kamis, 15 Januari 2026",
@@ -50,7 +55,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 175,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Kurnata", "Wahyu"],
+        "paid": false
      },
      {
         "date": "Jumat, 16 Januari 2026",
@@ -58,7 +64,8 @@
         "job": "Produksi",
         "type": "Karung",
         "totalProduction": 150,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Kurnata", "Wahyu"]
+        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Husen", "Kurnata", "Wahyu"],
+        "paid": false
      }
   ]
 }
