@@ -39,6 +39,14 @@
   color: #444444;
 }
 
+.summary .summary__table th.paid {
+  color: #81C784;
+}
+
+.summary .summary__table td.paid strong {
+  color: #1B5E20;
+}
+
 .summary .summary__table th {
   background-color: #333333;
   color: #ffffff;
