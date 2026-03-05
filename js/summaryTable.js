@@ -12,15 +12,21 @@ function getData(data, period) {
 
   // HEADER
   tDateTitle.setAttribute("colspan", entries.length);
+  // tDate.innerHTML = entries
+  //   .map(item => `<th>${item.shortDate}</th>`)
+  //   .join("");
   tDate.innerHTML = entries
-    .map(item => `<th>${item.shortDate}</th>`)
+    .map(item => `
+      <th class="${item.paid ? 'paid' : ''}">
+        ${item.shortDate}
+      </th>
+    `)
     .join("");
 
   // BODY & FOOTER
   const groupedData = createGroupedData(data, period);
-
-  tbody.innerHTML = createSummaryTableBodyRow(groupedData);
-  tfoot.innerHTML = createSummaryTableFootRow(groupedData);
+  tbody.innerHTML = createSummaryTableBodyRow(groupedData, entries);
+  tfoot.innerHTML = createSummaryTableFootRow(groupedData, entries);
 }
 
 /* =========================
@@ -56,12 +62,22 @@ function createGroupedData(data, period) {
 /* =========================
    BODY
 ========================= */
-
-function createSummaryTableBodyRow(groupedData) {
+function createSummaryTableBodyRow(groupedData, entries) {
   return groupedData.map((worker, index) => {
+
     const salaryCells = worker.salaries
-      .map(val => `<td>${formatNumber(val)}</td>`)
+      .map((val, i) => `
+        <td style="color:${entries[i].paid ? '#1B5E20' : 'inherit'}">
+          ${formatNumber(val)}
+        </td>
+      `)
       .join("");
+
+    const paidAmount = worker.salaries.reduce((sum, val, i) => {
+      return entries[i].paid ? sum + val : sum;
+    }, 0);
+
+    const netSalary = worker.totalSalary - worker.loan - paidAmount;
 
     return `
       <tr>
@@ -69,18 +85,17 @@ function createSummaryTableBodyRow(groupedData) {
         <td>${worker.name}</td>
         ${salaryCells}
         <td style="background:#FFCDD2"><strong>${formatNumber(worker.totalSalary)}</strong></td>
-        <td style="background:#C8E6C9"><strong>${formatNumber(worker.loan)}</strong></td>
-        <td style="background:#BBDEFB"><strong>${formatNumber(worker.netSalary)}</strong></td>
+        <td style="background:#FFF9C4"><strong>${formatNumber(worker.loan)}</strong></td>
+        <td style="background:#C8E6C9"><strong>${formatNumber(paidAmount)}</strong></td>
+        <td style="background:#BBDEFB"><strong>${formatNumber(netSalary)}</strong></td>
       </tr>
     `;
   }).join("");
 }
-
 /* =========================
    FOOTER (INDEX SAFE)
 ========================= */
-
-function createSummaryTableFootRow(groupedData) {
+function createSummaryTableFootRow(groupedData, entries) {
   if (!groupedData.length) return "";
 
   const colCount = groupedData[0].salaries.length;
@@ -89,12 +104,25 @@ function createSummaryTableFootRow(groupedData) {
     groupedData.reduce((sum, worker) => sum + worker.salaries[colIdx], 0)
   );
 
+  const totalPaid = groupedData.reduce((sum, worker) => {
+    const paid = worker.salaries.reduce((s, val, i) => {
+      return entries[i].paid ? s + val : s;
+    }, 0);
+    return sum + paid;
+  }, 0);
+
   const grandTotal = columnTotals.reduce((a, b) => a + b, 0);
   const totalLoan = groupedData.reduce((a, w) => a + w.loan, 0);
-  const totalNetSalary = groupedData.reduce((a, w) => a + w.netSalary, 0);
+
+  // PERBAIKAN DI SINI
+  const totalNetSalary = grandTotal - totalLoan - totalPaid;
 
   const totalCells = columnTotals
-    .map(val => `<td><strong>${formatNumber(val)}</strong></td>`)
+    .map((val, i) => `
+      <td class="${entries[i].paid ? 'paid' : ''}">
+        <strong>${formatNumber(val)}</strong>
+      </td>
+    `)
     .join("");
 
   return `
@@ -103,6 +131,7 @@ function createSummaryTableFootRow(groupedData) {
       ${totalCells}
       <td><strong>${formatNumber(grandTotal)}</strong></td>
       <td><strong>${formatNumber(totalLoan)}</strong></td>
+      <td><strong>${formatNumber(totalPaid)}</strong></td>
       <td><strong>${formatNumber(totalNetSalary)}</strong></td>
     </tr>
   `;

@@ -23,8 +23,11 @@ function createTableBodyRow(data, period, tbody) {
                <div class="main__table-workers-title">${item.workers.length} Orang</div>
                <div class="main__table-workers-list main__table-workers-list--hidden">${myWorkers}</div>
             </td>
-            <td style="background-color:#FFCDD2;"><strong>${formatNumber(dailyTotalSalary)}</strong></td>
-            <td style="background-color:#BBDEFB;"><strong>${formatNumber(dailySalaryPerWorker)}</strong></td>
+            <td class="main__status ${item.paid ? 'main__status-paid' : 'main__status-unpaid'}">
+               <span style="background-color:${item.paid ? '#81C784' : '#EF9A9A'};"></span>
+            </td>
+            <td style="background-color:#BBDEFB;"><strong>${formatNumber(dailyTotalSalary)}</strong></td>
+            <td style="background-color:#FFF9C4;"><strong>${formatNumber(dailySalaryPerWorker)}</strong></td>
          </tr>
    `}).join("");
 }
@@ -32,17 +35,22 @@ function createTableBodyRow(data, period, tbody) {
 function createTableFootRow(totals) {
    return `
          <tr>
-            <td colspan="5" align="right"><strong>Gaji Total</strong></td>
+            <td colspan="6" align="right"><strong>Gaji Total</strong></td>
             <td><strong>${formatNumber(totals.totalSalary)}</strong></td>
             <td><strong>${formatNumber(totals.totalSalaryPerWorker)}</strong></td>
          </tr>
          <tr>
-            <td colspan="5" align="right"><strong>Kasbon</strong></td>
+            <td colspan="6" align="right"><strong>Kasbon</strong></td>
             <td><strong>${formatNumber(totals.totalLoan)}</strong></td>
             <td><strong>${formatNumber(totals.loanPerWorker)}</strong></td>
          </tr>
          <tr>
-            <td colspan="5" align="right"><strong>Sisa Total</strong></td>
+           <td colspan="6" align="right"><strong>Dibayar</strong></td>
+           <td><strong>${formatNumber(totals.paidTotalSalary)}</strong></td>
+           <td><strong>${formatNumber(totals.paidSalaryPerWorker)}</strong></td>
+        </tr>
+         <tr>
+            <td colspan="6" align="right"><strong>Sisa Total</strong></td>
             <td><strong>${formatNumber(totals.netTotalSalary)}</strong></td>
             <td><strong>${formatNumber(totals.netSalaryPerWorker)}</strong></td>
          </tr>
@@ -71,25 +79,33 @@ function calculateDailySalary(item) {
 }
 
 function calculateTotals(data, period) {
-   let totals = {
-      totalSalary: 0,
-      totalSalaryPerWorker: 0,
-      loanPerWorker: 0,
-      totalLoan: 0,
-      netTotalSalary: 0,
-      netSalaryPerWorker: 0
-   }
+  let totals = {
+     totalSalary: 0,
+     totalSalaryPerWorker: 0,
+     paidTotalSalary: 0,
+     paidSalaryPerWorker: 0,
+     loanPerWorker: 0,
+     totalLoan: 0,
+     netTotalSalary: 0,
+     netSalaryPerWorker: 0
+  }
    
    data[period].data.forEach(item => {
-      const {dailyTotalSalary, dailySalaryPerWorker} = calculateDailySalary(item);
-      totals.totalSalary += dailyTotalSalary;
-      totals.totalSalaryPerWorker += dailySalaryPerWorker;
-   });
-   
+   const {dailyTotalSalary, dailySalaryPerWorker} = calculateDailySalary(item);
+
+   totals.totalSalary += dailyTotalSalary;
+   totals.totalSalaryPerWorker += dailySalaryPerWorker;
+
+   if(item.paid){
+      totals.paidTotalSalary += dailyTotalSalary;
+      totals.paidSalaryPerWorker += dailySalaryPerWorker;
+   }
+  });
+
    totals.loanPerWorker = data[period].loanPerWorker;
    totals.totalLoan = totals.loanPerWorker * data[period].loanWorkers.length;
-   totals.netTotalSalary = totals.totalSalary - totals.totalLoan;
-   totals.netSalaryPerWorker = totals.totalSalaryPerWorker - totals.loanPerWorker;
+   totals.netTotalSalary = totals.totalSalary - totals.totalLoan - totals.paidTotalSalary;
+   totals.netSalaryPerWorker = totals.totalSalaryPerWorker - totals.loanPerWorker - totals.paidSalaryPerWorker;
    
    return totals;
 }
