@@ -101,15 +101,24 @@
       "type": "Mobil",
       "totalProduction": 1,
       "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Husen", "Sana"],
-      "paid": false
+      "paid": true
     },
     {
       "date": "Kamis, 05 Maret 2026",
       "shortDate": "05 / 03",
       "job": "Produksi",
       "type": "Karung",
-      "totalProduction": 110,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Husen", "Sana"],
+      "totalProduction": 140,
+      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
+      "paid": false
+    },
+    {
+      "date": "Kamis, 05 Maret 2026",
+      "shortDate": "05 / 03",
+      "job": "Muat",
+      "type": "Mobil",
+      "totalProduction": 0.5,
+      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
       "paid": false
     },
     {
@@ -117,8 +126,17 @@
       "shortDate": "06 / 03",
       "job": "Produksi",
       "type": "Karung",
-      "totalProduction": 110,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Husen", "Sana"],
+      "totalProduction": 100,
+      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
+      "paid": false
+    },
+    {
+      "date": "Jumat, 06 Maret 2026",
+      "shortDate": "06 / 03",
+      "job": "Muat",
+      "type": "Mobil",
+      "totalProduction": 0.5,
+      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
       "paid": false
     }
   ]
