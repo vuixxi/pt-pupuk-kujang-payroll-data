@@ -1,0 +1,78 @@
+.security {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  scale: 1;
+  opacity: 1;
+  /* background-color: #eaeaea; */
+  background: radial-gradient(circle at 20% 20%, #FFCDD2 0%, transparent 40%),
+            radial-gradient(circle at 80% 30%, #FFF9C4 0%, transparent 40%),
+            radial-gradient(circle at 30% 80%, #C8E6C9 0%, transparent 40%),
+            radial-gradient(circle at 75% 75%, #BBDEFB 0%, transparent 40%),
+            #ffffff;
+  z-index: 9999999;
+  transition: opacity 1s, scale 0s 1s;
+}
+
+.security.security--hidden {
+  scale: 0;
+  opacity: 0;
+}
+
+.security .security__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.security .security__header {
+  text-align: center;
+}
+
+.security .security__header .security__title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.security .security__header .security__paragraph {
+  font-style: italic;
+  color: #555555;
+}
+
+.security .security__main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.security .security__main .security__item {}
+
+.security .security__main .security__item:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.security .security__main label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.security .security__main input {}
+
+.security .security__main button {}
+
+
+
+

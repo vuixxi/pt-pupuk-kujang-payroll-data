@@ -7,12 +7,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Quicksand-Bold";
   background-color: #eaeaea;
   color: #212121;
   user-select: none;
   scroll-behavior: smooth;
+}
+
+body.body--overflow {
+  overflow: hidden;
+}
+
+.container {
+  transition: 1s 1s;
+}
+
+.container.container--security {
+  opacity: 0;
 }
 
 
