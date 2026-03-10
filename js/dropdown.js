@@ -55,6 +55,7 @@ function setupDropdownSelection(data, period, headerDropdownMenu, headerDropdown
          
          handleMain(data, newPeriod);
          getData(data, newPeriod);
+        // initSalaryNotice(groupedData);
       }
    });
 }

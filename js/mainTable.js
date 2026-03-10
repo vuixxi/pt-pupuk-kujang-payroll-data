@@ -64,10 +64,10 @@ function calculateDailySalary(item) {
       "produksi": 3600,
       "muat": 110000,
       "bongkar": 120000,
-      "angkut cacahan lembut": 400,
-      "stapel cacahan": 800,
-      "stapel coa": 400,
-      "stapel produksi": 400,
+      "angkut cacahan lembut": 450,
+      "stapel cacahan": 900,
+      "stapel coa": 450,
+      "stapel produksi": 450,
       "salin": 765,
       "salin timbang": 200000
    };

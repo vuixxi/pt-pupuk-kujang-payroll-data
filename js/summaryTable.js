@@ -1,3 +1,8 @@
+
+let noticeInterval = null;
+let noticeQueue = [];
+let lastEmployee = null;
+
 /* =========================
    MAIN RENDER
 ========================= */
@@ -27,11 +32,38 @@ function getData(data, period) {
   const groupedData = createGroupedData(data, period);
   tbody.innerHTML = createSummaryTableBodyRow(groupedData, entries);
   tfoot.innerHTML = createSummaryTableFootRow(groupedData, entries);
+  initSalaryNotice(groupedData);
 }
 
 /* =========================
    GROUP DATA (INDEX BASED)
 ========================= */
+
+// function createGroupedData(data, period) {
+//   const { loanPerWorker, loanWorkers } = data[period];
+//   const entries = data[period].data;
+//   const allWorkers = [...new Set(entries.flatMap(item => item.workers))];
+
+//   return allWorkers.map(worker => {
+//     const perEntry = entries.map(item => {
+//       const salary = calculateDailySalary(item);
+//       return item.workers.includes(worker)
+//         ? salary.dailySalaryPerWorker
+//         : 0;
+//     });
+
+//     const totalSalary = perEntry.reduce((a, b) => a + b, 0);
+//     const loan = loanWorkers.includes(worker) ? loanPerWorker : 0;
+
+//     return {
+//       name: worker,
+//       salaries: perEntry, // ⬅️ INDEX = KOLOM
+//       totalSalary,
+//       loan,
+//       netSalary: totalSalary - loan
+//     };
+//   });
+// }
 
 function createGroupedData(data, period) {
   const { loanPerWorker, loanWorkers } = data[period];
@@ -47,17 +79,26 @@ function createGroupedData(data, period) {
     });
 
     const totalSalary = perEntry.reduce((a, b) => a + b, 0);
+
     const loan = loanWorkers.includes(worker) ? loanPerWorker : 0;
+
+    const paidAmount = perEntry.reduce((sum, val, i) => {
+      return entries[i].paid ? sum + val : sum;
+    }, 0);
+
+    const netSalary = totalSalary - loan - paidAmount;
 
     return {
       name: worker,
-      salaries: perEntry, // ⬅️ INDEX = KOLOM
+      salaries: perEntry,
       totalSalary,
       loan,
-      netSalary: totalSalary - loan
+      paidAmount,
+      netSalary
     };
   });
 }
+
 
 /* =========================
    BODY
@@ -77,7 +118,8 @@ function createSummaryTableBodyRow(groupedData, entries) {
       return entries[i].paid ? sum + val : sum;
     }, 0);
 
-    const netSalary = worker.totalSalary - worker.loan - paidAmount;
+    const netSalary = worker.netSalary;
+    // const netSalary = worker.totalSalary - worker.loan - paidAmount;
 
     return `
       <tr>

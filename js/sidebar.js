@@ -38,12 +38,14 @@ function handleSidebar() {
 
   function openMenu() {
     headerDropdownTitle?.setAttribute("disabled", true);
+    document.body.classList.add("body--overflow");
     headerMenuButton.classList.add("header__menu-button--active");
     sidebar.classList.remove("sidebar--hidden");
     sidebarBlackscreen.classList.remove("sidebar-blackscreen--hidden");
   }
 
   function closeMenu() {
+    document.body.classList.remove("body--overflow");
     headerDropdownTitle?.removeAttribute("disabled");
     headerMenuButton.classList.remove("header__menu-button--active");
     sidebar.classList.add("sidebar--hidden");
@@ -127,79 +129,33 @@ function handleContentClose() {
 
 
 
-/*
-function formulaCalculator() {
-  const RATE = {
-      "produksi": 45 * 80,
-      "muat": 110000,
-      "bongkar": 120000,
-      "angkut cacahan lembut": 400,
-      "stapel cacahan": 800,
-      "stapel coa": 400,
-      "stapel produksi": 400,
-      "salin": 680,
-      "salin timbang": 680
-  };
-  
-}
-
-function delegationCalculator() {
-  const calculatorTab = document.querySelectorAll(".calculator .calculator__tab");
-  document.addEventListener("click", function(e) {
-    if (e.target.classList.contains("calculator__tab")) {
-      calculatorTab.forEach(function(tab) {
-        tab.classList.remove("u-button--active");
-        tab.disabled = false;
-      });
-      e.target.classList.add("u-button--active");
-      e.target.disabled = true;
-    }
-  });
-}
-
-delegationCalculator();
-
-function handleCalculator() {
-  const jobInput = document.querySelector(".calculator__input-job");
-  const workerInput = document.querySelector(".calculator__input-worker");
-  const output = document.querySelector(".calculator__output");
-  
-  function calculate() {
-    const job = Number(jobInput.value);
-    const worker = Number(workerInput.value);
-
-    if (!job || !worker) {
-      output.innerText = 0;
-      return;
-    }
-    
-    let formula = 45 * 80;
-    const result = (job * formula) / worker;
-    output.innerText = formatNumber(result);
-  }
-
-  jobInput.addEventListener("input", calculate);
-  workerInput.addEventListener("input", calculate);
-}
-
-handleCalculator();
-*/
 
 // ==============================
 // DATA RATE
 // ==============================
-const RATE = {
-  produksi: 3600,
-  muat: 110000,
-  bongkar: 120000,
-  "angkut cacahan lembut": 400,
-  "stapel cacahan": 800,
-  "stapel coa": 400,
-  "stapel produksi": 400,
-  salin: 765,
-  "salin timbang": 200000
-};
+// const RATE = {
+//   produksi: 3600,
+//   muat: 110000,
+//   bongkar: 120000,
+//   "angkut cacahan lembut": 400,
+//   "stapel cacahan": 800,
+//   "stapel coa": 400,
+//   "stapel produksi": 400,
+//   salin: 765,
+//   "salin timbang": 200000
+// };
 
+const RATE = {
+  "produksi": 3600,
+  "muat": 110000,
+  "bongkar": 120000,
+  "angkut cacahan lembut": 450,
+  "stapel cacahan": 900,
+  "stapel coa": 450,
+  "stapel produksi": 450,
+  "salin": 765,
+  "salin timbang": 200000
+}
 // ==============================
 // HELPER
 // ==============================

@@ -6,13 +6,13 @@ function security() {
     const pass2 = document.getElementById("pass2").value;
 
     if (!pass1 || !pass2) {
-      alert("Isi dipit lah cokkk!");
-    } else if (Number(pass1) === 140 && Number(pass2) === 1) {
+      alert("Harap masukkan Username atau Password!");
+    } else if (pass1 === "Hannachan" && pass2 === "Asynchronous") {
       document.body.classList.remove("body--overflow");
       document.querySelector(".container").classList.remove("container--security");
       document.querySelector(".security").classList.add("security--hidden");
     } else {
-      alert("Salah bjir! coba inget inget >_<");
+      alert("Username atau Password salah!");
     }
   });
 }
