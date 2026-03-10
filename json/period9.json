@@ -126,8 +126,8 @@
       "shortDate": "06 / 03",
       "job": "Produksi",
       "type": "Karung",
-      "totalProduction": 100,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
+      "totalProduction": 150,
+      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi", "Sana"],
       "paid": false
     },
     {
@@ -135,8 +135,8 @@
       "shortDate": "06 / 03",
       "job": "Muat",
       "type": "Mobil",
-      "totalProduction": 0.5,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
+      "totalProduction": 1,
+      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi", "Sana"],
       "paid": false
     }
   ]
