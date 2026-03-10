@@ -1,0 +1,62 @@
+index.html
+css/
+  security.css
+  notice.css
+  header.css
+  main.css
+  sidebar.css
+  style.css
+  summary.css
+  utility.css
+js/
+  security.js
+  notice.js
+  app.js
+  dropdown.js
+  mainTable.js
+  sidebar.js
+  summaryTable.js
+  utils.js
+  workerList.js
+json/
+  data.json
+  period1
+  period2
+  period3
+  period4
+  period5
+  period6
+  period7
+  period8
+  period9
+  period10
+
+
+
+
+Harga borongan => mainTable.js dan sidebar.js
+"produksi": 3600,               // (250 * 45 * 80)
+"muat": 110000,                 
+"bongkar": 120000,              
+"angkut cacahan lembut": 450,   // (250 * 45 * 10)
+"stapel cacahan": 900,          // (250 * 45 * 20)
+"stapel coa": 450,              // (250 * 45 * 10)
+"stapel produksi": 450,         // (250 * 45 * 10)
+"salin": 765,                   // (250 * 45 * 17)
+"salin timbang": 200000         // (250 * 45 * 20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

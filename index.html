@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/notice.css">
   <link rel="stylesheet" href="./css/security.css">
   
   
@@ -21,22 +22,32 @@
     sidebar Laporkan Bug
     sidebar Hubungi Kami
     pisahkan js style.js
-    sidebar diklik hidden body scroll
     alert (vuixxi.github.io => Hannachan) tidak bisa di custom. pake div aja
+    tambahkan belum dibayar pada tabel
+    security buat 1 file agar bisa mematikan fungsi dengan komentar
+    tambahkan bgm setelah berhasil masuk
     
     update in github:
     index.html
     style.css
-    security.css
+    notice.css
+    mainTable.js
+    summaryTable.js
+    sidebar.js
+    notice.js
     security.js
+    data.json
+    period9.json
+    period10.json
+    
     
   -->
   
   
 </head>
-<body class="body--overflow">
+<body class="body--overfloww">
   
-  <div class="container container--security">
+  <div class="container container--securityy">
     
     <header class="header">
       <div class="header__brand">
@@ -274,11 +285,14 @@
     <div class="summary-toggle">
       <button type="button" class="summary-toggle__btn u-button">Tampilkan Data Pekerja</button>
     </div>
+    
+    <div class="notice notice--fixed js-notice">
+      <p class="notice__text js-notice-text"></p>
+    </div>
   
   </div>
   
-  
-  <section class="security">
+  <section class="security security--hidden">
     <div class="security__controls">
       <header class="security__header">
         <h3 class="security__title">Selamat Datang!</h3>
@@ -286,12 +300,12 @@
       </header>
       <main class="security__main">
         <div class="security__item">
-          <label for="pass1">Lagi esuk produksi olih pirang karung:</label>
-          <input type="number" class="security__pass1 u-input" id="pass1" placeholder="12345">
+          <label for="pass1">Username:</label>
+          <input type="input" class="security__pass1 u-input" id="pass1" placeholder="12345" value="Hannachan">
         </div>
         <div class="security__item">
-          <label for="pass2">Lagi esuk muat pirang mobil:</label>
-          <input type="number" class="security__pass2 u-input" id="pass2" placeholder="12345">
+          <label for="pass2">Password:</label>
+          <input type="password" class="security__pass2 u-input" id="pass2" placeholder="12345" value="Asynchronous">
         </div>
         <div class="security__item">
           <button type="button" class="section__button u-button">Masuk</button>
@@ -300,6 +314,7 @@
     </div>
   </section>
   
+  <script src="./js/notice.js"></script>
   <script src="./js/security.js"></script>
   <script src="./js/utils.js"></script>
   <script src="./js/sidebar.js"></script>
