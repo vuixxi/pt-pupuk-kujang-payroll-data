@@ -21,6 +21,7 @@ body.body--overflow {
 }
 
 .container {
+  margin-bottom: 2rem;
   transition: 1s 1s;
 }
 
