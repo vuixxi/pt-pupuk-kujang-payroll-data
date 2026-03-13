@@ -7,10 +7,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 10vw;
+  padding: 0.6rem 2rem;
   box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.3);
   z-index: 999999;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+}
+
 
 .header .header__brand {
   display: flex;
@@ -35,7 +42,13 @@
 }
 
 .header .header__title {
+  cursor: pointer;
   font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.header .header__title:hover {
+  color: #333333;
 }
 
 .header .header__actions {
