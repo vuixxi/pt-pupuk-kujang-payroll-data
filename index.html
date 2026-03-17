@@ -16,7 +16,19 @@
   
   
   <!--
+    4Yu4a34zvUbAJUqx
     
+    1.0.0   pertama rilis
+    1.0.1   bug fix
+    1.0.2   bug fix
+    
+    1.1.0   fitur baru
+    1.1.1   bug fix
+    
+    1.2.0   fitur baru
+    
+    2.0.0   perubahan besar
+
     next update:
     sesuaikan url dengan tampilan index (bug: #menu => refresh page: all disabled)
     sidebar Laporkan Bug
@@ -27,18 +39,35 @@
     security buat 1 file agar bisa mematikan fungsi dengan komentar
     tambahkan bgm setelah berhasil masuk
     
+    tips update
+    benerin format tanggal (biar gampang difilter)
+    benerin shortDate di summaryTable.js jika sudah hapus shorDate pada json (biar ga pusing)
+    jobs ganti ke id json
+    workers ganti ke id json
+    
+    
+    
+    jobs.json
+    {
+      "version": "1.0.0",
+      "updatedAt": "2026-03-16T08:00:00Z",
+      "data": [
+        { "id": 1, "name": "Produksi", "unit": "karung" },
+        { "id": 2, "name": "Muat", "unit": "mobil" },
+        { "id": 3, "name": "Bongkar", "unit": "mobil" },
+        { "id": 4, "name": "Stapel Cacahan", "unit": "karung" },
+        { "id": 5, "name": "Angkut Cacahan Lembut", "unit": "karung" }
+      ]
+    }
+    
+    format date 2026-03-07
+    startDate
+    endDate
+    note
+    createdAt 2026-03-07T10:30:25Z
+    updatedAt 2026-03-07T12:10:11Z
+    
     update in github:
-    index.html
-    style.css
-    notice.css
-    mainTable.js
-    summaryTable.js
-    sidebar.js
-    notice.js
-    security.js
-    data.json
-    period9.json
-    period10.json
     
     
   -->
@@ -302,11 +331,11 @@
       <main class="security__main">
         <div class="security__item">
           <label for="pass1">Username:</label>
-          <input type="input" class="security__pass1 u-input" id="pass1" placeholder="12345" value="Hannachan">
+          <input type="input" class="security__pass1 u-input" id="pass1" placeholder="12345" value="Hannachan" disabled>
         </div>
         <div class="security__item">
           <label for="pass2">Password:</label>
-          <input type="password" class="security__pass2 u-input" id="pass2" placeholder="12345" value="Asynchronous">
+          <input type="text" class="security__pass2 u-input" id="pass2" placeholder="12345" value="Asynchronous" disabled>
         </div>
         <div class="security__item">
           <button type="button" class="section__button u-button">Masuk</button>
@@ -315,9 +344,9 @@
     </div>
   </section>
   
+  <script src="./js/utils.js"></script>
   <script src="./js/notice.js"></script>
   <script src="./js/security.js"></script>
-  <script src="./js/utils.js"></script>
   <script src="./js/sidebar.js"></script>
   <script src="./js/mainTable.js"></script>
   <script src="./js/summaryTable.js"></script>

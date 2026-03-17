@@ -52,11 +52,36 @@ Harga borongan => mainTable.js dan sidebar.js
 
 
 
+Semua perubahan penting pada proyek ini akan dicatat di file ini.
+
+Format terinspirasi dari Keep a Changelog.
+Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
+
+[1.0.0] - 2025-10-18
+- Menampilkan tabel data produksi.
+- Menampilkan ringkasan produksi.
+- Manajemen daftar pekerja.
+- Navigasi sidebar interaktif.
+- Komponen dropdown UI.
+- Sistem notifikasi dasar.
+
+[1.0.1] - 2026-03-13
+- Mengubah format tanggal pada JSON (date dan displayDate)
+- Menyesuaikan mainTable.js dengan date dan displayDate
+
+[1.0.2] - 2026-03-14
+- Menambahkan version dan createdAt pada JSON
+- Menambahkan workers.json
+- Mengubah workers pada semua period menggunakan id
+- Menyesuaikan mainTable.js, summaryTable.js, dropdown.js dengan workers.json
+
+[1.0.3] - 2026-03-15
+- Menghapus displayDate dan shortDate pada JSON
+- Menyesuaikan utils.js, mainTable.js dan summaryTable.js dengan period.json
+
+[1.0.4] - 2026-03-16
 
 
-
-
-
-
-
-
+next update
+- jobs.json
+- keluarkan rate dari dalam function pada mainTable.js
