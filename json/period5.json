@@ -1,71 +1,66 @@
 {
+  "version": "1.0.0",
+  "createdAt": "2025-12-13T10:00:00Z",
   "periodId": 5,
   "period": "Periode 5",
   "loanPerWorker": 50000,
-  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
+  "loanWorkers": [1, 2, 3, 4, 12, 8],
   "data": [
-     {
-        "date": "Sabtu, 13 Desember 2025",
-        "shortDate": "12 / 12",
-        "job": "Angkut Cacahan Lembut",
-        "type": "Karung",
-        "totalProduction": 266,
-        "workers": ["Sirod", "Farhan", "Vicky", "Wahyu"],
-        "paid": false
-     },
-     {
-        "date": "Senin, 15 Desember 2025",
-        "shortDate": "15 / 12",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 216,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Wahyu"],
-        "paid": false
-     },
-     {
-        "date": "Selasa, 16 Desember 2025",
-        "shortDate": "16 / 12",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 185,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu"],
-        "paid": false
-     },
-     {
-        "date": "Rabu, 17 Desember 2025",
-        "shortDate": "17 / 12",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 150,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
-        "paid": false
-     },
-     {
-        "date": "Rabu, 17 Desember 2025",
-        "shortDate": "17 / 12",
-        "job": "Angkut Cacahan Lembut",
-        "type": "Karung",
-        "totalProduction": 210,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
-        "paid": false
-     },
-     {
-        "date": "Kamis, 18 Desember 2025",
-        "shortDate": "18 / 12",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 130,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
-        "paid": false
-     },
-     {
-        "date": "Jumat, 19 Desember 2025",
-        "shortDate": "19 / 12",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 200,
-        "workers": ["Sirod", "Farhan", "Vicky", "Komar", "Kurnata", "Wahyu", "Asep"],
-        "paid": false
-     }
+    {
+      "date": "2025-12-13",
+      "job": "Angkut Cacahan Lembut",
+      "type": "Karung",
+      "totalProduction": 266,
+      "workers": [1, 2, 3, 8],
+      "paid": false
+    },
+    {
+      "date": "2025-12-15",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 216,
+      "workers": [1, 2, 3, 4, 8],
+      "paid": false
+    },
+    {
+      "date": "2025-12-16",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 185,
+      "workers": [1, 2, 3, 4, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2025-12-17",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 150,
+      "workers": [1, 2, 3, 4, 12, 8, 9],
+      "paid": false
+    },
+    {
+      "date": "2025-12-17",
+      "job": "Angkut Cacahan Lembut",
+      "type": "Karung",
+      "totalProduction": 210,
+      "workers": [1, 2, 3, 4, 12, 8, 9],
+      "paid": false
+    },
+    {
+      "date": "2025-12-18",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 130,
+      "workers": [1, 2, 3, 4, 12, 8, 9],
+      "paid": false
+    },
+    {
+      "date": "2025-12-19",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 200,
+      "workers": [1, 2, 3, 4, 12, 8, 9],
+      "paid": false
+    }
   ]
 }

@@ -1,97 +1,73 @@
 {
+  "version": "1.0.1",
+  "createdAt": "2026-03-07T10:00:00Z",
   "periodId": 10,
   "period": "Periode 10",
   "loanPerWorker": 50000,
-  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Komar", "Endi", "Sana"],
+  "loanWorkers": [1, 2, 3, 4, 5, 6],
   "data": [
     {
-      "date": "Sabtu, 07 Maret 2026",
-      "shortDate": "07 / 03",
-      "job": "Stapel Cacahan",
-      "type": "Karung",
-      "totalProduction": 108,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi"],
-      "paid": false
-    },
-    {
-      "date": "Sabtu, 07 Maret 2026",
-      "shortDate": "07 / 03",
-      "job": "Angkut Cacahan Lembut",
-      "type": "Karung",
-      "totalProduction": 170,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi"],
-      "paid": false
-    },
-    {
-      "date": "Senin, 09 Maret 2026",
-      "shortDate": "09 / 03",
+      "date": "2026-03-09",
       "job": "Produksi",
       "type": "Karung",
       "totalProduction": 190,
-      "workers": ["Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "workers": [2, 3, 4, 5, 6],
       "paid": false
     },
     {
-      "date": "Senin, 09 Maret 2026",
-      "shortDate": "09 / 03",
+      "date": "2026-03-09",
       "job": "Muat",
       "type": "Mobil",
       "totalProduction": 0.5,
-      "workers": ["Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "workers": [2, 3, 4, 5, 6],
       "paid": true
     },
     {
-      "date": "Senin, 09 Maret 2026",
-      "shortDate": "09 / 03",
+      "date": "2026-03-09",
       "job": "Bongkar",
       "type": "Mobil",
       "totalProduction": 2,
-      "workers": ["Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "workers": [2, 3, 4, 5, 6],
       "paid": true
     },
     {
-      "date": "Selasa, 10 Maret 2026",
-      "shortDate": "10 / 03",
+      "date": "2026-03-10",
       "job": "Produksi",
       "type": "Karung",
       "totalProduction": 156,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
-      "date": "Selasa, 10 Maret 2026",
-      "shortDate": "10 / 03",
+      "date": "2026-03-10",
       "job": "Muat",
       "type": "Mobil",
       "totalProduction": 1,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "workers": [1, 2, 3, 4, 5, 6],
       "paid": true
     },
     {
-      "date": "Rabu, 11 Maret 2026",
-      "shortDate": "11 / 03",
+      "date": "2026-03-11",
       "job": "Produksi",
       "type": "Karung",
-      "totalProduction": 35,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "totalProduction": 32,
+      "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
-      "date": "Rabu, 11 Maret 2026",
-      "shortDate": "11 / 03",
+      "date": "2026-03-11",
       "job": "Muat",
       "type": "Mobil",
       "totalProduction": 0.5,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Endi", "Sana"],
+      "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
-      "date": "Rabu, 11 Maret 2026",
-      "shortDate": "11 / 03",
+      "date": "2026-03-12",
       "job": "Bongkar",
       "type": "Mobil",
       "totalProduction": 1,
-      "workers": ["Farhan", "Sirod", "Vicky", "Komar", "Sana"],
+      "workers": [1, 2, 3, 4, 6],
       "paid": false
     }
   ]

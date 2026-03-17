@@ -1,44 +1,42 @@
 {
+  "version": "1.0.0",
+  "createdAt": "2025-10-29T10:00:00Z",
   "periodId": 2,
   "period": "Periode 2",
   "loanPerWorker": 50000,
-  "loanWorkers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"],
+  "loanWorkers": [1, 2, 3, 4, 5, 8],
   "data": [
-     {
-        "date": "Rabu, 29 Oktober 2025",
-        "shortDate": "29 / 10",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 205,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"],
-        "paid": false
-     },
-     {
-        "date": "Kamis, 30 Oktober 2025",
-        "shortDate": "30 / 10",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 158,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"],
-        "paid": false
-     },
-     {
-        "date": "Jumat, 31 Oktober 2025",
-        "shortDate": "31 / 10",
-        "job": "Produksi",
-        "type": "Karung",
-        "totalProduction": 100,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"],
-        "paid": false
-     },
-     {
-        "date": "Jumat, 31 Oktober 2025",
-        "shortDate": "31 / 10",
-        "job": "Angkut Cacahan Lembut",
-        "type": "Karung",
-        "totalProduction": 156,
-        "workers": ["Sirod", "Farhan", "Vicky", "Endi", "Komar", "Wahyu"],
-        "paid": false
-     }
+    {
+      "date": "2025-10-29",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 205,
+      "workers": [1, 2, 3, 4, 5, 8],
+      "paid": false
+    },
+    {
+      "date": "2025-10-30",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 158,
+      "workers": [1, 2, 3, 4, 5, 8],
+      "paid": false
+    },
+    {
+      "date": "2025-10-31",
+      "job": "Produksi",
+      "type": "Karung",
+      "totalProduction": 100,
+      "workers": [1, 2, 3, 4, 5, 8],
+      "paid": false
+    },
+    {
+      "date": "2025-10-31",
+      "job": "Angkut Cacahan Lembut",
+      "type": "Karung",
+      "totalProduction": 156,
+      "workers": [1, 2, 3, 4, 5, 8],
+      "paid": false
+    }
   ]
 }
