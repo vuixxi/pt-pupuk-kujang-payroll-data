@@ -1,27 +1,28 @@
-function handleMain(data, period) {
+function handleMain(data, period, workerMap) {
    const tbody = document.querySelector(".main tbody");
    const tfoot = document.querySelector(".main tfoot");
 
    const totals = calculateTotals(data, period);
 
-   tbody.innerHTML = createTableBodyRow(data, period, tbody);
+   tbody.innerHTML = createTableBodyRow(data, period, workerMap);
    workerListSelection();
    tfoot.innerHTML = createTableFootRow(totals);
 }
 
-function createTableBodyRow(data, period, tbody) {
+function createTableBodyRow(data, period, workerMap) {
    return data[period].data.map((item, index) => {
 
-      const { dailyTotalSalary, dailySalaryPerWorker } = calculateDailySalary(item);
+      const { dailyTotalSalary, dailySalaryPerWorker } =
+         calculateDailySalary(item);
 
       const myWorkers = item.workers
-         .map(worker => `<span>${worker}</span>`)
+         .map(id => `<span>${workerMap[id] || "Unknown"}</span>`)
          .join(", ");
 
       return `
          <tr>
             <td>${index + 1}</td>
-            <td>${item.date}</td>
+            <td>${formatDisplayDate(item.date)}</td>
             <td>${item.job}</td>
             <td>${item.totalProduction} ${item.type}</td>
 
@@ -48,7 +49,6 @@ function createTableBodyRow(data, period, tbody) {
             </td>
          </tr>
       `;
-
    }).join("");
 }
 

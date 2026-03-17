@@ -2,7 +2,7 @@ let noticeInterval = null;
 let noticeQueue = [];
 let lastEmployee = null;
 
-function getData(data, period) {
+function getData(data, period, workerMap) {
   const tbody = document.querySelector(".summary tbody");
   const tfoot = document.querySelector(".summary tfoot");
   const tDateTitle = document.querySelector(".summary .summary__table-date-title");
@@ -16,13 +16,13 @@ function getData(data, period) {
   tDate.innerHTML = entries
     .map(item => `
       <th class="${item.paid ? "paid" : ""}">
-        ${item.shortDate}
+        ${formatShortDate(item.date)}
       </th>
     `)
     .join("");
 
   // BODY & FOOTER
-  const groupedData = createGroupedData(data, period);
+  const groupedData = createGroupedData(data, period, workerMap);
 
   tbody.innerHTML = createSummaryTableBodyRow(groupedData, entries);
   tfoot.innerHTML = createSummaryTableFootRow(groupedData, entries);
@@ -30,24 +30,28 @@ function getData(data, period) {
   initSalaryNotice(groupedData);
 }
 
-function createGroupedData(data, period) {
+function createGroupedData(data, period, workerMap) {
+
   const { loanPerWorker, loanWorkers } = data[period];
   const entries = data[period].data;
 
   const allWorkers = [...new Set(entries.flatMap(item => item.workers))];
 
-  return allWorkers.map(worker => {
+  return allWorkers.map(workerId => {
+
     const perEntry = entries.map(item => {
+
       const salary = calculateDailySalary(item);
 
-      return item.workers.includes(worker)
+      return item.workers.includes(workerId)
         ? salary.dailySalaryPerWorker
         : 0;
+
     });
 
     const totalSalary = perEntry.reduce((a, b) => a + b, 0);
 
-    const loan = loanWorkers.includes(worker)
+    const loan = loanWorkers.includes(workerId)
       ? loanPerWorker
       : 0;
 
@@ -58,13 +62,15 @@ function createGroupedData(data, period) {
     const netSalary = totalSalary - loan - paidAmount;
 
     return {
-      name: worker,
+      id: workerId,
+      name: workerMap[workerId] || "Unknown",
       salaries: perEntry,
       totalSalary,
       loan,
       paidAmount,
       netSalary
     };
+
   });
 }
 

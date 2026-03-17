@@ -1,4 +1,4 @@
-function handleDropDown(data, period) {
+function handleDropDown(data, period, workerMap) {
    const mainTitle = document.querySelector(".main .main__title");
    const headerDropdown = document.querySelector(".header .header__dropdown");
    const headerDropdownTitle = document.querySelector(".header .header__dropdown-title");
@@ -11,7 +11,7 @@ function handleDropDown(data, period) {
    setupMenuDelegation(headerDropdown, headerDropdownTitle, headerDropdownMenu);
    
    const headerDropdownItems = document.querySelectorAll(".header .header__dropdown-item");
-   setupDropdownSelection(data, period, headerDropdownMenu, headerDropdownItems, headerDropdownTitle, mainTitle);
+   setupDropdownSelection(data, period, workerMap, headerDropdownMenu, headerDropdownItems, headerDropdownTitle, mainTitle);
    
    headerDropdownItems[period].classList.add("header__dropdown-item--active");
 }
@@ -38,7 +38,7 @@ function setupMenuDelegation(headerDropdown, headerDropdownTitle, headerDropdown
    });
 }
 
-function setupDropdownSelection(data, period, headerDropdownMenu, headerDropdownItems, headerDropdownTitle, mainTitle) {
+function setupDropdownSelection(data, period, workerMap, headerDropdownMenu, headerDropdownItems, headerDropdownTitle, mainTitle) {
    headerDropdownMenu.addEventListener("click", (e) => {
       if (e.target.classList.contains("header__dropdown-item")) {
          
@@ -53,8 +53,8 @@ function setupDropdownSelection(data, period, headerDropdownMenu, headerDropdown
          headerDropdownTitle.textContent = data[newPeriod].period;
          mainTitle.innerHTML = `Data Pekerjaan PT PUPUK KUJANG ${data[newPeriod].period}`;
          
-         handleMain(data, newPeriod);
-         getData(data, newPeriod);
+         handleMain(data, newPeriod, workerMap);
+         getData(data, newPeriod, workerMap);
         // initSalaryNotice(groupedData);
       }
    });
