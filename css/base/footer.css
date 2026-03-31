@@ -1,0 +1,21 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #eaeaea;
+  padding: 0.2rem;
+  text-align: center;
+  z-index: 8;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #212121;
+}
+
+footer p i {
+  font-size: 0.8rem;
+  color: #333333;
+}
