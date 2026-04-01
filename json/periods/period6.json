@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "createdAt": "2026-01-12T10:00:00Z",
+  "periodId": 6,
+  "period": "Periode 6",
+  "loanPerWorker": 50000,
+  "loanWorkers": [1, 2, 3, 4, 12, 8],
+  "data": [
+    {
+      "date": "2026-01-12",
+      "job": 1,
+      "totalProduction": 210,
+      "workers": [1, 2, 3, 4, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2026-01-12",
+      "job": 4,
+      "totalProduction": 57,
+      "workers": [1, 2, 3, 4, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2026-01-13",
+      "job": 1,
+      "totalProduction": 107,
+      "workers": [1, 2, 3, 4, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2026-01-14",
+      "job": 1,
+      "totalProduction": 135,
+      "workers": [1, 2, 3, 7, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2026-01-14",
+      "job": 4,
+      "totalProduction": 137,
+      "workers": [1, 2, 3, 7, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2026-01-15",
+      "job": 1,
+      "totalProduction": 175,
+      "workers": [1, 2, 3, 4, 7, 12, 8],
+      "paid": false
+    },
+    {
+      "date": "2026-01-16",
+      "job": 1,
+      "totalProduction": 150,
+      "workers": [1, 2, 3, 4, 7, 12, 8],
+      "paid": false
+    }
+  ]
+}

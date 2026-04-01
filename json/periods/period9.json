@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "createdAt": "2026-02-27T10:00:00Z",
+  "periodId": 9,
+  "period": "Periode 9",
+  "loanPerWorker": 50000,
+  "loanWorkers": [1, 2, 3, 4, 7, 6],
+  "data": [
+    {
+      "date": "2026-02-27",
+      "job": 5,
+      "totalProduction": 189,
+      "workers": [3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-02-27",
+      "job": 4,
+      "totalProduction": 115,
+      "workers": [3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-02-28",
+      "job": 4,
+      "totalProduction": 117,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-02",
+      "job": 1,
+      "totalProduction": 194,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-02",
+      "job": 2,
+      "totalProduction": 0.5,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": true
+    },
+    {
+      "date": "2026-03-03",
+      "job": 1,
+      "totalProduction": 110,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-03",
+      "job": 2,
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": true
+    },
+    {
+      "date": "2026-03-03",
+      "job": 3,
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": true
+    },
+    {
+      "date": "2026-03-03",
+      "job": 4,
+      "totalProduction": 95,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-04",
+      "job": 1,
+      "totalProduction": 110,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-04",
+      "job": 3,
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 4, 7, 6],
+      "paid": true
+    },
+    {
+      "date": "2026-03-05",
+      "job": 1,
+      "totalProduction": 140,
+      "workers": [1, 2, 3, 4, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-05",
+      "job": 2,
+      "totalProduction": 0.5,
+      "workers": [1, 2, 3, 4, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-06",
+      "job": 1,
+      "totalProduction": 150,
+      "workers": [1, 2, 3, 4, 5, 6],
+      "paid": false
+    },
+    {
+      "date": "2026-03-06",
+      "job": 2,
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 4, 5, 6],
+      "paid": false
+    }
+  ]
+}
