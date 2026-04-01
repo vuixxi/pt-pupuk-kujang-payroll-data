@@ -1,0 +1,15 @@
+{
+  "version": "1.0.5",
+  "updatedAt": "2026-03-19T08:00:00Z",
+  "data": [
+    { "id": 1, "name": "Produksi", "unit": "Karung", "rate": 3600 },
+    { "id": 2, "name": "Muat", "unit": "Mobil", "rate": 110000 },
+    { "id": 3, "name": "Bongkar", "unit": "Mobil", "rate": 120000 },
+    { "id": 4, "name": "Angkut Cacahan Lembut", "unit": "Karung", "rate": 400 },
+    { "id": 5, "name": "Stapel Cacahan", "unit": "Karung", "rate": 800 },
+    { "id": 6, "name": "Stapel COA", "unit": "Karung", "rate": 400 },
+    { "id": 7, "name": "Stapel Produksi", "unit": "Karung", "rate": 400 },
+    { "id": 8, "name": "Salin", "unit": "Karung", "rate": 765 },
+    { "id": 9, "name": "Salin Timbang", "unit": "Mobil", "rate": 200000 }
+  ]
+}
