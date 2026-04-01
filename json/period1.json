@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0",
+  "createdAt": "2025-10-18T10:00:00Z",
+  "periodId": 1,
+  "period": "Periode 1",
+  "loanPerWorker": 50000,
+  "loanWorkers": [1, 2, 3, 5, 7],
+  "data": [
+    {
+      "date": "2025-10-18",
+      "job": 1,
+      "type": "Karung",
+      "totalProduction": 125,
+      "workers": [1, 2, 3, 5, 9],
+      "paid": false
+    },
+    {
+      "date": "2025-10-20",
+      "job": 1,
+      "type": "Karung",
+      "totalProduction": 133,
+      "workers": [1, 2, 3, 5, 7],
+      "paid": false
+    },
+    {
+      "date": "2025-10-21",
+      "job": 2,
+      "type": "Mobil",
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 5, 7],
+      "paid": false
+    },
+    {
+      "date": "2025-10-21",
+      "job": 1,
+      "type": "Karung",
+      "totalProduction": 103,
+      "workers": [1, 2, 3, 5, 7],
+      "paid": false
+    },
+    {
+      "date": "2025-10-22",
+      "job": 1,
+      "type": "Karung",
+      "totalProduction": 78,
+      "workers": [1, 2, 3, 5, 7],
+      "paid": false
+    },
+    {
+      "date": "2025-10-22",
+      "job": 2,
+      "type": "Mobil",
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 5, 7],
+      "paid": false
+    },
+    {
+      "date": "2025-10-24",
+      "job": 3,
+      "type": "Mobil",
+      "totalProduction": 1,
+      "workers": [1, 2, 3],
+      "paid": true
+    }
+  ]
+}
