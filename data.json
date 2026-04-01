@@ -1,0 +1,16 @@
+{
+  "periods": [
+    { "periodId": 1, "file": "period1.json" },
+    { "periodId": 2, "file": "period2.json" },
+    { "periodId": 3, "file": "period3.json" },
+    { "periodId": 4, "file": "period4.json" },
+    { "periodId": 5, "file": "period5.json" },
+    { "periodId": 6, "file": "period6.json" },
+    { "periodId": 7, "file": "period7.json" },
+    { "periodId": 8, "file": "period8.json" },
+    { "periodId": 9, "file": "period9.json" },
+    { "periodId": 10, "file": "period10.json" },
+    { "periodId": 11, "file": "period11.json" },
+    { "periodId": 12, "file": "period12.json" }
+  ]
+}
