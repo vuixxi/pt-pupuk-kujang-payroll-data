@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.3.1",
   "updatedAt": "2026-03-19T08:00:00Z",
   "data": [
     { "id": 1, "name": "Produksi", "unit": "Karung", "rate": 3600 },
@@ -10,6 +10,7 @@
     { "id": 6, "name": "Stapel COA", "unit": "Karung", "rate": 400 },
     { "id": 7, "name": "Stapel Produksi", "unit": "Karung", "rate": 400 },
     { "id": 8, "name": "Salin", "unit": "Karung", "rate": 765 },
-    { "id": 9, "name": "Salin Timbang", "unit": "Mobil", "rate": 200000 }
+    { "id": 9, "name": "Salin Timbang", "unit": "Mobil", "rate": 200000 },
+    { "id": 10, "name": "Muat Conveyor", "unit": "Unit", "rate": 300000 }
   ]
 }
