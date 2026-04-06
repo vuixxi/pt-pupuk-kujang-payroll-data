@@ -7,6 +7,17 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.1.0] - 2026-04-03
+
+### Ditambahkan
+- Menambahkan type pada jobs.json
+
+### Diubah
+- Menyesuaikan type pada jobs.json dengan mainTable.js
+
+
+---
+
 ## [2.0.0] - 2026-03-28
 ### ⚠️ Breaking Changes
 - Perubahan besar pada struktur folder
@@ -24,6 +35,7 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
   - ui/notice.js
   - ui/security.js
   - ui/sidebar.js
+  - json/periods/all periods
 
 ### Ditambahkan
 - Menambahkan file baru
