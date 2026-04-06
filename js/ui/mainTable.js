@@ -101,14 +101,21 @@ function calculateDailySalary(item, jobMap = {}) {
   // ambil rate dan total produksi
   const rate = job.rate || 0;
   const production = item.totalProduction || 0;
+  const workerCount = item.workers.length;
 
   // hitung total gaji harian
-  const dailyTotalSalary = production * rate;
+  // const dailyTotalSalary = production * rate;
+  
+  // cek tipe pekerjaan
+  if (job.type === "per_worker") {
+    dailyTotalSalary = rate * workerCount;
+  } else {
+    // default = per_unit
+    dailyTotalSalary = production * rate;
+  }
 
   // bagi rata ke semua worker
-  const dailySalaryPerWorker = item.workers.length
-    ? dailyTotalSalary / item.workers.length
-    : 0;
+  const dailySalaryPerWorker = workerCount ? dailyTotalSalary / item.workers.length : 0;
 
   // return hasil perhitungan
   return { dailyTotalSalary, dailySalaryPerWorker };
