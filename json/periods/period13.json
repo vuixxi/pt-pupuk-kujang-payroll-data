@@ -8,14 +8,7 @@
   "data": [
     {
       "date": "2026-04-03",
-      "job": 11,
-      "totalProduction": 1,
-      "workers": [1, 2, 3, 4, 5, 7],
-      "paid": false
-    },
-    {
-      "date": "2026-04-03",
-      "job": 1,
+      "job": 12,
       "totalProduction": 130,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": false
@@ -43,14 +36,7 @@
     },
     {
       "date": "2026-04-04",
-      "job": 11,
-      "totalProduction": 1,
-      "workers": [1, 2, 3, 4, 5, 7],
-      "paid": false
-    },
-    {
-      "date": "2026-04-04",
-      "job": 1,
+      "job": 12,
       "totalProduction": 216,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": false
