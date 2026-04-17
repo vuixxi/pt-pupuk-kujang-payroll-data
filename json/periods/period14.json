@@ -98,9 +98,9 @@
       "paid": false
     },
     {
-      "date": "2026-04-16",
+      "date": "2026-04-17",
       "job": 4,
-      "totalProduction": 50,
+      "totalProduction": 80,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     }
