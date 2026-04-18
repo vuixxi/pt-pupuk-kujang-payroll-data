@@ -9,7 +9,7 @@
     {
       "date": "2026-04-18",
       "job": 5,
-      "totalProduction": 87,
+      "totalProduction": 190,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     },
