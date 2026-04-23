@@ -13,6 +13,7 @@
     { "id": 9, "name": "Salin Timbang", "unit": "Mobil", "rate": 200000, "type": "per_unit" },
     { "id": 10, "name": "Muat Conveyor", "unit": "Unit", "rate": 100000, "type": "per_worker" },
     { "id": 11, "name": "Lembur Harian", "unit": "Hari", "rate": 100000, "type": "per_worker" },
-    { "id": 12, "name": "Produksi (Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" }
+    { "id": 12, "name": "Produksi (Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" },
+    { "id": 13, "name": "Mencacah", "unit": "Karung", "rate": 800, "type": "per_unit" }
   ]
 }
