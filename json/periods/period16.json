@@ -19,6 +19,20 @@
       "totalProduction": 0.5,
       "workers": [1, 2, 3, 6, 9],
       "paid": false
+    },
+    {
+      "date": "2026-04-28",
+      "job": 8,
+      "totalProduction": 400,
+      "workers": [1, 2, 3, 6, 9],
+      "paid": false
+    },
+    {
+      "date": "2026-04-28",
+      "job": 2,
+      "totalProduction": 0.5,
+      "workers": [1, 2, 3, 6, 9],
+      "paid": false
     }
   ]
 }
