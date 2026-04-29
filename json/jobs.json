@@ -3,7 +3,7 @@
   "updatedAt": "2026-03-19T08:00:00Z",
   "data": [
     { "id": 1, "name": "Produksi", "unit": "Karung", "rate": 3600, "type": "per_unit" },
-    { "id": 2, "name": "Muat", "unit": "Mobil", "rate": 110000, "type": "per_unit" },
+    { "id": 2, "name": "Muat (4,4)", "unit": "Mobil", "rate": 55000, "type": "per_unit", "info": "110 Karung" },
     { "id": 3, "name": "Bongkar", "unit": "Mobil", "rate": 120000, "type": "per_unit" },
     { "id": 4, "name": "Angkut Cacahan Lembut", "unit": "Karung", "rate": 400, "type": "per_unit" },
     { "id": 5, "name": "Stapel Cacahan", "unit": "Karung", "rate": 800, "type": "per_unit" },
@@ -14,6 +14,7 @@
     { "id": 10, "name": "Muat Conveyor", "unit": "Unit", "rate": 100000, "type": "per_worker" },
     { "id": 11, "name": "Lembur Harian", "unit": "Hari", "rate": 100000, "type": "per_worker" },
     { "id": 12, "name": "Produksi (Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" },
-    { "id": 13, "name": "Mencacah", "unit": "Karung", "rate": 800, "type": "per_unit" }
+    { "id": 13, "name": "Mencacah", "unit": "Karung", "rate": 800, "type": "per_unit" },
+    { "id": 14, "name": "Muat (3,6)", "unit": "Mobil", "rate": 45000, "type": "per_unit", "info": "90 Karung" }
   ]
 }
