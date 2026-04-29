@@ -37,7 +37,7 @@
     {
       "date": "2026-03-02",
       "job": 2,
-      "totalProduction": 0.5,
+      "totalProduction": 1,
       "workers": [1, 2, 3, 4, 7, 6],
       "paid": true
     },
@@ -51,7 +51,7 @@
     {
       "date": "2026-03-03",
       "job": 2,
-      "totalProduction": 1,
+      "totalProduction": 2,
       "workers": [1, 2, 3, 4, 7, 6],
       "paid": true
     },
@@ -93,7 +93,7 @@
     {
       "date": "2026-03-05",
       "job": 2,
-      "totalProduction": 0.5,
+      "totalProduction": 1,
       "workers": [1, 2, 3, 4, 6],
       "paid": false
     },
@@ -107,7 +107,7 @@
     {
       "date": "2026-03-06",
       "job": 2,
-      "totalProduction": 1,
+      "totalProduction": 2,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     }

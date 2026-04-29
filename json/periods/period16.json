@@ -3,36 +3,57 @@
   "createdAt": "2026-04-27T10:00:00Z",
   "periodId": 16,
   "period": "Periode 16",
-  "loanPerWorker": 50000,
-  "loanWorkers": [1, 2, 3, 6, 9],
+  "loanPerWorker": 0,
+  "loanWorkers": [],
   "data": [
     {
       "date": "2026-04-27",
       "job": 8,
-      "totalProduction": 425,
+      "totalProduction": 400,
       "workers": [1, 2, 3, 6, 9],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-04-27",
       "job": 2,
-      "totalProduction": 0.5,
+      "totalProduction": 1,
       "workers": [1, 2, 3, 6, 9],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-04-28",
       "job": 8,
-      "totalProduction": 521,
+      "totalProduction": 400,
       "workers": [1, 2, 3, 6, 9],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-04-28",
       "job": 2,
       "totalProduction": 1,
       "workers": [1, 2, 3, 6, 9],
+      "paid": true
+    },
+    {
+      "date": "2026-04-29",
+      "job": 1,
+      "totalProduction": 121,
+      "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
+    },
+    {
+      "date": "2026-04-29",
+      "job": 2,
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 6, 7, 9],
+      "paid": true
+    },
+    {
+      "date": "2026-04-29",
+      "job": 14,
+      "totalProduction": 1,
+      "workers": [1, 2, 3, 6, 7, 9],
+      "paid": true
     }
   ]
 }

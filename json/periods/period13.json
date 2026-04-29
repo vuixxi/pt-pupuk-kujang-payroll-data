@@ -44,7 +44,7 @@
     {
       "date": "2026-04-04",
       "job": 2,
-      "totalProduction": 0.5,
+      "totalProduction": 1,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": true
     },
