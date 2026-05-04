@@ -8,7 +8,7 @@
   "data": [
     {
       "date": "2026-05-04",
-      "job": 13,
+      "job": 15,
       "totalProduction": 250,
       "workers": [1, 2, 3, 6, 9],
       "paid": false
@@ -17,7 +17,7 @@
       "date": "2026-05-05",
       "job": 1,
       "totalProduction": 150,
-      "workers": [1, 2, 3, 6, 9],
+      "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     }
   ]
