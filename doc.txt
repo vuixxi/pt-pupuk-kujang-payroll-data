@@ -1,0 +1,213 @@
+update in github:
+
+- Di Ubah
+  - index.html (security)
+  
+  - period17.json
+
+- Di Tambahkan
+
+
+
+mini bug:
+- menu link # href sidebar.js
+- dropdown.js dan workerList.js
+
+
+
+next update:
+- ui.js pindah ke utils / helper alert.js
+- benerin folder dan file dengan versi
+- hapus nomor dan tanggal yang sama atau bedain warnanya
+- tambahkan komentar di sidebar.js
+- refactor jadi clean architecture
+- ui, logic, controller
+- export dan import
+- initApp semua function
+- js module
+- filter > status, pekerjaan
+- pisahin files json pertahunnya 
+  json/
+    periods/
+      2026/
+        period-004.json
+        period-005.json
+        period-006.json
+      2025/
+        period-001.json
+        period-002.json
+        period-003.json
+
+
+
+
+
+index.html
+CHANGELOG.md
+
+css/
+  base/
+    style.css
+    utility.css
+  components/
+    header.css
+    main.css
+    sidebar.css
+    summary.css
+    notice.css
+    security.css
+
+js/
+  app/
+    init.js            ← pengganti app.js (controller utama)
+
+  data/
+    loader.js          ← load JSON
+
+  logic/
+    salary.js          ← hitung gaji
+    summary.js         ← grouping & totals
+
+  ui/
+    mainTable.js       ← render tabel utama
+    summaryTable.js    ← render summary
+    dropdown.js
+    
+    sidebar/
+      index.js
+      calculator.js
+      feedback.js
+      report.js
+      ui.js
+    
+    workerList.js
+    notice.js
+    security.js
+
+  utils/
+    format.js          ← formatNumber, formatDate
+
+json/
+  data.json
+  jobs.json
+  workers.json
+  periods/
+    period1.json
+    period2.json
+    ...
+    period100.json
+
+
+
+
+json/
+  data.json
+  jobs.json
+  workers.json
+  period1.json
+  period2.json
+  ...
+
+ALL FUNCTION & GLOBAL VARIABLE
+
+app.js
+  - var myLink
+  - loadData()
+  - initApp()
+
+mainTable.js
+  - handleMain()
+  - createTableBodyRow()
+  - createTableFootRow()
+  - calculateDailySalary()
+  - calculateTotals()
+
+summaryTable.js
+  - var noticeInterval
+  - var noticeQueue
+  - var lastEmployee
+  - getData()
+  - createGroupedData()
+  - createSummaryTableBodyRow()
+  - createSummaryTableFootRow()
+  - setupSummaryToggle()
+
+utils.js
+  - var dateFormatter
+  - var shortDateFormatter
+  - formatNumber()
+  - formatDisplayDate()
+  - formatShortDate()
+
+notice.js
+  - initSalaryNotice()
+
+security.js
+  - security()
+
+sidebar.js
+  - var RATE
+  - parseHash()
+  - handleSidebar()
+  - handleContent()
+  - handleContentClose()
+  - getActiveRate()
+  - initCalculatorTabs()
+  - initCalculator()
+  - handleFeedback()
+  - handleReport()
+
+workerList.js
+  - workerListSelection()
+  - handleWorkerClick()
+  - handleOutsideClick()
+  - openWorkerList()
+  - closeWorkerList()
+  - closeAllWorkerLists()
+
+dropdown.js
+  - handleDropDown()
+  - renderDropdownMenu()
+  - setupDropdownToggle()
+  - setupMenuDelegation()
+  - setupDropdownSelection()
+
+
+
+
+
+next:
+ui/
+  sidebar/
+    sidebar.js
+    content.js
+
+  calculator/
+    calculator.js
+    tabs.js
+
+  feedback/
+    feedback.js
+    report.js
+    
+    
+docs/
+  README.md
+  VARIABLES.md
+  FUNCTIONS.md
+  
+{
+  "version": "1.0.0",
+  "period": "2026-03",
+  "createdAt": "2026-03-25T10:00:00Z",
+
+  "entries": [
+    {
+      "date": "2026-03-30",
+      "jobId": 1,
+      "quantity": 90,
+      "workers": [1,2,3],
+      "paid": false
+    }
+  ]
+}
