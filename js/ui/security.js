@@ -1,3 +1,17 @@
+const AudioSystem = (function () {
+  let bg = document.querySelector('.audio-system__bg');
+  
+  function playBg() {
+    if (bg && bg.paused) {
+      bg.volume = 0.5;
+      bg.play().catch(err => console.log(err));
+    }
+  }
+  
+  return { playBg };
+})();
+
+
 function security() {
   // ambil tombol login
   const btn = document.querySelector(".section__button");
@@ -64,7 +78,11 @@ function openApp() {
   document.body.classList.remove("body--overflow");
   document.querySelector(".container").classList.remove("container--security");
   document.querySelector(".security").classList.add("security--hidden");
+  
+  AudioSystem.playBg();
 }
+
+
 
 
 // jalankan function saat load
