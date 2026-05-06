@@ -5,15 +5,27 @@ Semua perubahan penting pada proyek ini akan dicatat di file ini.
 Format terinspirasi dari Keep a Changelog.  
 Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
+
+---
+
+## [2.1.1] - 2026-04-21
+
+### Diubah
+- Menambahkan type pekerjaan pada jobs.json
+  - Pekerjaan "Mencacah"
+
 ---
 
 ## [2.1.0] - 2026-04-03
 
 ### Ditambahkan
 - Menambahkan type pada jobs.json
+- Menambahkan audio-system index.html
 
 ### Diubah
 - Menyesuaikan type pada jobs.json dengan mainTable.js
+- Menyesuaikan audio-system security.css
+- Menyesuaikan audio-system security.js
 
 
 ---
