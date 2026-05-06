@@ -15,6 +15,34 @@
     },
     {
       "date": "2026-05-05",
+      "job": 7,
+      "totalProduction": 305,
+      "workers": [1, 2, 3, 6, 9],
+      "paid": false
+    },
+    {
+      "date": "2026-05-06",
+      "job": 1,
+      "totalProduction": 128,
+      "workers": [1, 2, 3, 6, 7, 9],
+      "paid": false
+    },
+    {
+      "date": "2026-05-06",
+      "job": 16,
+      "totalProduction": 220,
+      "workers": [1, 2, 3, 6, 7, 9],
+      "paid": false
+    },
+    {
+      "date": "2026-05-07",
+      "job": 15,
+      "totalProduction": 220,
+      "workers": [1, 2, 3, 6, 7],
+      "paid": false
+    },
+    {
+      "date": "2026-05-08",
       "job": 1,
       "totalProduction": 150,
       "workers": [1, 2, 3, 6, 7, 9],
