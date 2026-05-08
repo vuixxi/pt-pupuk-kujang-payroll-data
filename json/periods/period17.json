@@ -30,7 +30,7 @@
     {
       "date": "2026-05-06",
       "job": 16,
-      "totalProduction": 220,
+      "totalProduction": 250,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     },
@@ -44,7 +44,7 @@
     {
       "date": "2026-05-07",
       "job": 13,
-      "totalProduction": 220,
+      "totalProduction": 250,
       "workers": [1, 2, 6, 7],
       "paid": false
     },
