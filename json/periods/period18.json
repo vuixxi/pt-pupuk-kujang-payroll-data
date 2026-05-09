@@ -1,0 +1,24 @@
+{
+  "version": "2.1.1",
+  "createdAt": "2026-05-09T10:00:00Z",
+  "periodId": 18,
+  "period": "Periode 18",
+  "loanPerWorker": 0,
+  "loanWorkers": [],
+  "data": [
+    {
+      "date": "2026-05-09",
+      "job": 8,
+      "totalProduction": 400,
+      "workers": [1, 2, 3, 6, 9],
+      "paid": false
+    },
+    {
+      "date": "2026-05-11",
+      "job": 8,
+      "totalProduction": 400,
+      "workers": [1, 2, 3, 6, 7, 9],
+      "paid": false
+    }
+  ]
+}
