@@ -16,7 +16,7 @@
     { "id": 12, "name": "Produksi (Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" },
     { "id": 13, "name": "Mencacah", "unit": "Karung", "rate": 800, "type": "per_unit" },
     { "id": 14, "name": "Muat (3,6)", "unit": "Mobil", "rate": 45000, "type": "per_unit", "info": "90 Karung" },
-    { "id": 15, "name": "Bongkar & Cacah", "unit": "Karung", "rate": 1000, "type": "per_unit" },
+    { "id": 15, "name": "Bongkar & Cacah", "unit": "Karung", "rate": 1040, "type": "per_unit" },
     { "id": 16, "name": "Bongkar Stapel", "unit": "Karung", "rate": 240, "type": "per_unit" },
     { "id": 17, "name": "Muat (8,8)", "unit": "Mobil", "rate": 110000, "type": "per_unit", "info": "220 Karung" }
   ]
