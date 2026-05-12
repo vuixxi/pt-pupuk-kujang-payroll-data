@@ -11,21 +11,21 @@
       "job": 8,
       "totalProduction": 350,
       "workers": [1, 2, 3, 6, 9],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-05-11",
       "job": 8,
       "totalProduction": 551,
       "workers": [1, 2, 3, 6, 7, 9],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-05-11",
       "job": 17,
       "totalProduction": 1,
       "workers": [1, 2, 3, 6, 7, 9],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-05-12",
