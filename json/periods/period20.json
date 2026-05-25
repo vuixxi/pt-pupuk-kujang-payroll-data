@@ -9,23 +9,16 @@
     {
       "date": "2026-05-25",
       "job": 1,
-      "totalProduction": 100,
+      "totalProduction": 126,
       "workers": [1, 2, 3, 5],
       "paid": false
-    },
-    {
-      "date": "2026-05-25",
-      "job": 2,
-      "totalProduction": 2,
-      "workers": [1, 2, 3, 5],
-      "paid": true
     },
     {
       "date": "2026-05-25",
       "job": 3,
       "totalProduction": 1,
       "workers": [1, 2, 3, 5],
-      "paid": true
+      "paid": false
     }
   ]
 }
