@@ -16,7 +16,7 @@
     {
       "date": "2026-05-25",
       "job": 2,
-      "totalProduction": 1,
+      "totalProduction": 2,
       "workers": [1, 2, 3, 5],
       "paid": true
     },
