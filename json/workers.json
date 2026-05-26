@@ -13,6 +13,7 @@
     { "id": 9, "name": "Asep", "active": true },
     { "id": 10, "name": "Teja", "active": true },
     { "id": 11, "name": "Manah", "active": true },
-    { "id": 12, "name": "Kurnata", "active": true }
+    { "id": 12, "name": "Kurnata", "active": true },
+    { "id": 13, "name": "Ujang", "active": true }
   ]
 }
