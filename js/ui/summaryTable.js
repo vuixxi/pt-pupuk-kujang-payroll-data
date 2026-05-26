@@ -242,7 +242,7 @@ function setupSummaryToggle() {
   const summary = document.querySelector(".summary");
   const summaryToggleBtn = document.querySelector(".summary-toggle__btn");
 
-  let hidden = true;
+  let hidden = false;
 
   summaryToggleBtn.addEventListener("click", () => {
     hidden = !hidden;
