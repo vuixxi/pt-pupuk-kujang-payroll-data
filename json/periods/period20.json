@@ -3,8 +3,8 @@
   "createdAt": "2026-05-25T10:00:00Z",
   "periodId": 20,
   "period": "Periode 20",
-  "loanPerWorker": 0,
-  "loanWorkers": [],
+  "loanPerWorker": 50000,
+  "loanWorkers": [1, 2, 3, 5, 13],
   "data": [
     {
       "date": "2026-05-25",
@@ -18,13 +18,13 @@
       "job": 3,
       "totalProduction": 1,
       "workers": [1, 2, 3, 5],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-05-26",
       "job": 1,
       "totalProduction": 150,
-      "workers": [1, 2, 3, 5, 12],
+      "workers": [1, 2, 3, 5, 13],
       "paid": false
     }
   ]
