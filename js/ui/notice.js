@@ -84,7 +84,7 @@ function generateRandomAmount(baseSalary){
 }
 
 function formatNoticeText(name, amount){
-  return `${name} telah berhasil WD sebesar Rp. ${formatNumber(amount)}`;
+  return `${name} telah menerima gaji sebesar Rp. ${formatNumber(amount)}`;
 }
 
 
