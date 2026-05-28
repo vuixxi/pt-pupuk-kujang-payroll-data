@@ -92,12 +92,28 @@ json/
   jobs.json
   workers.json
   periods/
-    period1.json
-    period2.json
-    ...
-    period100.json
-
-
+    2025/
+        10-18.json
+        10-29.json
+        12-01.json
+        12-05.json
+        12-13.json
+    2026/
+        01-12.json
+        01-20.json
+        02-23.json
+        02-27.json
+        03-07.json
+        03-14.json
+        03-25.json
+        04-03.json
+        04-10.json
+        04-18.json
+        04-27.json
+        05-04.json
+        05-09.json
+        05-18.json
+        05-25.json
 
 
 json/
