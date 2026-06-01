@@ -23,7 +23,7 @@
     {
       "date": "2026-06-01",
       "job": 1,
-      "totalProduction": 205,
+      "totalProduction": 210,
       "workers": [1, 2, 3, 5, 7, 13],
       "paid": false
     }
