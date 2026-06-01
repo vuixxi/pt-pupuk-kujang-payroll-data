@@ -4,7 +4,7 @@
   "periodId": 21,
   "period": "Periode 21",
   "loanPerWorker": 50000,
-  "loanWorkers": [1, 2, 3, 5, 13],
+  "loanWorkers": [1, 2, 3, 5, 7, 13],
   "data": [
     {
       "date": "2026-05-30",
@@ -24,7 +24,7 @@
       "date": "2026-06-01",
       "job": 1,
       "totalProduction": 205,
-      "workers": [1, 2, 3, 5, 13],
+      "workers": [1, 2, 3, 5, 7, 13],
       "paid": false
     }
   ]
