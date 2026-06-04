@@ -47,6 +47,13 @@
       "totalProduction": 1,
       "workers": [1, 2, 3, 5, 7, 13],
       "paid": true
+    },
+    {
+      "date": "2026-06-04",
+      "job": 1,
+      "totalProduction": 150,
+      "workers": [1, 2, 3, 5, 7, 9],
+      "paid": false
     }
   ]
 }
