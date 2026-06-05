@@ -14,13 +14,6 @@
       "paid": false
     },
     {
-      "date": "2026-05-30",
-      "job": 4,
-      "totalProduction": 27,
-      "workers": [1, 2, 3, 5, 9, 13],
-      "paid": false
-    },
-    {
       "date": "2026-06-01",
       "job": 1,
       "totalProduction": 210,
@@ -58,7 +51,14 @@
     {
       "date": "2026-06-05",
       "job": 1,
-      "totalProduction": 220,
+      "totalProduction": 150,
+      "workers": [1, 2, 3, 5, 7, 9, 13],
+      "paid": false
+    },
+    {
+      "date": "2026-06-05",
+      "job": 4,
+      "totalProduction": 121,
       "workers": [1, 2, 3, 5, 7, 9, 13],
       "paid": false
     }
