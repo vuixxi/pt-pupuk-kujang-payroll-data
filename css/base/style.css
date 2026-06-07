@@ -10,8 +10,8 @@
 
 body {
   font-family: "Quicksand-Bold";
-  background-color: #eaeaea;
-  color: #212121;
+  background-color: #f8fafc;
+  color: #1f2937;
   user-select: none;
   scroll-behavior: smooth;
 }
@@ -29,7 +29,7 @@ body.body--overflow {
   opacity: 0;
 }
 
-
+/* 
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -48,4 +48,19 @@ body.body--overflow {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #333333;
+}
+ */
+ 
+::-webkit-scrollbar {
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
 }
