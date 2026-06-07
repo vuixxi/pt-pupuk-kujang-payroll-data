@@ -139,23 +139,23 @@ function createSummaryTableBodyRow(groupedData, entries) {
 
           ${salaryCells}
 
-          <td style="background:#BBDEFB">
+          <td>
             <strong>${formatNumber(worker.totalSalary)}</strong>
           </td>
 
-          <td style="background:#C8E6C9">
+          <td>
             <strong>${formatNumber(paidAmount)}</strong>
           </td>
 
-          <td style="background:#FFCDD2">
+          <td>
             <strong>${formatNumber(unpaidAmount)}</strong>
           </td>
 
-          <td style="background:#FFE0B2">
+          <td>
             <strong>${formatNumber(worker.loan)}</strong>
           </td>
 
-          <td style="background:#FFF9C4">
+          <td>
             <strong>${formatNumber(netSalary)}</strong>
           </td>
         </tr>

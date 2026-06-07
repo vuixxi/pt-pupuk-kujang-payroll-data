@@ -63,8 +63,8 @@ function createTableBodyRows(items, workerMap, jobMap) {
             <td class="main__status ${item.paid ? 'main__status-paid' : 'main__status-unpaid'}">
                <span style="background-color:${item.paid ? '#81C784' : '#EF9A9A'};"></span>
             </td>
-            <td style="background-color:#BBDEFB;"><strong>${formatNumber(dailyTotalSalary)}</strong></td>
-            <td style="background-color:#FFF9C4;"><strong>${formatNumber(dailySalaryPerWorker)}</strong></td>
+            <td><strong>${formatNumber(dailyTotalSalary)}</strong></td>
+            <td><strong>${formatNumber(dailySalaryPerWorker)}</strong></td>
          </tr>
       `;
    }).join(""); // gabungkan semua row jadi satu string
@@ -84,8 +84,8 @@ function createTableFootRows(totals) {
    return rows.map(([label, total, perWorker]) => `
       <tr>
          <td colspan="6" align="right"><strong>${label}</strong></td>
-         <td><strong>${formatNumber(total)}</strong></td>
-         <td><strong>${formatNumber(perWorker)}</strong></td>
+         <td align="center"><strong>${formatNumber(total)}</strong></td>
+         <td align="center"><strong>${formatNumber(perWorker)}</strong></td>
       </tr>
    `).join("");
 }
