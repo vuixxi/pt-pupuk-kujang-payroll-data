@@ -5,6 +5,32 @@ Semua perubahan penting pada proyek ini akan dicatat di file ini.
 Format terinspirasi dari Keep a Changelog.  
 Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
+---
+
+## [2.1.3] - 2026-06-06
+
+### Diubah
+- Mengoptimalkan tampilan HTML
+  - index.html
+  - style.css
+  - utility.css
+  - header.css
+  - sidebar.css
+  - main.css
+  - summary.css
+  - notice.css
+  - footer.css
+  
+  - mainTable.js
+  - summaryTable.js
+
+---
+
+## [2.1.2] - 2026-05-27
+
+### Diubah
+- Memperbaiki struktur folder
+  - all period.json => 2025/2025-10-18
 
 ---
 

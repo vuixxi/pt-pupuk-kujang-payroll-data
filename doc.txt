@@ -3,7 +3,8 @@ update in github:
 - Di Ubah
   - index.html (security)
   
-  - period17.json
+  - data.json
+  - 06-08.json
 
 - Di Tambahkan
 
@@ -44,6 +45,9 @@ next update:
 
 index.html
 CHANGELOG.md
+README.md
+version.txt
+doc.txt
 
 css/
   base/
