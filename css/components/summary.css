@@ -1,3 +1,17 @@
+ :root {
+  --primary: #2563eb;
+  --primary-light: #dbeafe;
+  --primary-dark: #1d4ed8;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --border: #e5e7eb;
+  --bg: #f8fafc;
+  --white: #ffffff;
+}
+
 .summary {
   display: grid;
   gap: 1rem;
@@ -13,9 +27,13 @@
 
 .summary .summary__title {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #111827;
 }
 
+
+
+/* 
 .summary .summary__table-wrapper {
   overflow: auto;
   padding-bottom: 1rem;
@@ -58,7 +76,134 @@
 
 .summary .summary__table tfoot tr {
   background-color: #dadada;
+} */
+
+.summary .summary__table th.paid {
+  color: #81C784;
 }
+
+.summary .summary__table td.paid strong {
+  color: #1B5E20;
+}
+
+.summary__table-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+}
+
+.summary__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+}
+
+/* reset */
+.summary__table thead th,
+.summary__table tbody td,
+.summary__table tfoot td {
+  white-space: nowrap;
+}
+
+/* Header */
+.summary__table thead th {
+  background: var(--primary);
+  color: white;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.summary__table thead tr:nth-child(2) th {
+  background: var(--primary-dark);
+  min-width: 125px;
+}
+
+.summary__table thead .summary__table-wide {
+  min-width: 150px;
+}
+
+
+
+/* Body */
+.summary__table tbody td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* bug font-weight */
+.summary__table tbody td:nth-child(6) {
+  font-weight: 400;
+}
+
+.summary__table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.summary__table tbody tr:hover {
+  background: var(--primary-light);
+}
+
+.summary__table tbody strong {
+  color: var(--primary-dark);
+}
+
+/* Footer */
+.summary__table tfoot td {
+  padding: 12px 8px;
+  border-top: 1px solid var(--border);
+  font-weight: 600;
+  text-align: center;
+}
+
+.summary__table tfoot tr {
+  background: #ecfdf5;
+  color: var(--success);
+}
+
+/* Kolom Nama rata kiri */
+.summary__table tbody td:nth-child(2) {
+  /* text-align: left; */
+  min-width: 150px;
+  font-weight: 500;
+}
+
+/* Nomor rata tengah */
+.summary__table tbody td:first-child {
+  text-align: center;
+  min-width: 50px;
+}
+
+/* Gaji */
+.summary__table tbody td:last-child strong {
+  color: var(--success);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summary__table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .summary__table {
+    min-width: 900px;
+  }
+
+
+}
+
  
 .summary-toggle {
    display: flex;

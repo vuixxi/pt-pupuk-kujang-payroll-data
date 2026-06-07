@@ -4,7 +4,7 @@ footer {
   bottom: 0;
   right: 0;
   width: 100vw;
-  background-color: #eaeaea;
+  background-color: #f8fafc;
   padding: 0.2rem;
   text-align: center;
   z-index: 8;
@@ -12,10 +12,10 @@ footer {
 
 footer p {
   font-size: 0.8rem;
-  color: #212121;
+  color: #1f2937;
 }
 
 footer p i {
   font-size: 0.8rem;
-  color: #333333;
+  color: #212121;
 }
