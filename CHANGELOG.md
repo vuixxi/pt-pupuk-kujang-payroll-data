@@ -7,6 +7,33 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.1.4] - 2026-06-07
+
+### Refactor (Architecture)
+- Migrasi arsitektur aplikasi ke ES Module
+- Modularisasi sistem menjadi beberapa modul terpisah:
+  - utils/format.js
+  - sidebar/index.js
+  - sidebar/ui.js
+  - sidebar/calculator.js
+  - sidebar/feedback.js
+  - sidebar/report.js
+  - ui/mainTable.js
+  - ui/summaryTable.js
+  - ui/dropdown.js
+  - ui/notice.js
+  - ui/workerList.js
+  
+- Penyederhanaan dan peningkatan struktur inisialisasi aplikasi di app/init.js
+- Menggabungkan pemanggilan stylesheet melalui CSS entry point (index.css)
+- Menyederhanakan asset loading pada index.html
+- Merapikan struktur folder CSS untuk mendukung arsitektur modular
+
+### Ditambahkan
+- index.css
+
+---
+
 ## [2.1.3] - 2026-06-06
 
 ### Diubah

@@ -1,3 +1,39 @@
+error
+initSalaryNotice (notice.js) di summaryTable.js
+
+
+draft es module
+logic/
+├─ salary.js
+├─ summary.js
+└─ period.js
+getPeriodData()
+getPeriodTotals()
+getActiveWorkers()
+
+============================================================================================================
+utils/format.js
+============================================================================================================
+
+formatNumber() => utils/format.js
+  - calculator.js
+  - mainTable.js
+  - summaryTable.js
+  - notice.js
+
+formatDisplayDate() => utils/format.js
+  - mainTable.js
+
+formatShortDate() => utils/format.js
+  - summaryTable.js
+
+
+============================================================================================================
+============================================================================================================
+
+
+
+
 update in github:
 
 - Di Ubah
@@ -7,6 +43,13 @@ update in github:
   - 06-08.json
 
 - Di Tambahkan
+
+
+ES Module:
+- mainTable
+  formatDisplayDate
+  formatNumber
+  workerListSelection
 
 
 
@@ -27,17 +70,6 @@ next update:
 - initApp semua function
 - js module
 - filter > status, pekerjaan
-- pisahin files json pertahunnya 
-  json/
-    periods/
-      2026/
-        period-004.json
-        period-005.json
-        period-006.json
-      2025/
-        period-001.json
-        period-002.json
-        period-003.json
 
 
 
@@ -50,6 +82,7 @@ version.txt
 doc.txt
 
 css/
+  index.css
   base/
     style.css
     utility.css
@@ -120,13 +153,6 @@ json/
         05-25.json
 
 
-json/
-  data.json
-  jobs.json
-  workers.json
-  period1.json
-  period2.json
-  ...
 
 ALL FUNCTION & GLOBAL VARIABLE
 

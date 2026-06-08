@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="icon" href="./assets/images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="./css/base/utility.css">
-  <link rel="stylesheet" href="./css/base/style.css">
-  <link rel="stylesheet" href="./css/components/summary.css">
-  <link rel="stylesheet" href="./css/components/main.css">
-  <link rel="stylesheet" href="./css/components/header.css">
-  <link rel="stylesheet" href="./css/components/sidebar.css">
-  <link rel="stylesheet" href="./css/components/notice.css">
-  <link rel="stylesheet" href="./css/components/security.css">
-  <link rel="stylesheet" href="./css/components/footer.css">
+  <link rel="stylesheet" href="./css/index.css">
+<!--   <link rel="stylesheet" href="./css/base/utility.css">
+<link rel="stylesheet" href="./css/base/style.css">
+<link rel="stylesheet" href="./css/components/summary.css">
+<link rel="stylesheet" href="./css/components/main.css">
+<link rel="stylesheet" href="./css/components/header.css">
+<link rel="stylesheet" href="./css/components/sidebar.css">
+<link rel="stylesheet" href="./css/components/notice.css">
+<link rel="stylesheet" href="./css/components/security.css">
+<link rel="stylesheet" href="./css/components/footer.css"> -->
 </head>
 <body class="body--overflow">
   <div class="container container--security">
@@ -290,25 +291,23 @@
         footerText.innerHTML = `&copy; Oleh Vicky Suganda Putra (V${latestVersion})`;
     });
   </script>
-  <script src="./js/utils/format.js"></script>
-  <script src="./js/ui/notice.js"></script>
-  <script src="./js/ui/security.js"></script>
   
-  <script src="./js/ui/sidebar/index.js"></script>
-  <script src="./js/ui/sidebar/calculator.js"></script>
-  <script src="./js/ui/sidebar/feedback.js"></script>
-  <script src="./js/ui/sidebar/report.js"></script>
-  <script src="./js/ui/sidebar/ui.js"></script>
-  
-  <script src="./js/ui/mainTable.js"></script>
-  <script src="./js/ui/summaryTable.js"></script>
-  <script src="./js/ui/workerList.js"></script>
-  <script src="./js/ui/dropdown.js"></script>
 
   <script type="module" src="./js/app/init.js"></script>
-  <!--
-    tidak perlu dipanggil karena sudah di import menggunakan js
-    <script type="module" src="./js/data/loader.js"></script>
-  -->
+  
+  <!-- Sudah ES module -->
+  <!-- <script src="./js/utils/format.js"></script> -->
+  <!-- <script src="./js/ui/notice.js"></script> -->
+  <!-- <script src="./js/ui/mainTable.js"></script> -->
+  <!-- <script src="./js/ui/summaryTable.js"></script> -->
+  <!-- <script src="./js/ui/workerList.js"></script> -->
+  <!-- <script src="./js/ui/dropdown.js"></script> -->
+  <!-- <script src="./js/ui/security.js"></script> -->
+  <!-- <script src="./js/ui/sidebar/index.js"></script> -->
+  <!-- <script src="./js/ui/sidebar/calculator.js"></script> -->
+  <!-- <script src="./js/ui/sidebar/feedback.js"></script> -->
+  <!-- <script src="./js/ui/sidebar/report.js"></script> -->
+  <!-- <script src="./js/ui/sidebar/ui.js"></script> -->
+  <!-- <script type="module" src="./js/data/loader.js"></script> -->
 </body>
 </html>
