@@ -1,7 +1,7 @@
 // =======================
 // CONTROLLER (ENTRY)
 // =======================
-function workerListSelection() {
+export function workerListSelection() {
    const mainTableWorkers = document.querySelectorAll(".main__table-workers");
    const mainTableWorkersLists = document.querySelectorAll(".main__table-workers-list");
    

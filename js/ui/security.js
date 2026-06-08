@@ -12,7 +12,7 @@ const AudioSystem = (function () {
 })();
 
 
-function security() {
+export function security() {
   // ambil tombol login
   const btn = document.querySelector(".section__button");
 
@@ -86,4 +86,3 @@ function openApp() {
 
 
 // jalankan function saat load
-security();

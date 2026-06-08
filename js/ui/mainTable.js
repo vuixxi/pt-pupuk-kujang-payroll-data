@@ -1,7 +1,10 @@
+import { formatNumber, formatDisplayDate } from "./../utils/format.js";
+import { workerListSelection } from "./workerList.js";
+
 /***********************
  * 🎮 CONTROLLER
  ***********************/
-function handleMain(data, period, workerMap, jobMap) {
+export function handleMain(data, period, workerMap, jobMap) {
    // ambil elemen tbody dan tfoot tabel
    const tbody = document.querySelector(".main tbody");
    const tfoot = document.querySelector(".main tfoot");
@@ -94,7 +97,7 @@ function createTableFootRows(totals) {
  * 🧠 LOGIC (PURE FUNCTION)
  ***********************/
 
-function calculateDailySalary(item, jobMap = {}) {
+export function calculateDailySalary(item, jobMap = {}) {
   // ambil data job
   const job = jobMap[item.job] || {};
 
@@ -106,6 +109,7 @@ function calculateDailySalary(item, jobMap = {}) {
   // hitung total gaji harian
   // const dailyTotalSalary = production * rate;
   
+  let dailyTotalSalary = 0;
   // cek tipe pekerjaan
   if (job.type === "per_worker") {
     dailyTotalSalary = rate * workerCount;
@@ -115,7 +119,7 @@ function calculateDailySalary(item, jobMap = {}) {
   }
 
   // bagi rata ke semua worker
-  const dailySalaryPerWorker = workerCount ? dailyTotalSalary / item.workers.length : 0;
+  const dailySalaryPerWorker = workerCount ? dailyTotalSalary / workerCount : 0;
 
   // return hasil perhitungan
   return { dailyTotalSalary, dailySalaryPerWorker };

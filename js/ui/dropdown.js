@@ -1,7 +1,11 @@
+import { handleMain } from "./mainTable.js";
+import { getData } from "./summaryTable.js";
+
+
 // =======================
 // CONTROLLER (ENTRY)
 // =======================
-function handleDropDown(data, period, workerMap, jobMap) {
+export function handleDropDown(data, period, workerMap, jobMap) {
 
    // ambil elemen dropdown dan title
    const mainTitle = document.querySelector(".main .main__title");

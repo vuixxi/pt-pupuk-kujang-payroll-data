@@ -1,16 +1,20 @@
+import { formatNumber, formatShortDate } from "./../utils/format.js";
+import { calculateDailySalary } from "./mainTable.js";
+import { initSalaryNotice } from "./notice.js";
+
 
 // =======================
 // STATE (GLOBAL)
 // =======================
-let noticeInterval = null;
-let noticeQueue = [];
-let lastEmployee = null;
+// let noticeInterval = null;
+// let noticeQueue = [];
+// let lastEmployee = null;
 
 
 // =======================
 // CONTROLLER
 // =======================
-function getData(data, period, workerMap, jobMap) {
+export function getData(data, period, workerMap, jobMap) {
   // ambil elemen tabel summary
   const tbody = document.querySelector(".summary tbody");
   const tfoot = document.querySelector(".summary tfoot");
@@ -236,7 +240,7 @@ function renderSalaryCells(salaries, entries) {
 // =======================
 // UI INTERACTION
 // =======================
-function setupSummaryToggle() {
+export function setupSummaryToggle() {
 
   // ambil elemen summary dan tombol toggle
   const summary = document.querySelector(".summary");

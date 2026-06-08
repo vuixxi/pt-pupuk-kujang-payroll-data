@@ -1,4 +1,10 @@
-function initSalaryNotice(groupedData){
+import { formatNumber } from "./../utils/format.js";
+
+let noticeInterval = null;
+let noticeQueue = [];
+let lastEmployee = null;
+
+export function initSalaryNotice(groupedData){
 
   // ambil nama dan gaji bersih tiap worker
   const employees = groupedData.map(w => ({
