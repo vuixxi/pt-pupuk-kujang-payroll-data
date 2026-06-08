@@ -1,4 +1,4 @@
-function formatNumber(num) {
+export function formatNumber(num) {
    // bulatkan angka dan format ke rupiah style Indonesia
    return Math.round(num).toLocaleString("id-ID");
 }
@@ -11,7 +11,7 @@ const dateFormatter = new Intl.DateTimeFormat("id-ID", {
    year: "numeric"
 });
 
-function formatDisplayDate(date) {
+export function formatDisplayDate(date) {
    // ubah string tanggal jadi format panjang
    return dateFormatter.format(new Date(date));
 }
@@ -22,7 +22,7 @@ const shortDateFormatter = new Intl.DateTimeFormat("id-ID", {
   month: "2-digit"
 });
 
-function formatShortDate(date) {
+export function formatShortDate(date) {
   // ubah tanggal jadi format pendek dan tambah spasi
   return shortDateFormatter
     .format(new Date(date))
