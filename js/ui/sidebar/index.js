@@ -20,7 +20,7 @@ function isMenuOpen(parts) {
 // =======================
 // SIDEBAR
 // =======================
-function handleSidebar() {
+export function handleSidebar() {
   const header = document.querySelector(".header");
   const headerDropdownTitle = document.querySelector(".header .header__dropdown-title");
   const headerMenuButton = document.querySelector(".header__menu-button");
@@ -58,7 +58,7 @@ function handleSidebar() {
 // =======================
 // CONTENT
 // =======================
-function handleContent() {
+export function handleContent() {
   const container = document.querySelector(".sidebar-content");
   const titleEl = document.querySelector(".sidebar-content__title");
 
@@ -88,7 +88,7 @@ function handleContent() {
 // =======================
 // CONTENT CLOSE
 // =======================
-function handleContentClose() {
+export function handleContentClose() {
   const closeBtn = document.querySelector(".sidebar-content__close");
   if (!closeBtn) return;
 

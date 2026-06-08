@@ -1,3 +1,5 @@
+import { formatNumber } from "./../../utils/format.js";
+
 // =======================
 // CONSTANT
 // =======================
@@ -34,7 +36,7 @@ function getActiveRate() {
 // =======================
 // CONTROLLER
 // =======================
-function initCalculatorTabs(calculateCallback) {
+export function initCalculatorTabs(calculateCallback) {
   document.addEventListener("click", (e) => {
     if (!e.target.classList.contains("calculator__tab")) return;
 
@@ -45,7 +47,7 @@ function initCalculatorTabs(calculateCallback) {
   });
 }
 
-function initCalculator() {
+export function initCalculator() {
   const jobInput = document.querySelector(".calculator__input-job");
   const workerInput = document.querySelector(".calculator__input-worker");
   const output = document.querySelector(".calculator__output");

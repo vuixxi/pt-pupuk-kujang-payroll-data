@@ -1,3 +1,5 @@
+import { showAlert } from "./ui.js";
+
 // =======================
 // LOGIC (PURE)
 // =======================
@@ -9,7 +11,7 @@ function isReportValid(report) {
 // =======================
 // CONTROLLER
 // =======================
-function handleReport() {
+export function handleReport() {
   const reportInput = document.querySelector("#reportInput");
   const reportButton = document.querySelector(".report__button");
 

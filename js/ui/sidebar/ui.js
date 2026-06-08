@@ -1,6 +1,6 @@
 // =======================
 // UI (COMMON)
 // =======================
-function showAlert(message) {
+export function showAlert(message) {
   alert(message);
 }

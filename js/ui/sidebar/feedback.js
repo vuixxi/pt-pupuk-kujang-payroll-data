@@ -1,3 +1,5 @@
+import { showAlert } from "./ui.js";
+
 // =======================
 // LOGIC (PURE)
 // =======================
@@ -9,7 +11,7 @@ function isFeedbackValid(criticism, suggestion) {
 // =======================
 // CONTROLLER
 // =======================
-function handleFeedback() {
+export function handleFeedback() {
   const criticismInput = document.querySelector("#criticism");
   const suggestionInput = document.querySelector("#suggestion");
   const feedbackButton = document.querySelector(".feedback__button");
