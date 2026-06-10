@@ -1,17 +1,3 @@
- :root {
-  --primary: #2563eb;
-  --primary-light: #dbeafe;
-  --primary-dark: #1d4ed8;
-  --success: #16a34a;
-  --warning: #f59e0b;
-  --danger: #dc2626;
-  --text: #1f2937;
-  --text-light: #6b7280;
-  --border: #e5e7eb;
-  --bg: #f8fafc;
-  --white: #ffffff;
-}
-
 .summary {
   display: grid;
   gap: 1rem;
@@ -28,62 +14,22 @@
 .summary .summary__title {
   text-align: center;
   font-size: 1.4rem;
-  color: #111827;
+  color: var(--text);
 }
 
-
-
-/* 
-.summary .summary__table-wrapper {
-  overflow: auto;
-  padding-bottom: 1rem;
+.summary .summary__table thead th.paid {
+  /* color: #81C784; */
+  color: var(--success-light-hover);
 }
 
-.summary .summary__table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 1000px;
+.summary .summary__table tbody td.paid strong {
+  /* color: #1B5E20; */
+  color: var(--success);
 }
 
-.summary .summary__table th,
-.summary .summary__table td {
-  padding: 0.4rem 0.8rem;
-  border: solid 2px #555555;
-  white-space: nowrap;
-}
-
-.summary .summary__table th strong,
-.summary .summary__table td strong {
-  color: #444444;
-}
-
-.summary .summary__table th.paid {
-  color: #81C784;
-}
-
-.summary .summary__table td.paid strong {
-  color: #1B5E20;
-}
-
-.summary .summary__table th {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.summary .summary__table tbody tr td:nth-child(1) {
-  text-align: center;
-}
-
-.summary .summary__table tfoot tr {
-  background-color: #dadada;
-} */
-
-.summary .summary__table th.paid {
-  color: #81C784;
-}
-
-.summary .summary__table td.paid strong {
-  color: #1B5E20;
+.summary .summary__table tfoot td.paid strong {
+  /* color: #1B5E20; */
+  color: var(--success-dark);
 }
 
 .summary__table-wrapper {
@@ -92,6 +38,9 @@
   margin: 0 auto;
   overflow-x: auto;
   border-radius: 16px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .summary__table {
@@ -100,9 +49,6 @@
   background: var(--white);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.05),
-    0 1px 3px rgba(0, 0, 0, 0.08);
   font-size: 0.9rem;
 }
 
@@ -116,7 +62,7 @@
 /* Header */
 .summary__table thead th {
   background: var(--primary);
-  color: white;
+  color: var(--white);
   padding: 12px 8px;
   text-align: center;
   font-weight: 600;
@@ -148,7 +94,7 @@
 }
 
 .summary__table tbody tr:nth-child(even) {
-  background: #fafafa;
+  background: var(--white);
 }
 
 .summary__table tbody tr:hover {
@@ -168,7 +114,7 @@
 }
 
 .summary__table tfoot tr {
-  background: #ecfdf5;
+  background: var(--success-light);
   color: var(--success);
 }
 

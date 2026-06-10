@@ -18,8 +18,8 @@
 /*   color: #9f1239;
 background-color: #fde8f3;
 border: 1.5px solid #f9a8d4; */
-  background-color: #dbeafe;
-  color: #1d4ed8;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
   border-radius: 25px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;

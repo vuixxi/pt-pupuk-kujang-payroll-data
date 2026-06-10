@@ -25,7 +25,7 @@
             radial-gradient(circle at 80% 30%, #FFF9C4 0%, transparent 40%),
             radial-gradient(circle at 30% 80%, #C8E6C9 0%, transparent 40%),
             radial-gradient(circle at 75% 75%, #BBDEFB 0%, transparent 40%),
-            #ffffff;
+            var(--primary-light);
   z-index: 9999999;
   transition: opacity 1s, scale 0s 1s;
 }
@@ -50,19 +50,21 @@
   font-weight: bold;
   font-size: 2rem;
 }
+
 .security .security__header .security__paragraph {
   font-style: italic;
-  color: #555555;
+  color: var(--text-light);
 }
 
 .security .security__main {
   display: grid;
   gap: 1rem;
   padding: 1rem;
+  border: solid 1px var(--border--hover);
   border-radius: 10px;
   /* background-color: #ffffff; */
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .security .security__main .security__item {}
@@ -80,7 +82,3 @@
 .security .security__main input {}
 
 .security .security__main button {}
-
-
-
-

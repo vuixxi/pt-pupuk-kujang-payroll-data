@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   padding: 0.6rem;
-  background-color: #f8fafc;
+  background-color: var(--bg);
   box-shadow: -1.5px 0 2px rgba(0, 0, 0, 0.2);
   visibility: visible;
   z-index: 99;
@@ -77,7 +77,7 @@
 .sidebar-content__controls {
   display: flex;
   flex-direction: column;
-  background-color: #eaeaea;
+  background-color: var(--bg);
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -91,7 +91,7 @@
   left: 0;
   flex-shrink: 0;
   width: 100%;
-  background-color: #eaeaea;
+  background-color: var(--bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,10 +133,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
-  color: salmon;
+  background-color: var(--success-light);
+  color: var(--success);
   border-radius: 3px;
-  border: solid 3px #aeaeae;
+  border: solid 3px var(--success-light-hover);
 }
 
 .sidebar-content .help {}
@@ -144,6 +144,7 @@
 .sidebar-content .help .help__grid {}
 
 .sidebar-content .help .help__row {
+  background-color: var(--white);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
@@ -151,7 +152,7 @@
 }
 
 .sidebar-content .help .help__row:nth-child(even) {
-  background-color: #dadada;
+  background-color: var(--bg);
 }
 
 .sidebar-content .help .help__col {}
@@ -192,13 +193,13 @@
 
 .sidebar-content .feedback textarea {
   min-height: 120px; /* pake js biar responsive*/
-  color: #333333;
+  color: var(--text);
   display: block;
   outline: none;
   padding: 0.4rem;
   border-radius: 3px;
-  border: solid  2px #dadada;
-  background-color: #eaeaea;
+  border: solid  2px var(--border);
+  background-color: var(--bg);
   width: 100%;
   font-family: "Quicksand-Bold";
   font-size: 1rem;
@@ -206,7 +207,7 @@
 }
 
 .sidebar-content .feedback textarea:focus {
-  border-color: #bfbfbf;
+  border-color: var(--border-hover);
 }
 
 .sidebar-content .feedback .feedback__submit {
@@ -237,13 +238,13 @@
 
 .sidebar-content .report textarea {
   min-height: 120px; /* pake js biar responsive*/
-  color: #333333;
+  color: var(--text);
   display: block;
   outline: none;
   padding: 0.4rem;
   border-radius: 3px;
-  border: solid  2px #dadada;
-  background-color: #eaeaea;
+  border: solid  2px var(--border);
+  background-color: var(--bg);
   width: 100%;
   font-family: "Quicksand-Bold";
   font-size: 1rem;
@@ -251,7 +252,7 @@
 }
 
 .sidebar-content .report textarea:focus {
-  border-color: #bfbfbf;
+  border-color: var(--border-hover);
 }
 
 .sidebar-content .report .report__submit {
