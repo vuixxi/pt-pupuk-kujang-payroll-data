@@ -10,8 +10,8 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #f8fafc;
-   color: #212121;
+   background-color: var(--bg);
+   color: var(--text);
    cursor: pointer;
    outline: none;
    padding: 0.4rem 0.8rem;
@@ -19,51 +19,51 @@
    border-radius: 3px;
    font-family: "Quicksand-Bold";
    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
-   transition: 0.2s;
+   transition: 0.3s;
 }
 
 .u-button:disabled {
-  background-color: #aeaeae;
-  color: #555555;
+  background-color: var(--disabled-bg);
+  color: var(--disabled-text);
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .u-button:disabled:hover {
   cursor: default;
-  background-color: #aeaeae;
-  color: #555555;
+  background-color: var(--disabled-bg);
+  color: var(--disabled-text);
 }
+
+.u-button:hover,
+.u-button--active {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.u-button--active:disabled,
+.u-button--active:disabled:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
 .u-icon {
-  color: #333333;
+  cursor: pointer;
+  color: var(--text);
   width: 1.7rem;
   height: 1.7rem;
   padding: 0.2rem;
   transition: 0.2s;
 }
 
-.u-button:hover,
-.u-button--active {
-  background-color: #212121;
-  color: #eaeaea;
-}
-
-.u-button--active:disabled {
-  background-color: #212121;
-  color: #eaeaea;
-}
-.u-button--active:disabled:hover {
-  background-color: #212121;
-  color: #eaeaea;
-}
-
 .u-link {
+  cursor: pointer;
   text-decoration: none;
-  color: #212121;
+  color: var(--text);
   transition: 0.2s;
 }
 
 .u-link:hover {
-  color: blue;
+  color: var(--primary);
 }
 
 .u-input {
@@ -71,11 +71,19 @@
   outline: none;
   font-family: "Quicksand-Bold";
   padding: 0.4rem;
-  border: solid 3px #aeaeae;
+  background-color: var(--bg);
+  color: var(--text);
+  border: solid 3px var(--border);
   border-radius: 3px;
   transition: 0.2s;
 }
 
 .u-input:focus {
-  border-color: salmon;
+  border-color: var(--primary-light);
+}
+
+.u-input:disabled {
+  background-color: var(--disabled-input-bg);
+  color: var(--disabled-input-text);
+  border-color: var(--disabled-input-border);
 }
