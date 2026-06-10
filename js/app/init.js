@@ -7,6 +7,7 @@ import { handleReport } from "./../ui/sidebar/report.js";
 import { getData, setupSummaryToggle } from "./../ui/summaryTable.js";
 import { handleDropDown } from "./../ui/dropdown.js";
 import { handleMain } from "./../ui/mainTable.js";
+import { initFooterVersion } from "./../ui/footerVersion.js";
 
 async function startApp() {
   const appData = await getAppData();
@@ -38,4 +39,6 @@ function initApp(data, period, workerMap, jobMap) {
 
   handleMain(data, period, workerMap, jobMap);
   setupSummaryToggle();
+  
+  initFooterVersion();
 }
