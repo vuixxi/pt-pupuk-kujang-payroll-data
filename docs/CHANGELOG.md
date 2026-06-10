@@ -7,6 +7,35 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.1.5] - 2026-06-09
+### Refactor (Architecture)
+- docs/CHANGELOG.md
+- docs/README.md
+- docs/doc.txt
+- docs/version.txt
+
+## Diubah
+- Mengoptimalkan tampilan
+  - main.css
+  - summary.css
+- Mengganti hardcoded color menjadi CSS variables dari variables.css
+  - style.css
+  - utility.css
+  - security.css
+  - header.css
+  - sidebar.css
+  - main.css
+  - summary.css
+  - notice.css
+  - footer.css
+
+
+## Ditambahkan
+- base/variables.css
+- ui/footerVersion.js
+
+---
+
 ## [2.1.4] - 2026-06-07
 
 ### Refactor (Architecture)
