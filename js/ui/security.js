@@ -1,3 +1,5 @@
+import { handleSidebar } from "./sidebar/index.js";
+
 const AudioSystem = (function () {
   let bg = document.querySelector('.audio-system__bg');
   
@@ -75,11 +77,20 @@ function showAlert(message) {
 }
 
 function openApp() {
+  let container = document.querySelector(".container");
+  let security = document.querySelector(".security");
+  
   document.body.classList.remove("body--overflow");
-  document.querySelector(".container").classList.remove("container--security");
-  document.querySelector(".security").classList.add("security--hidden");
+  container.classList.remove("container--security");
+  security.classList.add("security--hidden");
+  
+  setTimeout(function() {
+    security.style.visibility = "hidden";
+    security.style.display = "none";
+  }, 3000);
   
   AudioSystem.playBg();
+  handleSidebar();
 }
 
 
