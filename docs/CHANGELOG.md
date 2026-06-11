@@ -7,7 +7,45 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.1.7] - 2026-06-10
+
+
+---
+
+## [2.1.6] - 2026-06-10
+
+### Diperbaiki
+- Memperbaiki bug pada halaman security yang tidak dapat diklik setelah login pada perangkat tertentu
+  - base/style.css
+  - components/security.css
+  - app/init.js
+  - ui/security.js
+- Mengoptimalkan halaman sidebar
+  - ui/sidebar.css
+
+- Memperbaiki bug ukuran sidebar yang tidak sesuai
+  - sidebar/index.js
+
+- Memperbaiki pemanggilan calculator menggunakan jobs.json
+  - sidebar-content.html
+  - calculator.js
+
+### Refactor
+- Memecah struktur halaman menjadi beberapa partials
+  - partials/login.html
+  - partials/header.html
+  - partials/sidebar.html
+  - partials/sidebar-content.html
+  - partials/main.html
+  - partials/summary.html
+
+- Menambahkan loader untuk menghubungkan dan memuat seluruh partials HTML
+  - app/components.js
+
+---
+
 ## [2.1.5] - 2026-06-09
+
 ### Refactor (Architecture)
 - docs/CHANGELOG.md
 - docs/README.md
@@ -16,8 +54,6 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ## Diubah
 - Mengoptimalkan tampilan
-  - main.css
-  - summary.css
 - Mengganti hardcoded color menjadi CSS variables dari variables.css
   - style.css
   - utility.css

@@ -1,41 +1,9 @@
 Update in github:
+        
+period.json => quantity
+hapus period karena sudah ada periodId. koneksi ulang pada mainTable.js
 
-- refactor
-  - docs/CHANGELOG.md
-  - docs/README.md
-  - docs/doc.txt
-  - docs/version.txt
-
-- Diubah
-  - index.html (security)
-  
-  - main.css
-  - summary.css
-  
-  - init.js
-  
-  - 06-08.json
-
-- Ditambahkan
- - base/variables.css
- - ui/footerVersion.js
-
-ubah warna css memakai variable
-- selesai
-  - style.css
-  - utility.css
-  - security.css
-  - header.css
-  - sidebar.css
-  - main.css
-  - summary.css
-  - notice.css
-  - footer.css
-
-
-
-
-
+update calculator.js agar clean dan proffesional
 
 
 draft es module
@@ -135,6 +103,13 @@ docs/
   README.md
   version.txt
   doc.txt
+partials/
+  - login.html
+  - header.html
+  - sidebar.html
+  - sidebar-content.html
+  - main.html
+  - summary.html
 css/
   index.css
   base/
@@ -151,6 +126,7 @@ css/
 js/
   app/
     init.js
+    components.js
   data/
     loader.js
   ui/
@@ -302,3 +278,55 @@ docs/
     }
   ]
 }
+
+
+
+
+js/
+├── app/
+│   ├── init.js
+│   └── components.js
+│
+├── features/
+│   ├── auth/
+│   │   └── security.js
+│   │
+│   ├── payroll/
+│   │   ├── mainTable.js
+│   │   ├── summaryTable.js
+│   │   └── workerList.js
+│   │
+│   ├── period/
+│   │   └── dropdown.js
+│   │
+│   └── sidebar/
+│       ├── calculator.js
+│       ├── feedback.js
+│       ├── report.js
+│       └── index.js
+│
+├── services/
+│   └── loader.js
+│
+├── shared/
+│   ├── utils/
+│   │   └── format.js
+│   │
+│   └── ui/
+│       ├── notice.js
+│       └── footerVersion.js
+│
+└── tests/
+
+
+
+
+macam macam tests:
+
+console.log()
+↓
+assert manual
+↓
+Vitest / Jest
+↓
+CI/CD otomatis
