@@ -1,4 +1,5 @@
 import { security } from "./../ui/security.js";
+import { loadAppComponents } from "./components.js";
 import { getAppData } from "./../data/loader.js";
 import { handleSidebar, handleContent, handleContentClose } from "./../ui/sidebar/index.js";
 import { initCalculatorTabs, initCalculator } from "./../ui/sidebar/calculator.js";
@@ -10,6 +11,9 @@ import { handleMain } from "./../ui/mainTable.js";
 import { initFooterVersion } from "./../ui/footerVersion.js";
 
 async function startApp() {
+
+  await loadAppComponents();
+  
   const appData = await getAppData();
 
   if (!appData) return;
@@ -29,10 +33,12 @@ function initApp(data, period, workerMap, jobMap) {
   getData(data, period, workerMap, jobMap);
   handleDropDown(data, period, workerMap, jobMap);
   
-  handleSidebar();
+  // handleSidebar() dipindah ke security,js (bug pada lebar sidebar)
+  
+  // handleSidebar();
   handleContent();
   handleContentClose();
-  const calculate = initCalculator();
+  const calculate = initCalculator(jobMap);
   initCalculatorTabs(calculate);
   handleFeedback();
   handleReport();
