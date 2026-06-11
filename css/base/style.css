@@ -22,12 +22,15 @@ body.body--overflow {
 }
 
 .container {
+  display: block;
+  opacity: 1;
   margin-bottom: 3rem;
   transition: 1s 1s;
 }
 
 .container.container--security {
   opacity: 0;
+  display: none;
 }
 
 body::-webkit-scrollbar,
