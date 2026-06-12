@@ -2,14 +2,22 @@
 
 Semua perubahan penting pada proyek ini akan dicatat di file ini.
 
-Format terinspirasi dari Keep a Changelog.  
+Format terinspirasi dari Keep a Changelog.
 Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
-## [2.1.7] - 2026-06-10
+## [2.1.7] - 2026-06-11
 
+### Diperbaiki
+  - Memperbaiki periodId pada dropdown.js
+  - Memperbaiki quantity pada mainTable.js
+  - Mengoptimalkan source code sidebar/calculator.js
 
+### Diubah
+  - Menghapus semua key period, karena sudah ada periodId pada semua period.json
+  - Mengganti semua key totalProduction menjadi quantity pada semua period.json
+  
 ---
 
 ## [2.1.6] - 2026-06-10

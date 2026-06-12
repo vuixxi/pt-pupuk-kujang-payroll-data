@@ -1,10 +1,51 @@
 Update in github:
-        
-period.json => quantity
-hapus period karena sudah ada periodId. koneksi ulang pada mainTable.js
 
-update calculator.js agar clean dan proffesional
 
+calculator.js
+sesuaikan type per_unit & per_worker
+
+
+
+gunakan state untuk data, period, workerMap, JobMap
+
+const state = {
+  data,
+  period,
+  workerMap,
+  jobMap
+};
+
+lalu migrasi satu file dulu.
+Misalnya:
+handleMain(state);
+Jangan semuanya sekaligus.
+
+Karena kalau langsung:
+Misalnya:
+getData(state);
+handleDropDown(state);
+handleMain(state);
+...
+lalu ada bug, kamu tidak tahu file mana yang menyebabkan masalah.
+
+// selectors.js
+export function getCurrentPeriodData(state) {
+  return state.data[state.period].data;
+}
+
+// all.js
+const currentData = getCurrentPeriodData(state);
+
+state/
+├── store.js
+├── selectors.js
+└── actions.js
+
+
+
+
+breaking change / debugging / test:
+kamu tau ga? aku takut banget setelah mengenal clean code. soalnya kebanyakan kalo ada error, malah ga ada diconsole
 
 draft es module
 logic/
@@ -318,6 +359,11 @@ js/
 │
 └── tests/
 
+Perbaikan struktur folder
+selesai:
+  - app/
+  
+
 
 
 
@@ -330,3 +376,29 @@ assert manual
 Vitest / Jest
 ↓
 CI/CD otomatis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
