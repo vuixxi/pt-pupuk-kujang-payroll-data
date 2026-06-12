@@ -10,11 +10,12 @@ function calculateResult(job, worker, rate) {
 
 function getActiveRate(jobMap) {
   const activeTab = document.querySelector(".calculator__tab.u-button--active");
+  
   if (!activeTab) return 0;
   
-  const jobId =activeTab.dataset.jobId;
+  const jobId = activeTab.dataset.jobId;
   
-  return jobMap[jobId].rate || 0;
+  return jobMap[jobId]?.rate ?? 0;
 }
 
 
@@ -37,7 +38,8 @@ export function initCalculator(jobMap) {
   const workerInput = document.querySelector(".calculator__input-worker");
   const output = document.querySelector(".calculator__output");
   
-  renderCalculatorTab(jobMap);
+  renderCalculateTab(jobMap);
+  activateFirstTab();
 
   function calculate() {
     const job = Number(jobInput.value);
@@ -55,18 +57,18 @@ export function initCalculator(jobMap) {
 }
 
 
-// new
-function renderCalculatorTab(jobMap) {
-  let nav = document.querySelector(".calculator__navbar");
-  Object.values(jobMap).forEach(job => {
-    nav.innerHTML += `<button class="calculator__tab u-button" data-job-id="${job.id}">${job.name}</button>`;
-  });
-}
 
 
 // =======================
 // UI
 // =======================
+function calculateTab(jobMap) {
+  return Object.values(jobMap).map(job =>`<button class="calculator__tab u-button" data-job-id="${job.id}">${job.name}</button>`).join("");
+}
+
+function renderCalculateTab(jobMap) {
+  document.querySelector(".calculator__navbar").innerHTML = calculateTab(jobMap);
+}
 
 function renderCalculatorOutput(output, result) {
   output.innerText = result ? formatNumber(result) : "0";
@@ -77,6 +79,14 @@ function resetTabs() {
     tab.classList.remove("u-button--active");
     tab.disabled = false;
   });
+}
+
+function activateFirstTab() {
+  const firstTab = document.querySelector(".calculator__tab");
+
+  if (!firstTab) return;
+
+  activateTab(firstTab);
 }
 
 function activateTab(tab) {
