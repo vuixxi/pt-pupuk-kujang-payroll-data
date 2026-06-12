@@ -58,7 +58,7 @@ function createTableBodyRows(items, workerMap, jobMap) {
             <td>${index + 1}</td>
             <td>${formatDisplayDate(item.date)}</td>
             <td>${job.name || "Unknown"}</td>
-            <td>${item.totalProduction} ${job.unit || ""}</td>
+            <td>${item.quantity} ${job.unit || ""}</td>
             <td class="main__table-workers">
               <div class="main__table-workers-title">${item.workers.length} Orang</div>
               <div class="main__table-workers-list main__table-workers-list--hidden">${myWorkers}</div>
@@ -103,7 +103,7 @@ export function calculateDailySalary(item, jobMap = {}) {
 
   // ambil rate dan total produksi
   const rate = job.rate || 0;
-  const production = item.totalProduction || 0;
+  const production = item.quantity || 0;
   const workerCount = item.workers.length;
 
   // hitung total gaji harian

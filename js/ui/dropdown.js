@@ -47,7 +47,7 @@ export function handleDropDown(data, period, workerMap, jobMap) {
 function renderDropdownMenu(data, period) {
    return data.map((item, index) => `
       <button type="button" class="header__dropdown-item u-button" data-period="${index}">
-         ${item.period}
+         Periode ${item.periodId}
       </button>
    `).join("");
 }
@@ -91,8 +91,8 @@ function setupDropdownSelection(
 // UI ACTION
 // =======================
 function setDropdownTitle(headerDropdownTitle, mainTitle, data, period) {
-   headerDropdownTitle.textContent = data[period].period;
-   mainTitle.innerHTML = `Data Pekerjaan PT PUPUK KUJANG ${data[period].period}`;
+   headerDropdownTitle.textContent = `Periode ${data[period].periodId}`;
+   mainTitle.innerHTML = `Data Pekerjaan PT PUPUK KUJANG Periode ${data[period].periodId}`;
 }
 
 function setActiveDropdownItem(items, index) {
