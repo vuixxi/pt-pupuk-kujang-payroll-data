@@ -1,0 +1,23 @@
+{
+  "version": "2.1.7",
+  "createdAt": "2026-06-12T10:00:00Z",
+  "periodId": 23,
+  "loanPerWorker": 0,
+  "loanWorkers": [],
+  "data": [
+    {
+      "date": "2026-06-12",
+      "job": 7,
+      "quantity": 452,
+      "workers": [1, 2, 3, 5, 6, 13],
+      "paid": false
+    },
+    {
+      "date": "2026-06-13",
+      "job": 1,
+      "quantity": 0,
+      "workers": [1, 2, 3, 5, 6, 13],
+      "paid": false
+    }
+  ]
+}

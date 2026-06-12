@@ -2,84 +2,83 @@
   "version": "1.0.2",
   "createdAt": "2026-03-14T10:00:00Z",
   "periodId": 11,
-  "period": "Periode 11",
   "loanPerWorker": 0,
   "loanWorkers": [1, 2, 3, 4, 5, 6],
   "data": [
     {
       "date": "2026-03-07",
       "job": 5,
-      "totalProduction": 108,
+      "quantity": 108,
       "workers": [1, 2, 3, 4, 5],
       "paid": false
     },
     {
       "date": "2026-03-07",
       "job": 4,
-      "totalProduction": 170,
+      "quantity": 170,
       "workers": [1, 2, 3, 4, 5],
       "paid": false
     },
     {
       "date": "2026-03-14",
       "job": 1,
-      "totalProduction": 102,
+      "quantity": 102,
       "workers": [1, 2, 3, 4, 5],
       "paid": false
     },
     {
       "date": "2026-03-16",
       "job": 1,
-      "totalProduction": 125,
+      "quantity": 125,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
       "date": "2026-03-16",
       "job": 2,
-      "totalProduction": 2,
+      "quantity": 2,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": true
     },
     {
       "date": "2026-03-16",
       "job": 4,
-      "totalProduction": 152,
+      "quantity": 152,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
       "date": "2026-03-17",
       "job": 1,
-      "totalProduction": 208,
+      "quantity": 208,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
       "date": "2026-03-17",
       "job": 2,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": true
     },
     {
       "date": "2026-03-17",
       "job": 4,
-      "totalProduction": 94,
+      "quantity": 94,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
       "date": "2026-03-18",
       "job": 5,
-      "totalProduction": 122,
+      "quantity": 122,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     },
     {
       "date": "2026-03-18",
       "job": 4,
-      "totalProduction": 86,
+      "quantity": 86,
       "workers": [1, 2, 3, 4, 5, 6],
       "paid": false
     }

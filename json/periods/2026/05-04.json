@@ -2,63 +2,62 @@
   "version": "2.1.1",
   "createdAt": "2026-05-04T10:00:00Z",
   "periodId": 17,
-  "period": "Periode 17",
   "loanPerWorker": 50000,
   "loanWorkers": [1, 2, 3, 6, 9],
   "data": [
     {
       "date": "2026-05-04",
       "job": 15,
-      "totalProduction": 250,
+      "quantity": 250,
       "workers": [1, 2, 3, 6, 9],
       "paid": false
     },
     {
       "date": "2026-05-05",
       "job": 7,
-      "totalProduction": 305,
+      "quantity": 305,
       "workers": [1, 2, 3, 6, 9],
       "paid": false
     },
     {
       "date": "2026-05-06",
       "job": 1,
-      "totalProduction": 128,
+      "quantity": 128,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     },
     {
       "date": "2026-05-06",
       "job": 16,
-      "totalProduction": 250,
+      "quantity": 250,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     },
     {
       "date": "2026-05-07",
       "job": 17,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 6, 7],
       "paid": true
     },
     {
       "date": "2026-05-07",
       "job": 13,
-      "totalProduction": 250,
+      "quantity": 250,
       "workers": [1, 2, 6, 7],
       "paid": false
     },
     {
       "date": "2026-05-08",
       "job": 1,
-      "totalProduction": 150,
+      "quantity": 150,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": false
     },
     {
       "date": "2026-05-08",
       "job": 17,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 3, 6, 7, 9],
       "paid": true
     }

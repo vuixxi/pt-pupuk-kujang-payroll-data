@@ -2,84 +2,83 @@
   "version": "2.0.0",
   "createdAt": "2026-03-25T10:00:00Z",
   "periodId": 12,
-  "period": "Periode 12",
   "loanPerWorker": 50000,
   "loanWorkers": [1, 2, 3, 4, 5, 6, 7],
   "data": [
     {
       "date": "2026-03-30",
       "job": 1,
-      "totalProduction": 90,
+      "quantity": 90,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": false
     },
     {
       "date": "2026-03-30",
       "job": 3,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": true
     },
     {
       "date": "2026-03-31",
       "job": 1,
-      "totalProduction": 128,
+      "quantity": 128,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": false
     },
     {
       "date": "2026-03-31",
       "job": 2,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": true
     },
     {
       "date": "2026-03-31",
       "job": 3,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": true
     },
     {
       "date": "2026-04-01",
       "job": 1,
-      "totalProduction": 215,
+      "quantity": 215,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": false
     },
     {
       "date": "2026-04-01",
       "job": 2,
-      "totalProduction": 1,
+      "quantity": 1,
       "workers": [1, 2, 3, 4, 5, 6, 7],
       "paid": false
     },
     {
       "date": "2026-04-02",
       "job": 1,
-      "totalProduction": 180,
+      "quantity": 180,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": false
     },
     {
       "date": "2026-04-02",
       "job": 2,
-      "totalProduction": 2,
+      "quantity": 2,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": false
     },
     {
       "date": "2026-04-02",
       "job": 4,
-      "totalProduction": 78,
+      "quantity": 78,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": false
     },
     {
       "date": "2026-04-02",
       "job": 10,
-      "totalProduction": 2,
+      "quantity": 2,
       "workers": [1, 2, 3, 4, 5, 7],
       "paid": false
     }
