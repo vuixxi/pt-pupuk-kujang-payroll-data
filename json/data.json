@@ -21,6 +21,7 @@
     { "periodId": 19, "file": "2026/05-18.json" },
     { "periodId": 20, "file": "2026/05-25.json" },
     { "periodId": 21, "file": "2026/05-30.json" },
-    { "periodId": 22, "file": "2026/06-08.json" }
+    { "periodId": 22, "file": "2026/06-08.json" },
+    { "periodId": 23, "file": "2026/06-12.json" }
   ]
 }
