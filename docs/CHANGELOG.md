@@ -7,6 +7,26 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.1.8] - 2026-06-12
+
+### Refactor
+- Restrukturisasi direktori menjadi berbasis fitur:
+  - `mainTable.js` → `features/payroll/mainTable.js`
+  - `summaryTable.js` → `features/payroll/summaryTable.js`
+  - `workerList.js` → `features/payroll/workerList.js`
+  - `dropdown.js` → `features/period/dropdown.js`
+  - `notice.js` → `features/ui/notice.js`
+  - `footerVersion.js` → `features/ui/footerVersion.js`
+  - `security.js` → `features/auth/login.js`
+
+### Perubahan
+- Direktori `data/` diubah menjadi `services/`.
+
+### Penamaan Ulang
+- `security.js` diubah menjadi `login.js`.
+
+---
+
 ## [2.1.7] - 2026-06-11
 
 ### Diperbaiki
