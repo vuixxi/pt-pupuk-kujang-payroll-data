@@ -7,6 +7,16 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.1.9] - 2026-06-13
+
+### Diubah
+- Mengganti logo aplikasi (`icon.png`) dan favicon (`favicon.png`) pada `header.html`
+
+### Diperbaiki
+- Memperbaiki logika perhitungan pada kalkulator untuk mendukung tipe pekerjaan `per_unit` dan `per_worker` pada `calculator,js`
+
+---
+
 ## [2.1.8] - 2026-06-12
 
 ### Refactor
@@ -30,73 +40,75 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 ## [2.1.7] - 2026-06-11
 
 ### Diperbaiki
-  - Memperbaiki periodId pada dropdown.js
-  - Memperbaiki quantity pada mainTable.js
-  - Mengoptimalkan source code sidebar/calculator.js
+  - Memperbaiki periodId pada `dropdown.js`
+  - Memperbaiki quantity pada `mainTable.js`
+  - Mengoptimalkan source code `sidebar/calculator.js`
 
 ### Diubah
-  - Menghapus semua key period, karena sudah ada periodId pada semua period.json
-  - Mengganti semua key totalProduction menjadi quantity pada semua period.json
+  - Menghapus semua key period, karena sudah ada periodId pada semua `period.json`
+  - Mengganti semua key totalProduction menjadi quantity pada semua `period.json`
   
+---
+
 ---
 
 ## [2.1.6] - 2026-06-10
 
 ### Diperbaiki
 - Memperbaiki bug pada halaman security yang tidak dapat diklik setelah login pada perangkat tertentu
-  - base/style.css
-  - components/security.css
-  - app/init.js
-  - ui/security.js
+  - `base/style.css`
+  - `components/security.css`
+  - `app/init.js`
+  - `ui/security.js`
 - Mengoptimalkan halaman sidebar
-  - ui/sidebar.css
+  - `ui/sidebar.css`
 
 - Memperbaiki bug ukuran sidebar yang tidak sesuai
-  - sidebar/index.js
+  - `sidebar/index.js`
 
 - Memperbaiki pemanggilan calculator menggunakan jobs.json
-  - sidebar-content.html
-  - calculator.js
+  - `sidebar-content.html`
+  - `calculator.js`
 
 ### Refactor
 - Memecah struktur halaman menjadi beberapa partials
-  - partials/login.html
-  - partials/header.html
-  - partials/sidebar.html
-  - partials/sidebar-content.html
-  - partials/main.html
-  - partials/summary.html
+  - `partials/login.html`
+  - `partials/header.html`
+  - `partials/sidebar.html`
+  - `partials/sidebar-content.html`
+  - `partials/main.html`
+  - `partials/summary.html`
 
 - Menambahkan loader untuk menghubungkan dan memuat seluruh partials HTML
-  - app/components.js
+  - `app/components.js`
 
 ---
 
 ## [2.1.5] - 2026-06-09
 
 ### Refactor (Architecture)
-- docs/CHANGELOG.md
-- docs/README.md
-- docs/doc.txt
-- docs/version.txt
+- `docs/CHANGELOG.md`
+- `docs/README.md`
+- `docs/doc.txt`
+- `docs/version.txt`
 
-## Diubah
+### Diubah
 - Mengoptimalkan tampilan
 - Mengganti hardcoded color menjadi CSS variables dari variables.css
-  - style.css
-  - utility.css
-  - security.css
-  - header.css
-  - sidebar.css
-  - main.css
-  - summary.css
-  - notice.css
-  - footer.css
+  - `style.css`
+  - `utility.css`
+  - `security.css`
+  - `header.css`
+  - `sidebar.css`
+  - `main.css`
+  - `summary.css`
+  - `notice.css`
+  - `footer.css`
 
 
-## Ditambahkan
-- base/variables.css
-- ui/footerVersion.js
+### Ditambahkan
+- `base/variables.css`
+- `ui/footerVersion.js`
 
 ---
 
@@ -105,25 +117,25 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 ### Refactor (Architecture)
 - Migrasi arsitektur aplikasi ke ES Module
 - Modularisasi sistem menjadi beberapa modul terpisah:
-  - utils/format.js
-  - sidebar/index.js
-  - sidebar/ui.js
-  - sidebar/calculator.js
-  - sidebar/feedback.js
-  - sidebar/report.js
-  - ui/mainTable.js
-  - ui/summaryTable.js
-  - ui/dropdown.js
-  - ui/notice.js
-  - ui/workerList.js
+  - `utils/format.js`
+  - `sidebar/index.js`
+  - `sidebar/ui.js`
+  - `sidebar/calculator.js`
+  - `sidebar/feedback.js`
+  - `sidebar/report.js`
+  - `ui/mainTable.js`
+  - `ui/summaryTable.js`
+  - `ui/dropdown.js`
+  - `ui/notice.js`
+  - `ui/workerList.js`
   
-- Penyederhanaan dan peningkatan struktur inisialisasi aplikasi di app/init.js
-- Menggabungkan pemanggilan stylesheet melalui CSS entry point (index.css)
-- Menyederhanakan asset loading pada index.html
+- Penyederhanaan dan peningkatan struktur inisialisasi aplikasi di `app/init.js`
+- Menggabungkan pemanggilan stylesheet melalui CSS entry point `(index.css)`
+- Menyederhanakan asset loading pada `index.html`
 - Merapikan struktur folder CSS untuk mendukung arsitektur modular
 
 ### Ditambahkan
-- index.css
+- `index.css`
 
 ---
 
@@ -131,18 +143,17 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ### Diubah
 - Mengoptimalkan tampilan HTML
-  - index.html
-  - style.css
-  - utility.css
-  - header.css
-  - sidebar.css
-  - main.css
-  - summary.css
-  - notice.css
-  - footer.css
-  
-  - mainTable.js
-  - summaryTable.js
+  - `index.html`
+  - `style.css`
+  - `utility.css`
+  - `header.css`
+  - `sidebar.css`
+  - `main.css`
+  - `summary.css`
+  - `notice.css`
+  - `footer.css`
+  - m`ainTable.js`
+  - `summaryTable.js`
 
 ---
 
@@ -157,7 +168,7 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 ## [2.1.1] - 2026-04-21
 
 ### Diubah
-- Menambahkan type pekerjaan pada jobs.json
+- Menambahkan type pekerjaan pada `jobs.json`
   - Pekerjaan "Mencacah"
 
 ---
@@ -165,13 +176,13 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 ## [2.1.0] - 2026-04-03
 
 ### Ditambahkan
-- Menambahkan type pada jobs.json
-- Menambahkan audio-system index.html
+- Menambahkan type pada `jobs.json`
+- Menambahkan audio-system `index.html`
 
 ### Diubah
-- Menyesuaikan type pada jobs.json dengan mainTable.js
-- Menyesuaikan audio-system security.css
-- Menyesuaikan audio-system security.js
+- Menyesuaikan type pada `jobs.json` dengan `mainTable.js`
+- Menyesuaikan audio-system `security.css`
+- Menyesuaikan audio-system `security.js`
 
 
 ---
@@ -183,26 +194,26 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ### Refactor
 - refactor folder
-  - app/init.js
-  - data/loader.js
+  - `app/init.js`
+  - `data/loader.js`
 - Memisahkan ui, logic, dan controller
-  - ui/mainTable.js
-  - ui/summaryTable.js
-  - ui/workerList.js
-  - ui/dropdown.js
-  - ui/notice.js
-  - ui/security.js
-  - ui/sidebar.js
-  - json/periods/all periods
+  - `ui/mainTable.js`
+  - `ui/summaryTable.js`
+  - `ui/workerList.js`
+  - `ui/dropdown.js`
+  - `ui/notice.js`
+  - `ui/security.js`
+  - `ui/sidebar.js`
+  - `json/periods/all periods`
 
 ### Ditambahkan
 - Menambahkan file baru
-  - ui/calculator.js
-  - ui/feedback.js
-  - ui/report.js
-  - ui/ui.js
-  - CHANGELOG.md
-  - CHANGELOG.js
+  - `ui/calculator.js`
+  - `ui/feedback.js`
+  - `ui/report.js`
+  - `ui/ui.js`
+  - `CHANGELOG.md`
+  - `CHANGELOG.js`
 
 ---
 
@@ -214,69 +225,70 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ## [1.3.2] - 2026-03-19
 ### Diubah
-- Menyesuaikan rate pada app.js, mainTable.js, dan summaryTable.js dengan jobs.json
+- Menyesuaikan rate pada `app.js`, `mainTable.js`, dan `summaryTable.js` dengan `jobs.json`
 
 ### Ditingkatkan
-- Mengoptimalkan app.js
-- Mengoptimalkan mainTable.js
+- Mengoptimalkan `app.js`
+- Mengoptimalkan `mainTable.js`
 
 ---
 
 ## [1.3.1] - 2026-03-19
 ### Ditambahkan
-- Menambahkan unit dan rate pada jobs.json
-- Menambahkan footer pada index.html dan footer.css
+- Menambahkan unit dan rate pada `jobs.json`
+- Menambahkan footer pada `index.html` dan `footer.css`
 
 ### Diubah
-- Menyesuaikan app.js dan mainTable.js dengan jobs.json
-- Mengoptimalkan tampilan main.css
+- Menyesuaikan `app.js` dan `mainTable.js` dengan `jobs.json`
+- Mengoptimalkan tampilan `main.css`
 
 ### Diperbaiki
-- Memperbaiki bug tampilan style.css, notice.css, dan sidebar.css
+- Memperbaiki bug tampilan `style.css`, `notice.css`, dan s`idebar.css`
 
 ### Dihapus
-- Menghapus type pada semua period
+- Menghapus type pada semua `period.json`
 
 ---
 
 ## [1.3.0] - 2026-03-19
 ### Ditambahkan
-- Menambahkan jobs.json
+- Menambahkan `jobs.json`
 
 ### Diubah
 - Mengubah jobs pada semua period menggunakan id
-- Menyesuaikan app.js, mainTable.js dan dropdown.js dengan jobs.json
+- Menyesuaikan `app.js`, `mainTable.js`, dan `dropdown.js` dengan `jobs.json`
 
 ---
 
 ## [1.2.1] - 2026-03-15
 ### Dihapus
-- Menghapus displayDate dan shortDate pada JSON
+- Menghapus displayDate dan shortDate pada semua `period.json`
 
 ### Diperbaiki
-- Menyesuaikan utils.js, mainTable.js dan summaryTable.js dengan period.json
+- Menyesuaikan `utils.js`, `mainTable.js`, dan `summaryTable.js` dengan `period.json`
 
 ---
 
 ## [1.2.0] - 2026-03-14
 ### Ditambahkan
-- Menambahkan version dan createdAt pada JSON
-- Menambahkan workers.json
+- Menambahkan version dan createdAt pada semua `period.json`
+- Menambahkan `workers.json`
 
 ### Diubah
-- Mengubah workers pada semua period menggunakan id
-- Menyesuaikan app.js, mainTable.js, summaryTable.js, dropdown.js dengan workers.json
+- Mengubah `workers.json` pada semua `period.json` menggunakan id
+- Menyesuaikan `app.js`, `mainTable.js`, `summaryTable.js`, dan `dropdown.js` dengan `workers.json`
 
 ---
 
 ## [1.1.0] - 2026-03-13
 ### Diubah
 - Mengubah format tanggal pada JSON (date dan displayDate)
-- Menyesuaikan mainTable.js dengan date dan displayDate
+- Menyesuaikan `mainTable.js` dengan date dan displayDate
 
 ---
 
 ## [1.0.0] - 2025-10-18
+
 ### Ditambahkan
 - Menampilkan tabel data produksi
 - Menampilkan ringkasan produksi
@@ -284,3 +296,5 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 - Navigasi sidebar interaktif
 - Komponen dropdown UI
 - Sistem notifikasi dasar
+
+---
