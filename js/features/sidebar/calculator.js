@@ -3,21 +3,34 @@ import { formatNumber } from "./../../shared/utils/format.js";
 // =======================
 // LOGIC (PURE)
 // =======================
-function calculateResult(job, worker, rate) {
-  if (!job || !worker || !rate) return 0;
-  return (job * rate) / worker;
+function calculateResult(job, worker, activeJob) {
+  if (!activeJob) return 0;
+
+  if (activeJob.type === "per_unit") {
+    if (!job || !worker) return 0;
+
+    return (job * activeJob.rate) / worker;
+  }
+
+  if (activeJob.type === "per_worker") {
+    if (!job) return 0;
+
+    return job * activeJob.rate;
+  }
+
+  return 0;
 }
 
-function getActiveRate(jobMap) {
+function getActiveJob(jobMap) {
   const activeTab = document.querySelector(".calculator__tab.u-button--active");
   
   if (!activeTab) return 0;
   
   const jobId = activeTab.dataset.jobId;
+  const activeJob = jobMap[jobId];
   
-  return jobMap[jobId]?.rate ?? 0;
+  return activeJob;
 }
-
 
 // =======================
 // CONTROLLER
@@ -44,10 +57,11 @@ export function initCalculator(jobMap) {
   function calculate() {
     const job = Number(jobInput.value);
     const worker = Number(workerInput.value);
-    const rate = getActiveRate(jobMap);
-
-    const result = calculateResult(job, worker, rate);
+    const activeJob = getActiveJob(jobMap);
+    
+    const result = calculateResult(job, worker, activeJob);
     renderCalculatorOutput(output, result);
+    
   }
 
   jobInput.addEventListener("input", calculate);
