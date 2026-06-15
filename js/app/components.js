@@ -1,15 +1,22 @@
 // app/components.js
 
 async function loadComponent(id, file) {
-  const res = await fetch(file);
+  try {
+    const res = await fetch(file);
 
-  if (!res.ok) {
-    throw new Error(`Gagal memuat ${file}`);
+    if (!res.ok) throw new Error(`Gagal load ${file}`);
+
+    const html = await res.text();
+
+    const el = document.getElementById(id);
+    if (!el) throw new Error(`Element ${id} tidak ditemukan`);
+
+    el.innerHTML = html;
+
+  } catch (err) {
+    alert(err.message);
+    // console.log(err.message);
   }
-
-  const html = await res.text();
-
-  document.getElementById(id).innerHTML = html;
 }
 
 const COMPONENTS = [
@@ -22,7 +29,7 @@ const COMPONENTS = [
 ];
 
 export async function loadAppComponents() {
-  await Promise.all(
+  await Promise.allSettled(
     COMPONENTS.map(([id, file]) =>
       loadComponent(id, file)
     )
