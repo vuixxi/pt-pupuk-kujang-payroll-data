@@ -7,6 +7,22 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.2.0] - 2026-06-14
+
+### Diperbaiki
+- Memperbaiki load DOM pada `init.js`
+- Memperbaiki error handling pada `components.js`
+- Memperbaiki masalah class pada `summaryTable.js`
+- Memperbaiki script agar tema berfungsi `sidebar.html`, `sidebar-content.html`, `init.js`
+- Memperbaiki tampilan `variables.css`, `utility.css`, `main.css`, `summary.css`,`index.css`, `sidebar.css`
+
+### Ditambahkan
+- Menambahkan fitur theme pada aplikasi
+  - Ditambahkan `themes.css`, `themes.js`
+
+
+---
+
 ## [2.1.9] - 2026-06-13
 
 ### Diubah

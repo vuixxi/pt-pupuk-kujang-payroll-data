@@ -1,10 +1,36 @@
 Update in github:
 
+next update theme:
+warna pilihan user (custom theme).
+calculate: warna utama agar warna setelah nya sesuai
+jika tema makin gelap, teks nya ubah jadi terang
+simpan ke localStorage, jika ada ambil datanya dari localStorage
 
-calculator.js
-sesuaikan type per_unit & per_worker
+tutorial fitur baru
+Itu biasanya disebut feature onboarding / product tour / coach marks. Intinya kamu “menandai fitur baru” lalu menampilkan tooltip atau highlight saat user pertama kali masuk.
+Custom config-driven tour system (tanpa framework)
+const tour = [
+  {
+    id: "step-1",
+    element: "#btn-new",
+    title: "Fitur Baru",
+    description: "Klik untuk mulai"
+  }
+];
 
+jika fetch gagal load lagi
 
+mode offline
+
+pisahkan
+sidebar.html dan sidebar-content.html
+sidebar.css dan sidebar-content.css
+
+ganti folder payroll jadi tables
+
+filter dan sortir
+
+recap all periode
 
 gunakan state untuk data, period, workerMap, JobMap
 
@@ -250,16 +276,17 @@ docs/
   version.txt
   doc.txt
 partials/
-  - login.html
-  - header.html
-  - sidebar.html
-  - sidebar-content.html
-  - main.html
-  - summary.html
+  login.html
+  header.html
+  sidebar.html
+  sidebar-content.html
+  main.html
+  summary.html
 css/
   index.css
   base/
     variables.css
+    themes.css
     style.css
     utility.css
   components/
