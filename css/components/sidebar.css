@@ -290,3 +290,49 @@
 .sidebar-content .contact .contact__icon-whatsapp svg {
   scale: 1.7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-content .theme {}
+
+.sidebar-content .theme__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.sidebar-content .theme__wrapper .theme__item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar-content .theme__wrapper .theme__item:hover {
+  background-color: var(--primary-light);
+}
+
+.sidebar-content .theme__wrapper .theme__item.active {
+  background-color: var(--primary-light);
+}
+
+.sidebar-content .theme__wrapper .theme__item .theme__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.sidebar-content .theme__wrapper .theme__item .theme__label {}

@@ -40,7 +40,7 @@
 
 
 
-thead th {
+.main__table thead th {
   background: var(--primary);
   color: var(--white);
   padding: 12px 8px;
@@ -49,7 +49,7 @@ thead th {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-thead tr:nth-child(2) th {
+.main__table thead tr:nth-child(2) th {
   background: var(--primary-dark);
 }
 
@@ -57,67 +57,71 @@ thead tr:nth-child(2) th {
   min-width: 200px;
 }
 
-tbody td {
+.main__table tbody td {
   padding: 12px 8px;
   border-bottom: 1px solid var(--border);
   text-align: center;
   vertical-align: middle;
 }
 
-tbody strong {
+.main__table tbody strong {
   color: var(--primary-dark);
 }
 
-tbody tr:nth-child(even) {
+.main__table tbody tr {
+  background: var(--white);
+}
+
+.main__table tbody tr:nth-child(even) {
   background: var(--bg);
 }
 
-tbody tr:hover {
+.main__table tbody tr:hover {
   background: var(--primary-light);
 }
 
-tfoot td {
+.main__table tfoot td {
   padding: 12px 8px;
   border-top: 1px solid var(--border);
   font-weight: 600;
 }
 
-tfoot tr:nth-child(odd) {
+.main__table tfoot tr:nth-child(odd) {
   background: var(--bg);
 }
 
-tfoot tr:last-child {
+.main__table tfoot tr:last-child {
   background: var(--success-light);
   color: var(--success);
   font-size: 14px;
 }
 
 /* Status */
-tbody td:nth-child(6) {
+.main__table tbody td:nth-child(6) {
   font-weight: 600;
   color: var(--danger);
 }
 
-strong {
+.main__table strong {
   font-weight: 500;
 }
 
-.main .main__table-workers {
+.main .main__table .main__table-workers {
   position: relative;
 }
 
-.main .main__table-workers-title {
+.main .main__table .main__table-workers-title {
   cursor: pointer;
   /* color: #2563EB; */
   color: var(--primary-dark);
   transition: 0.2s;
 }
 
-.main .main__table-workers-title:hover {
+.main .main__table .main__table-workers-title:hover {
   color: var(--danger);
 }
 
-.main .main__table-workers-list {
+.main .main__table .main__table-workers-list {
   position: absolute;
   top: 100%;
   right: 50%;
@@ -134,7 +138,7 @@ strong {
   transition: 0.3s;
 }
 
-.main .main__table-workers-list::after {
+.main .main__table .main__table-workers-list::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -147,16 +151,16 @@ strong {
   z-index: 9;
 }
 
-.main .main__table-workers-list.main__table-workers-list--hidden {
+.main .main__table .main__table-workers-list.main__table-workers-list--hidden {
   visibility: hidden;
   opacity: 0;
   transform: translate(0, 10px);
 }
 
-.main .main__status {
+.main .main__table .main__status {
 }
 
-.main .main__status span {
+.main .main__table .main__status span {
   display: block;
   width: 0.8rem;
   height: 0.8rem;

@@ -17,20 +17,8 @@
   color: var(--text);
 }
 
-.summary .summary__table thead th.paid {
-  /* color: #81C784; */
-  color: var(--success-light-hover);
-}
 
-.summary .summary__table tbody td.paid strong {
-  /* color: #1B5E20; */
-  color: var(--success);
-}
 
-.summary .summary__table tfoot td.paid strong {
-  /* color: #1B5E20; */
-  color: var(--success-dark);
-}
 
 .summary__table-wrapper {
   width: 100%;
@@ -38,9 +26,7 @@
   margin: 0 auto;
   overflow-x: auto;
   border-radius: 16px;
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.05),
-    0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .summary__table {
@@ -52,12 +38,20 @@
   font-size: 0.9rem;
 }
 
+
+
+
 /* reset */
 .summary__table thead th,
 .summary__table tbody td,
 .summary__table tfoot td {
   white-space: nowrap;
 }
+
+.summary__table strong {
+  font-weight: normal;
+}
+
 
 /* Header */
 .summary__table thead th {
@@ -90,22 +84,52 @@
 
 /* bug font-weight */
 .summary__table tbody td:nth-child(6) {
-  font-weight: 400;
+  font-weight: normal;
+}
+
+.summary__table tbody tr {
+  background: var(--white);  
 }
 
 .summary__table tbody tr:nth-child(even) {
-  background: var(--white);
+  background: var(--bg);
 }
 
-.summary__table tbody tr:hover {
+.summary__table tbody tr:hover,
+.summary .summary__table tbody tr:hover td.paid,
+.summary .summary__table tbody tr:hover:nth-child(even) td.paid {
   background: var(--primary-light);
 }
+
+/* paid / status */
+.summary__table thead tr th.paid {
+  background-color: var(--paid);
+}
+
+.summary__table tbody tr td.paid {
+  background-color: var(--paid-lightest);
+}
+
+.summary__table tbody tr:nth-child(even) td.paid {
+  background-color: var(--paid-lighter);
+}
+
+.summary__table tfoot tr td.paid {
+  background-color: var(--paid-light);
+}
+
+
 
 .summary__table tbody strong {
   color: var(--primary-dark);
 }
 
 /* Footer */
+.summary__table tfoot tr {
+  background: var(--success-light);
+  color: var(--success);
+}
+
 .summary__table tfoot td {
   padding: 12px 8px;
   border-top: 1px solid var(--border);
@@ -113,9 +137,12 @@
   text-align: center;
 }
 
-.summary__table tfoot tr {
-  background: var(--success-light);
-  color: var(--success);
+
+
+/* Nomor rata tengah */
+.summary__table tbody td:first-child {
+  text-align: center;
+  min-width: 50px;
 }
 
 /* Kolom Nama rata kiri */
@@ -125,16 +152,14 @@
   font-weight: 500;
 }
 
-/* Nomor rata tengah */
-.summary__table tbody td:first-child {
-  text-align: center;
-  min-width: 50px;
-}
+
 
 /* Gaji */
 .summary__table tbody td:last-child strong {
   color: var(--success);
 }
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
