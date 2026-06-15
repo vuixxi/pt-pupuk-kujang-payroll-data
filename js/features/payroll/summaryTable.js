@@ -226,16 +226,16 @@ function createSummaryTableFootRow(groupedData, entries) {
 // =======================
 // UI HELPERS
 // =======================
+
 function renderSalaryCells(salaries, entries) {
   return salaries
     .map((val, i) => `
-      <td style="color:${entries[i].paid ? "#1B5E20" : "inherit"}">
+      <td class="${entries[i].paid ? 'paid' : ''}">
         ${formatNumber(val)}
       </td>
     `)
     .join("");
 }
-
 
 // =======================
 // UI INTERACTION
