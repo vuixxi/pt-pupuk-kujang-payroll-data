@@ -8,17 +8,22 @@
   --success-dark: #15803d;
   --warning: #f59e0b;
   --danger: #dc2626;
+  
+  /* New color */
+  --paid: #1e40af;
+  --paid-light: #dbeafe;
+  --paid-lighter: #eff6ff;
+  --paid-lightest: #f8fbff;
+  
+  
   --text: #1f2937;
   --text-light: #6b7280;
   --border: #e5e7eb;
   --border-hover: #bfbfbf;
   --bg: #f8fafc;
   --white: #ffffff;
-  
-    /* Disabled */
   --disabled-bg: #d1d5db;
   --disabled-text: #6b7280;
-  
   --disabled-input-bg: #f1f5f9;
   --disabled-input-text: #94a3b8;
   --disabled-input-border: #e2e8f0;
