@@ -22,7 +22,7 @@
     {
       "date": "2026-06-15",
       "job": 1,
-      "quantity": 150,
+      "quantity": 153,
       "workers": [1, 2, 3, 5, 6, 7, 9, 13],
       "paid": false
     }
