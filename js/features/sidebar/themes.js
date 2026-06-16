@@ -1,3 +1,5 @@
+import { modal } from "./../ui/modal/index.js";
+
 const themes = [
   { value: "default", label: "Biru" },
   { value: "sky", label: "Biru Langit" },
@@ -45,10 +47,12 @@ export function initThemes() {
   setTheme(currentTheme, html);
   
   container.addEventListener("click", (e) => {
-    const item = e.target.closest(".theme__item");
-    if (!item) return;
-    
-    let value = item.dataset.value;
-    setTheme(value, html);
+    modal.confirm("Apakah yakin mau mengganti tema?", () => {
+      const item = e.target.closest(".theme__item");
+      if (!item) return;
+      
+      let value = item.dataset.value;
+      setTheme(value, html);
+    });
   });
 }

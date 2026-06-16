@@ -1,4 +1,4 @@
-import { showAlert } from "./ui.js";
+import { modal } from "./../ui/modal/index.js";
 
 // =======================
 // LOGIC (PURE)
@@ -27,7 +27,7 @@ export function handleFeedback() {
   suggestionInput.addEventListener("input", checkInput);
 
   feedbackButton.addEventListener("click", function () {
-    showAlert("Kritik dan Saran anda telah terkirim!");
+    modal.success("Kritik & Saran telah berhasil dikirim.");
     resetFeedbackForm(criticismInput, suggestionInput, feedbackButton);
   });
 

@@ -1,4 +1,5 @@
-import { showAlert } from "./ui.js";
+// import { showAlert } from "./ui.js";
+import { modal } from "./../ui/modal/index.js";
 
 // =======================
 // LOGIC (PURE)
@@ -23,7 +24,14 @@ export function handleReport() {
   reportInput.addEventListener("input", checkInput);
 
   reportButton.addEventListener("click", function () {
-    showAlert("Laporan anda telah terkirim!");
+    // showAlert("Laporan anda telah terkirim!");
+    // showModal({
+    //   title: "Laporkan Bug",
+    //   message: "Apakah kamu yakin?",
+    //   onConfirm: () => console.log("deleted"),
+    // });
+    
+    modal.success("Laporan bug telah berhasil dikirim.");
     resetReportForm(reportInput, reportButton);
   });
 
