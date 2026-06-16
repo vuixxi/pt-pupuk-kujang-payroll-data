@@ -1,4 +1,5 @@
 import { handleSidebar } from "./../sidebar/index.js";
+import { modal } from "./../ui/modal/index.js";
 
 const AudioSystem = (function () {
   let bg = document.querySelector('.audio-system__bg');
@@ -52,16 +53,17 @@ function validateLogin(username, password) {
 function handleLoginResult(status) {
 
   if (status === "EMPTY") {
-    showAlert("Harap masukkan Username atau Password!");
+    modal.error("Harap masukkan Username atau Password!");
     return;
   }
 
   if (status === "SUCCESS") {
+    modal.success("Berhasil masuk!");
     openApp();
     return;
   }
 
-  showAlert("Username atau Password salah!");
+  modal.error("Username atau Password salah!");
 }
 
 
