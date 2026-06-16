@@ -1,5 +1,13 @@
 Update in github:
 
+load css dulu, baru html dan js
+
+perbaiki style modal.css versi sendiri
+
+item tema bisa diklik berkali kali sehingga terjadi bug dengan warna tema yang sama
+
+tombol login bisa diklik berkali kali, bug width sidebar
+
 next update theme:
 warna pilihan user (custom theme).
 calculate: warna utama agar warna setelah nya sesuai
@@ -237,8 +245,6 @@ logika login
 
 
 
-
-
 ES Module:
 - mainTable
   formatDisplayDate
@@ -290,6 +296,7 @@ css/
     style.css
     utility.css
   components/
+    modal.css
     header.css
     main.css
     sidebar.css
@@ -312,6 +319,10 @@ js/
     period/
       dropdown.js
     ui/
+      modal/
+        modal.js
+        helper.js
+        index.js
       notice.js
       footerVersion.js
     sidebar/

@@ -7,6 +7,22 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.2.1] - 2026-06-15
+
+### Diperbaiki
+- Memperbaiki modal pada `login`, `report.js`, `feedback.js`, dan `themes.js`
+- Menambahkan modal pada `index.css`
+- Menambahkan class baru pada `utility.css` dan variable baru pada `variables.css`
+- Menambahkan tag atribut versi pada `index.html`
+
+### Ditambahkan
+- Menambahkan sistem modal kustom untuk menggantikan alert dan confirm bawaan browser
+- Menambahkan modal pada `modal.css` dan `modal.js`. `helper.js`, `icons.js`, dan`index.js`
+
+
+
+---
+
 ## [2.2.0] - 2026-06-14
 
 ### Diperbaiki
