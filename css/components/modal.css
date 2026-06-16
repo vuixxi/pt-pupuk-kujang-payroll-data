@@ -1,0 +1,141 @@
+/* .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+  transition: 0.3s;
+}
+
+.modal {
+  background: var(--bg);
+  padding: 1.2rem;
+  border-radius: 10px;
+  min-width: 300px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.modal__title {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 3rem;
+} */
+
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal {
+  width: 18rem;
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 1.4rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.2s ease;
+}
+
+.modal__icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.modal__icon.u-icon {
+  width: 7rem;
+  height: 7rem;
+  margin: auto;
+}
+
+.modal__title {
+  margin: 0 0 10px;
+}
+
+.modal__message {
+  margin: 2rem 0;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal__btn {
+
+}
+/* 
+.modal__btn.modal__btn--primary {
+  background: #2563eb;
+  color: white;
+}
+
+.modal__btn.modal__btn--secondary {
+  background: #e5e7eb;
+} */
+
+.modal.success {
+  border-top: 5px solid var(--success);
+}
+
+.modal.error {
+  border-top: 5px solid var(--danger);
+}
+
+.modal.warning {
+  border-top: 5px solid var(--warning);
+}
+
+.modal.confirm {
+  border-top: 5px solid var(--primaryy);
+}
+
+
+.modal-overlay.closing {
+  animation: fadeOut 0.2s ease forwards;
+}
+
+.modal-overlay.closing .modal {
+  animation: scaleOut 0.2s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
