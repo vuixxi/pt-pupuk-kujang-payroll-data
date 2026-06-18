@@ -26,7 +26,7 @@
             radial-gradient(circle at 30% 80%, #C8E6C9 0%, transparent 40%),
             radial-gradient(circle at 75% 75%, #BBDEFB 0%, transparent 40%),
             var(--primary-light);
-  z-index: 9999999;
+  z-index: 999;
   transition: opacity 1s, scale 0s 1s;
 }
 
