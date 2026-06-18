@@ -1,3 +1,23 @@
+// import { handleSidebar, handleContent, handleContentClose } from "./../features/sidebar/index.js";
+import { initThemes } from "./themes.js";
+import { initCalculatorTabs, initCalculator } from "./calculator.js";
+import { handleFeedback } from "./feedback.js";
+import { handleReport } from "./report.js";
+
+
+export function initSidebar(jobMap) {
+  handleContent();
+  handleContentClose();
+  initThemes();
+  const calculate = initCalculator(jobMap);
+  initCalculatorTabs(calculate);
+  handleFeedback();
+  handleReport();
+}
+
+
+
+
 
 // =======================
 // LOGIC (PURE)
