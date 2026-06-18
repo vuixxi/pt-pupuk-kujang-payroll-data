@@ -1,4 +1,7 @@
-Update in github:
+aku butuh solusi programmer vanila javascript terbaik untuk proyek besar / produksi, profesional, dan team setara dengan standar industri yang advance
+
+html belum diload js udah nyari class html, error 
+refactor
 
 load css dulu, baru html dan js
 
@@ -330,7 +333,6 @@ js/
       calculator.js
       feedback.js
       report.js
-      ui.js
   shared/
     utils/
       format.js
@@ -550,3 +552,211 @@ CI/CD otomatis
 
 
 
+
+
+
+
+project-root/
+│
+├── assets/
+│   ├── css/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+├── src/
+│   │
+│   ├── core/
+│   │
+│   ├── layout/
+│   │
+│   ├── pages/
+│   │   ├── home/
+│   │   ├── project1/
+│   │   ├── project2/
+│   │   └── project3/
+│   │
+│   ├── services/
+│   │
+│   ├── store/
+│   │
+│   ├── router/
+│   │
+│   ├── components/
+│   │
+│   ├── modules/
+│   │
+│   └── utils/
+│
+├── public/
+│
+├── config/
+│
+├── tests/
+│
+└── docs/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+project-root/
+│
+├── index.html
+├── 404.html
+├── assets/
+│   ├── css/
+│   │   ├── base.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   └── utilities.css
+│   │
+│   ├── images/
+│   └── icons/
+│
+├── src/
+│   │
+│   ├── core/
+│   │   ├── router.js
+│   │   ├── state.js
+│   │   ├── eventBus.js
+│   │   ├── app.js
+│   │   └── config.js
+│   │
+│   ├── layout/
+│   │   ├── header.js
+│   │   ├── sidebar.js
+│   │   └── footer.js
+│   │
+│   ├── pages/
+│   │   ├── home/
+│   │   │   ├── index.js
+│   │   │   ├── view.js
+│   │   │   └── style.css
+│   │   │
+│   │   ├── project1/
+│   │   │   ├── index.js
+│   │   │   ├── view.js
+│   │   │   ├── model.js
+│   │   │   ├── service.js
+│   │   │   ├── controller.js
+│   │   │   ├── utils.js
+│   │   │   └── state.js
+│   │   │
+│   │   ├── project2/
+│   │   │   ├── index.js
+│   │   │   ├── view.js
+│   │   │   ├── engine/
+│   │   │   │   ├── core.js
+│   │   │   │   ├── worker.js
+│   │   │   │   └── algorithm.js
+│   │   │   └── api.js
+│   │   │
+│   │   └── project3/
+│   │       ├── index.js
+│   │       ├── view.js
+│   │       ├── modules/
+│   │       │   ├── auth.js
+│   │       │   ├── dashboard.js
+│   │       │   ├── analytics.js
+│   │       │   └── payment.js
+│   │       └── store.js
+│   │
+│   ├── services/
+│   │   ├── apiClient.js
+│   │   ├── storage.js
+│   │   └── logger.js
+│   │
+│   └── utils/
+│       ├── dom.js
+│       ├── format.js
+│       └── validator.js
+│
+└── README.md
+
+
+
+
+
+
+
+
+
+project-spa/
+│
+├── public/
+│   ├── index.html
+│   ├── 404.html
+│
+├── src/
+│   ├── app.js                # bootstrap SPA
+│   ├── router.js             # client-side routing
+│   ├── navigation.js         # nav handler
+│
+│   ├── core/
+│   │   ├── state.js          # global state manager
+│   │   ├── utils.js          # helper functions
+│   │   ├── api.js            # fetch wrapper
+│   │   ├── events.js         # event bus
+│   │
+│   ├── layouts/
+│   │   ├── mainLayout.js
+│   │
+│   ├── pages/
+│   │   ├── index/
+│   │   │   ├── index.html
+│   │   │   ├── index.js
+│   │   │   ├── index.css
+│   │   │   ├── modules/
+│   │   │
+│   │   ├── proyek1/
+│   │   │   ├── proyek1.html
+│   │   │   ├── proyek1.js
+│   │   │   ├── proyek1.css
+│   │   │   ├── modules/
+│   │   │   │   ├── chart.js
+│   │   │   │   ├── table.js
+│   │   │   │   ├── form.js
+│   │   │
+│   │   ├── proyek2/
+│   │   │   ├── proyek2.html
+│   │   │   ├── proyek2.js
+│   │   │   ├── proyek2.css
+│   │   │   ├── modules/
+│   │   │
+│   │   ├── proyek3/
+│   │   │   ├── proyek3.html
+│   │   │   ├── proyek3.js
+│   │   │   ├── proyek3.css
+│   │   │   ├── modules/
+│   │
+│   ├── components/
+│   │   ├── navbar.js
+│   │   ├── sidebar.js
+│   │   ├── modal.js
+│   │   ├── loader.js
+│   │
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── reset.css
+│   │   ├── variables.css
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│
+├── package.json
+└── README.md

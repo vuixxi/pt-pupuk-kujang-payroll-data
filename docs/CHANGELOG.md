@@ -7,6 +7,19 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.2.2] - 2026-06-16
+
+### Diperbaiki
+- Memperbaiki overlay pada `security.css`, `header.css`, `sidebar.css`, dan `modal.css`
+- Mengoptimalkan source code `init.js`
+- Mengoptimalkan pemanggilan partials pada `components.js`
+- Memperbaiki pemanggilan function pada `sidebar/index.js` agar lebih modular
+
+### Dihapus
+- `sidebar/ui.js`
+
+---
+
 ## [2.2.1] - 2026-06-15
 
 ### Diperbaiki
