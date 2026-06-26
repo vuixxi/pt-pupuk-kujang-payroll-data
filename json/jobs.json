@@ -19,6 +19,6 @@
     { "id": 15, "name": "Bongkar & Cacah", "unit": "Karung", "rate": 1040, "type": "per_unit" },
     { "id": 16, "name": "Bongkar Stapel", "unit": "Karung", "rate": 240, "type": "per_unit" },
     { "id": 17, "name": "Muat (8,8)", "unit": "Mobil", "rate": 110000, "type": "per_unit", "info": "220 Karung" },
-    { "id": 18, "name": "Produksi (49kg)", "unit": "Karung", "rate": 3825, "type": "per_unit" }
+    { "id": 18, "name": "Produksi (49kg)", "unit": "Karung", "rate": 3760, "type": "per_unit" }
   ]
 }
