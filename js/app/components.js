@@ -1,5 +1,6 @@
 const COMPONENTS = [
   ["login", "./partials/login.html"],
+  ["workspace", "./partials/workspace.html"],
   ["header", "./partials/header.html"],
   ["sidebar", "./partials/sidebar.html"],
   ["sidebar-content", "./partials/sidebar-content.html"],
