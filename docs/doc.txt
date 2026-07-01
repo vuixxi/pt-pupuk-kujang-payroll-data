@@ -1,4 +1,5 @@
 aku butuh solusi programmer vanila javascript terbaik untuk proyek besar / produksi, profesional, dan team setara dengan standar industri yang advance
+buat agar lebih clean dan scalable
 
 html belum diload js udah nyari class html, error 
 refactor
