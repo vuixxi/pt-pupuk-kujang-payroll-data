@@ -1,0 +1,90 @@
+
+
+.workspace.workspace--security {
+  opacity: 0;
+  display: none;
+}
+
+.workspace__wrapper {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.workspace__title {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+/* reset */
+.workspace thead th,
+.workspace tbody td {
+  white-space: nowrap;
+}
+
+.workspace__table-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.workspace__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+
+
+.workspace thead th {
+  min-width: 150px;
+  background: var(--primary);
+  color: var(--white);
+  padding: 16px 8px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.workspace thead th:nth-child(1) { min-width: 50px; }
+.workspace thead th:nth-child(2) { min-width: 300px; }
+
+.workspace tbody td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.workspace tbody tr {
+  background: var(--white);
+}
+
+.workspace tbody tr:nth-child(even) {
+  background: var(--bg);
+}
+
+.workspace tbody tr:hover {
+  background: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+  .main__table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .main__table {
+    min-width: 900px;
+  }
+}
