@@ -1,3 +1,4 @@
+import { initWorkspace } from "./../pages/workspace.js";
 import { handleSidebar } from "./../sidebar/index.js";
 import { modal } from "./../ui/modal/index.js";
 
@@ -15,7 +16,7 @@ const AudioSystem = (function () {
 })();
 
 
-export function security() {
+export function security(jobMap) {
   // ambil tombol login
   const btn = document.querySelector(".section__button");
 
@@ -26,7 +27,7 @@ export function security() {
 
     const status = validateLogin(pass1, pass2);
 
-    handleLoginResult(status);
+    handleLoginResult(status, jobMap);
   });
 }
 
@@ -38,8 +39,12 @@ function validateLogin(username, password) {
   if (!username || !password) {
     return "EMPTY";
   }
-
+  
   if (username === "Hannachan" && password === "Asynchronous") {
+    return "WORKSPACE";
+  }
+
+  if (username === "Hannachan" && password === "MyKontol") {
     return "SUCCESS";
   }
 
@@ -50,10 +55,17 @@ function validateLogin(username, password) {
 // =======================
 // CONTROLLER
 // =======================
-function handleLoginResult(status) {
+function handleLoginResult(status, jobMap) {
 
   if (status === "EMPTY") {
     modal.error("Harap masukkan Username atau Password!");
+    return;
+  }
+  
+  if (status === "WORKSPACE") {
+    modal.success("Berhasil masuk!");
+    initWorkspace(jobMap);
+    openWorkspace();
     return;
   }
 
@@ -97,5 +109,19 @@ function openApp() {
 
 
 
-
-// jalankan function saat load
+function openWorkspace() {
+  let workspace = document.querySelector(".workspace");
+  let security = document.querySelector(".security");
+  
+  document.body.classList.remove("body--overflow");
+  workspace.classList.remove("workspace--security");
+  security.classList.add("security--hidden");
+  
+  setTimeout(function() {
+    security.style.visibility = "hidden";
+    security.style.display = "none";
+  }, 3000);
+  
+  AudioSystem.playBg();
+  handleSidebar();
+}
