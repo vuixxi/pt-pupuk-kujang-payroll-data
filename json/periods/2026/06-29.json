@@ -50,14 +50,14 @@
     {
       "date": "2026-07-02",
       "job": 1,
-      "quantity": 175,
+      "quantity": 136,
       "workers": [1, 2, 3, 5, 7, 13],
       "paid": false
     },
     {
-      "date": "2026-07-03",
-      "job": 1,
-      "quantity": 175,
+      "date": "2026-07-02",
+      "job": 17,
+      "quantity": 1,
       "workers": [1, 2, 3, 5, 7, 13],
       "paid": false
     }
