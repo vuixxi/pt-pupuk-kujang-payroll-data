@@ -59,7 +59,7 @@
       "job": 17,
       "quantity": 1,
       "workers": [1, 2, 3, 5, 7, 13],
-      "paid": false
+      "paid": true
     }
   ]
 }
