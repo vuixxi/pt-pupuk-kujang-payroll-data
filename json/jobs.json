@@ -10,7 +10,7 @@
     { "id": 6, "name": "Stapel COA", "unit": "Karung", "rate": 400, "type": "per_unit" },
     { "id": 7, "name": "Stapel Produksi", "unit": "Karung", "rate": 400, "type": "per_unit" },
     { "id": 8, "name": "Salin", "unit": "Karung", "rate": 765, "type": "per_unit" },
-    { "id": 9, "name": "Salin Timbang", "unit": "Mobil", "rate": 200000, "type": "per_unit" },
+    { "id": 9, "name": "Salin Timbang (8.8)", "unit": "Mobil", "rate": 200000, "type": "per_unit" },
     { "id": 10, "name": "Muat Conveyor", "unit": "Unit", "rate": 100000, "type": "per_worker" },
     { "id": 11, "name": "Lembur Harian", "unit": "Hari", "rate": 100000, "type": "per_worker" },
     { "id": 12, "name": "Produksi (Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" },
