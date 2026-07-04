@@ -72,8 +72,12 @@
   background: var(--white);
 }
 
-.main__table tbody tr:nth-child(even) {
+.main__table tbody tr:nth-last-child(even) {
   background: var(--bg);
+}
+
+.main__table tbody td[rowspan] {
+  vertical-align: center;
 }
 
 .main__table tbody tr:hover {

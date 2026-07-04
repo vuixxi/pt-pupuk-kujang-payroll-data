@@ -64,8 +64,11 @@
 }
 
 .summary__table thead tr:nth-child(2) th {
+  background: var(--primary-medium);
+}
+
+.summary__table thead tr:nth-child(3) th {
   background: var(--primary-dark);
-  min-width: 125px;
 }
 
 .summary__table thead .summary__table-wide {
