@@ -13,6 +13,7 @@
 
 html[data-theme="ruby"] {
   --primary: #dc2626;
+  --primary-medium: #cf2222;
   --primary-light: #fee2e2;
   --primary-dark: #b91c1c;
 
@@ -24,6 +25,7 @@ html[data-theme="ruby"] {
 
 html[data-theme="amber"] {
   --primary: #ea580c;
+  --primary-medium: #db510b;
   --primary-light: #ffedd5;
   --primary-dark: #c2410c;
 
@@ -35,6 +37,7 @@ html[data-theme="amber"] {
 
 html[data-theme="gold"] {
   --primary: #ca8a04;
+  --primary-medium: #ba7f05;
   --primary-light: #fef9c3;
   --primary-dark: #a16207;
 
@@ -46,6 +49,7 @@ html[data-theme="gold"] {
 
 html[data-theme="emerald"] {
   --primary: #16a34a;
+  --primary-medium: #169645;
   --primary-light: #dcfce7;
   --primary-dark: #15803d;
 
@@ -57,6 +61,7 @@ html[data-theme="emerald"] {
 
 html[data-theme="indigo"] {
   --primary: #4f46e5;
+  --primary-medium: #4940d9;
   --primary-light: #e0e7ff;
   --primary-dark: #4338ca;
 
@@ -68,6 +73,7 @@ html[data-theme="indigo"] {
 
 html[data-theme="violet"] {
   --primary: #7c3aed;
+  --primary-medium: #7334e3;
   --primary-light: #ede9fe;
   --primary-dark: #6d28d9;
 
@@ -79,6 +85,7 @@ html[data-theme="violet"] {
 
 html[data-theme="rose"] {
   --primary: #db2777;
+  --primary-medium: #cf2370;
   --primary-light: #fce7f3;
   --primary-dark: #be185d;
 
@@ -90,6 +97,7 @@ html[data-theme="rose"] {
 
 html[data-theme="cyan"] {
   --primary: #06b6d4;
+  --primary-medium: #07a9c6;
   --primary-light: #cffafe;
   --primary-dark: #0e7490;
 
@@ -112,6 +120,7 @@ html[data-theme="cyan"] {
 
 html[data-theme="lime"] {
   --primary: #84cc16;
+  --primary-medium: #76ba14;
   --primary-light: #ecfccb;
   --primary-dark: #4d7c0f;
 
@@ -124,6 +133,7 @@ html[data-theme="lime"] {
 
 html[data-theme="sky"] {
   --primary: #38bdf8;
+  --primary-medium: #2eafe8;
   --primary-light: #e0f2fe;
   --primary-dark: #0284c7;
 
@@ -135,6 +145,7 @@ html[data-theme="sky"] {
 
 html[data-theme="lemon"] {
   --primary: #facc15;
+  --primary-medium: #e8bb13;
   --primary-light: #fef9c3;
   --primary-dark: #a16207;
 

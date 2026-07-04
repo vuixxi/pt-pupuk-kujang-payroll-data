@@ -1,6 +1,7 @@
 :root {
   --primaryy: #2563eb; /* sementara sebelum primary ganti theme */
   --primary: #2563eb;
+  --primary-medium: #2160e2;
   --primary-light: #dbeafe;
   --primary-dark: #1d4ed8;
   --success: #16a34a;
