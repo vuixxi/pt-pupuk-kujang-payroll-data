@@ -7,20 +7,25 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
-## [2.3.2] - 2026-07-01
+## [2.3.1] - 2026-07-03
+
+### Diperbaiki
+- Mengoptimalkan tampilan table
+  - `summary.html`
+  - `variables.css`, `themes.css`, `main.css`, `summary.css`
+  - `mainTable.js`, `summaryTable.js`
+
+---
+
+## [2.3.0] - 2026-07-01
 
 ### Ditambahkan
 - Halaman baru `workspace.html`
 
 ### Diperbaiki
 - `login.html`
-- `index.css`
-- `workspace.css`
-
-- `init.js`
-- `login.js`
-- `components.js`
-- `workspace.js`
+- `index.css`, `workspace.css`
+- `init.js`, `components.js`, `login.js`, `workspace.js`
 
 ---
 
