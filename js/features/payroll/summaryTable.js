@@ -20,6 +20,7 @@ export function getData(data, period, workerMap, jobMap) {
   const tfoot = document.querySelector(".summary tfoot");
   const tDateTitle = document.querySelector(".summary .summary__table-date-title");
   const tDate = document.querySelector(".summary .summary__table-date");
+  const tJob = document.querySelector(".summary .summary__table-job");
 
   // ambil data harian periode aktif
   const entries = data[period].data;
@@ -28,7 +29,7 @@ export function getData(data, period, workerMap, jobMap) {
   const groupedData = createGroupedData(data, period, workerMap, jobMap);
 
   // UI RENDER
-  renderDateHeader(tDateTitle, tDate, entries);
+  renderDateHeader(tDateTitle, tDate, tJob, entries, jobMap);
   tbody.innerHTML = createSummaryTableBodyRow(groupedData, entries);
   tfoot.innerHTML = createSummaryTableFootRow(groupedData, entries);
 
@@ -106,19 +107,109 @@ function sum(arr) {
 // =======================
 // UI (RENDER)
 // =======================
-function renderDateHeader(tDateTitle, tDate, entries) {
+// function renderDateHeader(tDateTitle, tDate, tJob, entries, jobMap) {
 
-  // set colspan sesuai jumlah tanggal
-  tDateTitle.setAttribute("colspan", entries.length);
+//   // group berdasarkan tanggal
+//   const groups = [];
 
-  // render header tanggal
-  tDate.innerHTML = entries
-    .map(item =>
-      `<th class="${item.paid ? "paid" : ""}">
-        ${formatShortDate(item.date)}
-      </th>`
-    )
+//   entries.forEach(entry => {
+//     let group = groups.find(g => g.date === entry.date);
+
+//     if (!group) {
+//       group = {
+//         date: entry.date,
+//         jobs: []
+//       };
+
+//       groups.push(group);
+//     }
+
+//     group.jobs.push(entry);
+//   });
+
+//   // ===== Row 1 (Tanggal) =====
+//   const dateCells = groups.map(group => `
+//       <th colspan="${group.jobs.length}">
+//           ${formatShortDate(group.date)}
+//       </th>
+//   `).join("");
+
+//   tDateTitle.innerHTML = `
+//       <th rowspan="2">No</th>
+//       <th rowspan="2">Nama</th>
+
+//       ${dateCells}
+
+//       <th rowspan="2" class="summary__table-wide">Total</th>
+//       <th rowspan="2" class="summary__table-wide">Sudah Dibayar</th>
+//       <th rowspan="2" class="summary__table-wide">Belum Dibayar</th>
+//       <th rowspan="2" class="summary__table-wide">Kasbon</th>
+//       <th rowspan="2" class="summary__table-wide">Gaji</th>
+//   `;
+
+//   // ===== Row 2 (Nama pekerjaan) =====
+
+//   tDate.innerHTML = groups.map(group =>
+//       group.jobs.map(item => `
+//           <th class="${item.paid ? "paid" : ""}">
+//               ${jobMap[item.job]?.name ?? "-"}
+//           </th>
+//       `).join("")
+//   ).join("");
+// }
+
+function renderDateHeader(tDateTitle, tDate, tJob, entries, jobMap) {
+
+  // group berdasarkan tanggal
+  const groups = [];
+
+  entries.forEach(entry => {
+    let group = groups.find(g => g.date === entry.date);
+
+    if (!group) {
+      group = {
+        date: entry.date,
+        jobs: []
+      };
+
+      groups.push(group);
+    }
+
+    group.jobs.push(entry);
+  });
+
+  // Baris 1
+  tDateTitle.innerHTML = `
+    <th rowspan="3">No</th>
+    <th rowspan="3">Nama</th>
+
+    <th colspan="${entries.length}">
+      Tanggal
+    </th>
+
+    <th rowspan="3" class="summary__table-wide">Total</th>
+    <th rowspan="3" class="summary__table-wide">Sudah Dibayar</th>
+    <th rowspan="3" class="summary__table-wide">Belum Dibayar</th>
+    <th rowspan="3" class="summary__table-wide">Kasbon</th>
+    <th rowspan="3" class="summary__table-wide">Gaji</th>
+  `;
+
+  // Baris 2 (tanggal)
+  tDate.innerHTML = groups.map(group => `
+      <th colspan="${group.jobs.length}" class="summary__table-wide">
+          ${formatShortDate(group.date)}
+      </th>
+  `).join("");
+
+  // Baris 3
+  tJob.innerHTML = entries
+    .map(item => `
+      <th class="${item.paid ? "paid" : ""} summary__table-wide">
+        ${jobMap[item.job]?.name ?? "-"}
+      </th>
+    `)
     .join("");
+
 }
 
 

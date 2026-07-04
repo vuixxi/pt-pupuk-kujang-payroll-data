@@ -39,40 +39,63 @@ function renderTableBody(tbody, html) {
 function renderTableFoot(tfoot, html) {
    tfoot.innerHTML = html;
 }
-
 function createTableBodyRows(items, workerMap, jobMap) {
-   // loop setiap data harian dan ubah jadi row HTML
-   return items.map((item, index) => {
-      // ⚠️ (MASIH CALL LOGIC - nanti bisa di-inject kalau mau lebih clean)
+   let no = 1;
+   let lastDate = "";
+
+   return items.map(item => {
       const { dailyTotalSalary, dailySalaryPerWorker } = calculateDailySalary(item, jobMap);
 
-      // ambil data job berdasarkan id
       const job = jobMap[item.job] || {};
 
-      // ubah daftar worker jadi string HTML
-      const myWorkers = item.workers.map(id => `<span>${workerMap[id] || "Unknown"}</span>`).join(", ");
+      const myWorkers = item.workers
+         .map(id => `<span>${workerMap[id] || "Unknown"}</span>`)
+         .join(", ");
 
-      // return template row tabel
+      // tampilkan tanggal hanya jika berbeda dengan sebelumnya
+      const showDate = item.date !== lastDate;
+
+      const firstColumns = showDate
+         ? `
+            <td>${no++}</td>
+            <td>${formatDisplayDate(item.date)}</td>
+         `
+         : `
+            <td></td>
+            <td></td>
+         `;
+
+      lastDate = item.date;
+
       return `
          <tr>
-            <td>${index + 1}</td>
-            <td>${formatDisplayDate(item.date)}</td>
+            ${firstColumns}
             <td>${job.name || "Unknown"}</td>
             <td>${item.quantity} ${job.unit || ""}</td>
+
             <td class="main__table-workers">
-              <div class="main__table-workers-title">${item.workers.length} Orang</div>
-              <div class="main__table-workers-list main__table-workers-list--hidden">${myWorkers}</div>
+               <div class="main__table-workers-title">
+                  ${item.workers.length} Orang
+               </div>
+               <div class="main__table-workers-list main__table-workers-list--hidden">
+                  ${myWorkers}
+               </div>
             </td>
-            <td class="main__status ${item.paid ? 'main__status-paid' : 'main__status-unpaid'}">
-               <span style="background-color:${item.paid ? '#81C784' : '#EF9A9A'};"></span>
+
+            <td class="main__status ${
+               item.paid ? "main__status-paid" : "main__status-unpaid"
+            }">
+               <span style="background-color:${
+                  item.paid ? "#81C784" : "#EF9A9A"
+               };"></span>
             </td>
+
             <td><strong>${formatNumber(dailyTotalSalary)}</strong></td>
             <td><strong>${formatNumber(dailySalaryPerWorker)}</strong></td>
          </tr>
       `;
-   }).join(""); // gabungkan semua row jadi satu string
+   }).join("");
 }
-
 function createTableFootRows(totals) {
    // daftar label dan nilai untuk footer tabel
    const rows = [
