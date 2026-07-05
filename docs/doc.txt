@@ -292,6 +292,7 @@ partials/
   sidebar-content.html
   main.html
   summary.html
+  workspace.html
 css/
   index.css
   base/
@@ -334,6 +335,8 @@ js/
       calculator.js
       feedback.js
       report.js
+    pages/
+      workspace.js
   shared/
     utils/
       format.js

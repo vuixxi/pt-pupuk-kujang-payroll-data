@@ -7,6 +7,21 @@ Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
 ---
 
+## [2.4.0] - 2026-07-05
+
+### Ditambahkan
+- Menambahkan Kalkulator Gaji yang mendukung perhitungan berdasarkan jenis pekerjaan.
+- Menambahkan fitur Tambahkan untuk menyimpan hasil perhitungan ke dalam daftar.
+- Menambahkan daftar hasil perhitungan sehingga pengguna dapat menyimpan beberapa hasil sekaligus.
+- Menambahkan perhitungan total akumulasi dari seluruh hasil yang telah ditambahkan.
+- Menambahkan tombol Hapus pada setiap item hasil perhitungan.
+- Menambahkan tombol Reset untuk menghapus seluruh daftar perhitungan sekaligus
+  - `sidebar-content.html`
+  - `sidebar.css`
+  - `calculator.js`
+
+---
+
 ## [2.3.1] - 2026-07-03
 
 ### Diperbaiki
