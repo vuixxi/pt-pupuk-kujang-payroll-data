@@ -178,37 +178,40 @@ function renderDateHeader(tDateTitle, tDate, tJob, entries, jobMap) {
     group.jobs.push(entry);
   });
 
-  // Baris 1
-  tDateTitle.innerHTML = `
-    <th rowspan="3">No</th>
-    <th rowspan="3">Nama</th>
+tDateTitle.innerHTML = `
+  <th rowspan="3">No</th>
+  <th rowspan="3">Nama</th>
 
-    <th colspan="${entries.length}">
-      Tanggal
+  <th colspan="${entries.length}">
+    Tanggal
+  </th>
+
+  <th colspan="5">
+    Informasi Pembayaran
+  </th>
+`;
+
+tDate.innerHTML = `
+  ${groups.map(group => `
+    <th colspan="${group.jobs.length}">
+      ${formatShortDate(group.date)}
     </th>
+  `).join("")}
 
-    <th rowspan="3" class="summary__table-wide">Total</th>
-    <th rowspan="3" class="summary__table-wide">Sudah Dibayar</th>
-    <th rowspan="3" class="summary__table-wide">Belum Dibayar</th>
-    <th rowspan="3" class="summary__table-wide">Kasbon</th>
-    <th rowspan="3" class="summary__table-wide">Gaji</th>
-  `;
+  <th rowspan="2" class="summary__table-wide">Total</th>
+  <th rowspan="2" class="summary__table-wide">Sudah Dibayar</th>
+  <th rowspan="2" class="summary__table-wide">Belum Dibayar</th>
+  <th rowspan="2" class="summary__table-wide">Kasbon</th>
+  <th rowspan="2" class="summary__table-wide">Gaji</th>
+`;
 
-  // Baris 2 (tanggal)
-  tDate.innerHTML = groups.map(group => `
-      <th colspan="${group.jobs.length}" class="summary__table-wide">
-          ${formatShortDate(group.date)}
-      </th>
-  `).join("");
-
-  // Baris 3
-  tJob.innerHTML = entries
-    .map(item => `
-      <th class="${item.paid ? "paid" : ""} summary__table-wide">
-        ${jobMap[item.job]?.name ?? "-"}
-      </th>
-    `)
-    .join("");
+tJob.innerHTML = `
+  ${entries.map(item => `
+    <th class="${item.paid ? "paid" : ""} summary__table-wide">
+      ${jobMap[item.job]?.name ?? "-"}
+    </th>
+  `).join("")}
+`;
 
 }
 
