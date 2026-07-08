@@ -5,6 +5,16 @@ Semua perubahan penting pada proyek ini akan dicatat di file ini.
 Format terinspirasi dari Keep a Changelog.
 Penomoran versi menggunakan Semantic Versioning (MAJOR.MINOR.PATCH).
 
+## [2.4.1] - 2026-07-07
+
+### Diperbaiki
+- Menyusun ulang struktur header tabel ringkasan agar lebih terorganisir.
+- Mengelompokkan kolom Total, Sudah Dibayar, Belum Dibayar, Kasbon, dan Gaji ke dalam kategori **Informasi Pembayaran**.
+- Memperbaiki penggunaan rowspan dan colspan pada header tabel sehingga tampilan lebih konsisten.
+  - summary.html
+  - summary.css
+  - summaryTable.js
+
 ---
 
 ## [2.4.0] - 2026-07-05
