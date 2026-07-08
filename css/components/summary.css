@@ -63,6 +63,12 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* Nama */
+.summary__table thead tr:nth-child(1) th:nth-child(2) {
+  min-width: 200px;
+}
+
+
 .summary__table thead tr:nth-child(2) th {
   background: var(--primary-medium);
 }
