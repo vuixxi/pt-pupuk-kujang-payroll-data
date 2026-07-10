@@ -17,7 +17,7 @@
       "job": 8,
       "quantity": 302,
       "workers": [2, 3, 5, 13, 14],
-      "paid": false
+      "paid": true
     },
     {
       "date": "2026-07-08",
@@ -37,14 +37,14 @@
       "date": "2026-07-09",
       "job": 8,
       "quantity": 252,
-      "workers": [3, 5, 13, 14],
-      "paid": false
+      "workers": [2, 5, 13, 14],
+      "paid": true
     },
     {
       "date": "2026-07-09",
       "job": 17,
       "quantity": 1,
-      "workers": [3, 5, 13, 14],
+      "workers": [2, 5, 13, 14],
       "paid": true
     }
   ]
