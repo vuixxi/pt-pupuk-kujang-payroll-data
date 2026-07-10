@@ -8,16 +8,16 @@
     {
       "date": "2026-07-10",
       "job": 8,
-      "quantity": 220,
+      "quantity": 335,
       "workers": [1, 2, 3, 5, 13],
       "paid": false
     },
     {
       "date": "2026-07-10",
       "job": 17,
-      "quantity": 1,
+      "quantity": 2,
       "workers": [1, 2, 3, 5, 13],
-      "paid": false
+      "paid": true
     }
   ]
 }
