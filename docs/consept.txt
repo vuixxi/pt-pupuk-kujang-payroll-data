@@ -1,0 +1,225 @@
+====================================================
+              SYSTEM.EXE
+A small program made for one special person.
+====================================================
+
+========================
+OPENING
+========================
+
+Layar hitam.
+
+> Initializing...
+> Loading modules...
+> Preparing memories...
+> Done.
+
+[Tekan ENTER]
+
+====================================================
+
+========================
+CHAPTER 1 - HELLO
+========================
+
+Hi, [Nama].
+
+Aku bikin sesuatu.
+
+Tenang,
+nggak panjang kok.
+
+Cuma sekitar dua menit.
+
+Kalau udah siap,
+klik Continue.
+
+[Tombol Continue]
+
+====================================================
+
+========================
+CHAPTER 2 - LOADING MEMORIES
+========================
+
+Loading memories...
+
+[████░░░░░░] 20%
+First conversation...
+
+[██████░░░░] 45%
+Random jokes...
+
+[████████░░] 70%
+Late night chats...
+
+[██████████] 100%
+Favorite moments loaded.
+
+Continue.
+
+====================================================
+
+========================
+CHAPTER 3 - A LITTLE STORY
+========================
+
+Aku boleh cerita sebentar?
+
+[Tombol: Sure :)]
+
+Terima kasih.
+
+Sebenarnya...
+
+Awalnya aku nggak pernah nyangka.
+
+Semuanya terasa biasa aja.
+
+Sampai akhirnya...
+
+Kita mulai sering ngobrol.
+
+Terus ngobrol lagi.
+
+Dan lagi.
+
+Tanpa sadar...
+
+Aku mulai menikmati setiap obrolan itu.
+
+====================================================
+
+========================
+CHAPTER 4 - LITTLE THINGS
+========================
+
+Aku mulai nungguin notifikasi.
+
+Aku mulai senyum sendiri
+waktu lihat nama kamu muncul.
+
+Aku mulai penasaran
+hari kamu berjalan gimana.
+
+Aku mulai berharap
+besok kita masih bisa ngobrol lagi.
+
+Lucu ya.
+
+Padahal awalnya
+cuma teman ngobrol biasa.
+
+====================================================
+
+========================
+CHAPTER 5 - SYSTEM ANALYSIS
+========================
+
+Scanning...
+
+Friendship...
+██████████
+
+Comfort...
+██████████████
+
+Happiness...
+██████████████████
+
+Feelings...
+██████████████████████
+
+Analyzing...
+
+Analyzing...
+
+Analysis complete.
+
+Result found.
+
+====================================================
+
+========================
+RESULT
+========================
+
+Aku suka sama kamu.
+
+Sesederhana itu.
+
+Nggak ada alasan yang rumit.
+
+Cuma karena...
+
+Setiap ngobrol sama kamu,
+hari rasanya jadi lebih menyenangkan.
+
+====================================================
+
+========================
+CHAPTER 6 - HONESTY
+========================
+
+Aku tahu...
+
+Aku nggak bisa mengatur
+gimana perasaan seseorang.
+
+Dan aku juga nggak berharap
+kamu harus langsung menjawab apa pun.
+
+Aku cuma pengen jujur.
+
+Karena menurutku...
+
+Perasaan yang baik
+lebih baik disampaikan
+daripada disimpan sampai menyesal.
+
+====================================================
+
+========================
+CHAPTER 7 - THANK YOU
+========================
+
+Kalau ternyata...
+
+Perasaan kita sama.
+
+Aku bakal senang sekali.
+
+Kalau ternyata tidak.
+
+Nggak apa-apa.
+
+Aku tetap bersyukur
+bisa mengenal kamu.
+
+Karena kamu udah jadi
+salah satu bagian yang bikin hariku lebih berwarna.
+
+====================================================
+
+========================
+ENDING
+========================
+
+Thank you
+for reading until the end.
+
+I hope this little website
+made you smile.
+
+Have a wonderful day.
+
+:)
+
+From,
+
+[Namamu]
+
+====================================================
+
+[Tombol]
+Replay
