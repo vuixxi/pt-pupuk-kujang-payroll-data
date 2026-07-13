@@ -17,7 +17,7 @@
       "job": 1,
       "quantity": 0,
       "workers": [1, 2, 3, 5, 14],
-      "paid": false
+      "paid": true
     }
   ]
 }
