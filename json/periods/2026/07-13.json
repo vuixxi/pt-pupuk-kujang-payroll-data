@@ -15,9 +15,44 @@
     {
       "date": "2026-07-14",
       "job": 1,
-      "quantity": 0,
-      "workers": [1, 2, 3, 5, 14],
+      "quantity": 100,
+      "workers": [1, 2, 3, 5, 13, 14],
+      "paid": false
+    },
+    {
+      "date": "2026-07-14",
+      "job": 18,
+      "quantity": 114,
+      "workers": [1, 2, 3, 5, 13, 14],
+      "paid": false
+    },
+    {
+      "date": "2026-07-15",
+      "job": 18,
+      "quantity": 168,
+      "workers": [1, 2, 3, 5, 13, 14],
+      "paid": false
+    },
+    {
+      "date": "2026-07-15",
+      "job": 19,
+      "quantity": 1,
+      "workers": [1, 2, 3, 5, 13, 14],
       "paid": true
+    },
+    {
+      "date": "2026-07-16",
+      "job": 18,
+      "quantity": 150,
+      "workers": [1, 2, 3, 5, 13, 14],
+      "paid": false
+    },
+    {
+      "date": "2026-07-17",
+      "job": 18,
+      "quantity": 150,
+      "workers": [1, 2, 3, 5, 13, 14],
+      "paid": false
     }
   ]
 }
