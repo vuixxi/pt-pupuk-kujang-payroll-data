@@ -2,7 +2,7 @@
   "version": "2.4.2",
   "createdAt": "2026-08-03T10:00:00Z",
   "periodId": 30,
-  "loanPerWorker": 00,
+  "loanPerWorker": 0,
   "loanWorkers": [],
   "data": [
     {
