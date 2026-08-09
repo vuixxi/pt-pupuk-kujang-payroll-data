@@ -32,6 +32,13 @@
       "quantity": 252,
       "workers": [1, 2, 3, 5, 9],
       "paid": false
+    },
+    {
+      "date": "2026-08-07",
+      "job": 3,
+      "quantity": 1,
+      "workers": [1, 2, 3, 5, 9],
+      "paid": true
     }
   ]
 }
