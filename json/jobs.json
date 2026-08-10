@@ -22,7 +22,8 @@
     { "id": 18, "name": "Produksi (49kg)", "unit": "Karung", "rate": 3760, "type": "per_unit" },
     { "id": 19, "name": "Muat (3,2)", "unit": "Mobil", "rate": 36000, "type": "per_unit", "info": "80 Karung" },
     { "id": 20, "name": "Bongkar COA", "unit": "Karung", "rate": 400, "type": "per_unit" },
-    { "id": 21, "name": "Produksi COA (45kg)", "unit": "Karung", "rate": 3600, "type": "per_unit" },
-    { "id": 22, "name": "Harian", "unit": "Hari", "rate": 65000, "type": "per_worker" }
+    { "id": 21, "name": "Produksi COA (49kg)", "unit": "Karung", "rate": 3760, "type": "per_unit" },
+    { "id": 22, "name": "Harian", "unit": "Hari", "rate": 65000, "type": "per_worker" },
+    { "id": 23, "name": "Harian (COA)", "unit": "Hari", "rate": 50000, "type": "per_worker" }
   ]
 }
