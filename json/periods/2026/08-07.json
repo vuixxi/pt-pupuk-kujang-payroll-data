@@ -2,9 +2,16 @@
   "version": "2.4.2",
   "createdAt": "2026-08-07T10:00:00Z",
   "periodId": 31,
-  "loanPerWorker": 0,
-  "loanWorkers": [],
+  "loanPerWorker": 100000,
+  "loanWorkers": [1, 2, 3, 5, 9, 13, 14],
   "data": [
+    {
+      "date": "2026-08-07",
+      "job": 7,
+      "quantity": 36,
+      "workers": [1, 2, 3, 5, 9],
+      "paid": false
+    },
     {
       "date": "2026-08-07",
       "job": 20,
@@ -52,6 +59,20 @@
       "job": 6,
       "quantity": 209,
       "workers": [1, 2, 3, 5, 9, 13, 14],
+      "paid": false
+    },
+    {
+      "date": "2026-08-10",
+      "job": 22,
+      "quantity": 1,
+      "workers": [1, 2, 3],
+      "paid": false
+    },
+    {
+      "date": "2026-08-10",
+      "job": 23,
+      "quantity": 1,
+      "workers": [1, 2, 3],
       "paid": false
     }
   ]
