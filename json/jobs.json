@@ -13,7 +13,7 @@
     { "id": 9, "name": "Salin Timbang (8.8)", "unit": "Mobil", "rate": 200000, "type": "per_unit" },
     { "id": 10, "name": "Muat Conveyor", "unit": "Unit", "rate": 100000, "type": "per_worker" },
     { "id": 11, "name": "Lembur Harian", "unit": "Hari", "rate": 100000, "type": "per_worker" },
-    { "id": 12, "name": "Produksi (Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" },
+    { "id": 12, "name": "Produksi (45kg Lembur)", "unit": "Karung", "rate": 4000, "type": "per_unit" },
     { "id": 13, "name": "Mencacah", "unit": "Karung", "rate": 800, "type": "per_unit" },
     { "id": 14, "name": "Muat (3,6)", "unit": "Mobil", "rate": 45000, "type": "per_unit", "info": "90 Karung" },
     { "id": 15, "name": "Bongkar & Cacah", "unit": "Karung", "rate": 1040, "type": "per_unit" },
@@ -24,6 +24,11 @@
     { "id": 20, "name": "Bongkar COA", "unit": "Karung", "rate": 400, "type": "per_unit" },
     { "id": 21, "name": "Produksi COA (49kg)", "unit": "Karung", "rate": 3760, "type": "per_unit" },
     { "id": 22, "name": "Harian", "unit": "Hari", "rate": 65000, "type": "per_worker" },
-    { "id": 23, "name": "Harian (COA)", "unit": "Hari", "rate": 50000, "type": "per_worker" }
+    { "id": 23, "name": "Harian (COA)", "unit": "Hari", "rate": 50000, "type": "per_worker" },
+    { "id": 24, "name": "Produksi (49kg Lembur)", "unit": "Karung", "rate": 3995, "type": "per_unit" },
+    { "id": 25, "name": "Bongkar Produksi (6.0)", "unit": "Mobil", "rate": 72000, "type": "per_unit", "info": "150 Karung" },
+    { "id": 26, "name": "Muat (7.2)", "unit": "Mobil", "rate": 91000, "type": "per_unit", "info": "182 Karung" },
+    { "id": 27, "name": "Salin Timbang (49kg)", "unit": "Karung", "rate": 816, "type": "per_unit" },
+    { "id": 28, "name": "Bongkar Produksi (7.0)", "unit": "Mobil", "rate": 84000, "type": "per_unit", "info": "175 Karung" }
   ]
 }
